@@ -35,4 +35,12 @@ describe("selectHomeForYouQuests", () => {
   it("uses mock recommendations for an empty response", () => {
     expect(selectHomeForYouQuests([], fallback, false)).toEqual(fallback);
   });
+
+  it("preserves an intentional empty result for a strict region filter", () => {
+    expect(selectHomeForYouQuests([], fallback, false, 6, true)).toEqual([]);
+  });
+
+  it("never leaks nationwide mock fallback into a strict region after an API error", () => {
+    expect(selectHomeForYouQuests(undefined, fallback, true, 6, true)).toEqual([]);
+  });
 });

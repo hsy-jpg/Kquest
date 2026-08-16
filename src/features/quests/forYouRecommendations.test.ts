@@ -42,6 +42,7 @@ const candidates = [
   quest(5, "Jeju Coastal Trail", "NATURE", "Jeju", 96),
   quest(6, "Seoul Neighborhood Market", "MARKET", "Seoul", 75),
   quest(7, "Seoul Nature Garden", "NATURE", "Seoul", 80),
+  quest(8, "Bupyeong Pungmul Festival", "FESTIVAL", "Incheon", 98),
 ];
 
 const prefs = (moods: string[], activities: string[], region: string): Prefs => ({ moods, activities, region });
@@ -70,5 +71,26 @@ describe("rankForYouQuests", () => {
   it("limits one Quest type to two until diverse candidates are selected", () => {
     const ranked = rankForYouQuests(candidates, prefs(["relax"], ["nature"], "seoul"), [], 6);
     expect(ranked.filter((item) => item.questType === "NATURE")).toHaveLength(2);
+  });
+
+  it("never includes an Incheon Quest in a Jeonnam-scoped recommendation", () => {
+    const ranked = rankForYouQuests(candidates, prefs(["exciting"], ["festival"], "jeonnam"), [], 6);
+    expect(ranked.some((item) => item.title.includes("Bupyeong"))).toBe(false);
+    expect(ranked.every((item) => item.region === "Jeollanam-do")).toBe(true);
+  });
+
+  it("matches Bupyeong correctly when Incheon is selected", () => {
+    const ranked = rankForYouQuests(candidates, prefs(["exciting"], ["festival"], "incheon"), [], 6);
+    expect(ranked[0].title).toBe("Bupyeong Pungmul Festival");
+  });
+
+  it("keeps preference relevance above novelty while recording a repetition penalty", () => {
+    const userPrefs = prefs(["relax"], ["nature"], "seoul");
+    const first = rankForYouQuests(candidates, userPrefs, [], 2);
+    const recentIds = new Set(first.map((item) => item.databaseId));
+    const rotated = rankForYouQuests(candidates, userPrefs, [], 2, new Date("2026-08-17T00:00:00Z"), recentIds);
+    expect(rotated[0].questType).toBe("NATURE");
+    expect(rotated[0].recommendation.fallbackStage).toBe(1);
+    expect(rotated[0].recommendation.breakdown.recentRecommendation).toBe(-4);
   });
 });

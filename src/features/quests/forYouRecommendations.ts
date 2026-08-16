@@ -17,6 +17,7 @@ export type RecommendationBreakdown = {
   distance: number;
   learnedPreference: number;
   currentQuestBehavior: number;
+  recentRecommendation: number;
   qualityTieBreaker: number;
   confidenceTieBreaker: number;
 };
@@ -54,8 +55,16 @@ const MOOD_KEYWORDS: Record<string, string[]> = {
 };
 
 const REGION_ALIASES: Record<string, string[]> = {
-  seoul: ["seoul"], busan: ["busan"], jeju: ["jeju"],
+  seoul: ["seoul"], incheon: ["incheon"], busan: ["busan"],
+  daegu: ["daegu"], gwangju: ["gwangju"], daejeon: ["daejeon"],
+  ulsan: ["ulsan"], sejong: ["sejong"], gyeonggi: ["gyeonggi"],
+  gangwon: ["gangwon"], chungbuk: ["chungbuk", "chungcheongbuk", "north chungcheong"],
+  chungnam: ["chungnam", "chungcheongnam", "south chungcheong"],
+  jeonbuk: ["jeonbuk", "jeollabuk", "north jeolla"],
   jeonnam: ["jeollanam", "jeonnam", "south jeolla"],
+  gyeongbuk: ["gyeongbuk", "gyeongsangbuk", "north gyeongsang"],
+  gyeongnam: ["gyeongnam", "gyeongsangnam", "south gyeongsang"],
+  jeju: ["jeju"],
 };
 
 const normalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -63,9 +72,6 @@ const normalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, 
 function regionMatches(prefRegion: string, quest: SupabaseQuestCard): boolean {
   const target = normalize(`${quest.location} ${quest.region ?? ""} ${quest.district ?? ""}`);
   if (prefRegion === "korea" || prefRegion === "near") return false;
-  if (prefRegion === "other") {
-    return !["seoul", "busan", "jeju", "jeollanam", "jeonnam", "south jeolla"].some((region) => target.includes(region));
-  }
   return (REGION_ALIASES[prefRegion] ?? [prefRegion]).some((alias) => target.includes(normalize(alias)));
 }
 
@@ -90,9 +96,14 @@ export function rankForYouQuests(
   events: QuestEventSignal[],
   limit = 6,
   now = new Date(),
+  recentRecommendedIds: ReadonlySet<string> = new Set(),
 ): RecommendedQuest[] {
+  const hasStrictRegion = prefs.region !== "korea" && prefs.region !== "near";
+  const eligibleQuests = hasStrictRegion
+    ? quests.filter((quest) => regionMatches(prefs.region, quest))
+    : quests;
   const byQuest = groupEvents(events);
-  const questById = new Map(quests.map((quest) => [quest.databaseId, quest]));
+  const questById = new Map(eligibleQuests.map((quest) => [quest.databaseId, quest]));
   const learnedTypes = new Map<string, number>();
 
   for (const event of events) {
@@ -102,7 +113,7 @@ export function rankForYouQuests(
     learnedTypes.set(source.questType, Math.min(2, (learnedTypes.get(source.questType) ?? 0) + weight));
   }
 
-  const scored = quests.map((quest): RecommendedQuest => {
+  const scored = eligibleQuests.map((quest): RecommendedQuest => {
     const text = questText(quest);
     const region = regionMatches(prefs.region, quest) ? 4 : 0;
     const activity = prefs.activities.some((value) => matchesAnyType(ACTIVITY_TYPES[value] ?? [], quest)) ? 3 : 0;
@@ -118,12 +129,13 @@ export function rankForYouQuests(
       event.event_type === "VIEW" && now.getTime() - new Date(event.created_at).getTime() <= 7 * 86_400_000,
     );
     const currentQuestBehavior = completed ? -8 : recentViewOnly ? -2 : started ? 1 : 0;
+    const recentRecommendation = recentRecommendedIds.has(quest.databaseId) ? -4 : 0;
     const learnedPreference = completed ? 0 : learnedTypes.get(quest.questType) ?? 0;
     const qualityTieBreaker = Math.max(0, Math.min(0.5, quest.qualityScore / 200));
     const confidenceTieBreaker = Math.max(0, Math.min(0.5, quest.classificationConfidence * 0.5));
     const breakdown: RecommendationBreakdown = {
       region, mood, activity, local, season, duration: 0, distance: 0,
-      learnedPreference, currentQuestBehavior, qualityTieBreaker, confidenceTieBreaker,
+      learnedPreference, currentQuestBehavior, recentRecommendation, qualityTieBreaker, confidenceTieBreaker,
     };
     const score = Math.round(Object.values(breakdown).reduce((sum, value) => sum + value, 0) * 100) / 100;
     const reasons = Object.entries(breakdown).filter(([, value]) => value !== 0).map(([key, value]) => `${key}:${value > 0 ? "+" : ""}${value}`);
@@ -149,15 +161,18 @@ export function rankForYouQuests(
     || new Date(b.publishedAt ?? b.createdAt).getTime() - new Date(a.publishedAt ?? a.createdAt).getTime(),
   );
 
+  // Repetition is only a tie-breaker inside the same relevance stage. A fresh
+  // but poorly matched Quest must never outrank a relevant local Quest.
+  const orderedForRotation = scored;
   const selected: RecommendedQuest[] = [];
   const categoryCounts = new Map<string, number>();
-  for (const quest of scored) {
+  for (const quest of orderedForRotation) {
     if ((categoryCounts.get(quest.questType) ?? 0) >= 2) continue;
     selected.push(quest);
     categoryCounts.set(quest.questType, (categoryCounts.get(quest.questType) ?? 0) + 1);
     if (selected.length === limit) return selected;
   }
-  for (const quest of scored) {
+  for (const quest of orderedForRotation) {
     if (!selected.includes(quest)) selected.push(quest);
     if (selected.length === limit) break;
   }

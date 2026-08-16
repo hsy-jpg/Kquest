@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Flame, Zap, Clock, MapPin, ChevronRight, Gift, TrendingUp, Star, Sparkles, SlidersHorizontal } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
@@ -25,9 +25,11 @@ const labelFor = (list: readonly { id: string; emoji: string; label: string }[],
 
 const Index = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [dailyRewardClaimed, setDailyRewardClaimed] = useState(false);
   const [prefs, setPrefs] = useState<Prefs | null>(() => loadPrefs());
   const [editingPrefs, setEditingPrefs] = useState(false);
+  const [recentForYouIds, setRecentForYouIds] = useState<ReadonlySet<string>>(() => new Set());
   const forYou = recommendedQuests(prefs, 6);
   const {
     data: publishedQuests,
@@ -36,12 +38,18 @@ const Index = () => {
   } = usePublishedQuests();
   const { data: questEventSignals = [] } = useQuestEventSignals();
   const personalizedPublished = useMemo(
-    () => prefs && publishedQuests ? rankForYouQuests(publishedQuests, prefs, questEventSignals, 6) : publishedQuests,
-    [prefs, publishedQuests, questEventSignals],
+    () => prefs && publishedQuests ? rankForYouQuests(publishedQuests, prefs, questEventSignals, 6, new Date(), recentForYouIds) : publishedQuests,
+    [prefs, publishedQuests, questEventSignals, recentForYouIds],
   );
   const displayedForYou = useMemo(
-    () => selectHomeForYouQuests(personalizedPublished, forYou, publishedQuestsError, 6),
-    [personalizedPublished, forYou, publishedQuestsError],
+    () => selectHomeForYouQuests(
+      personalizedPublished,
+      forYou,
+      publishedQuestsError,
+      6,
+      Boolean(prefs && prefs.region !== "korea" && prefs.region !== "near"),
+    ),
+    [personalizedPublished, forYou, publishedQuestsError, prefs, publishedQuests],
   );
   const displayedForToday = useMemo(() => {
     if (publishedQuestsError || !publishedQuests?.length) return featuredQuests;
@@ -51,6 +59,11 @@ const Index = () => {
     const ranked = rankForTodayQuests(publishedQuests, questEventSignals, forYouIds, 3);
     return ranked.length ? ranked : featuredQuests;
   }, [publishedQuestsError, publishedQuests, displayedForYou, questEventSignals]);
+
+  useEffect(() => {
+    if (location.hash !== "#for-you") return;
+    requestAnimationFrame(() => document.getElementById("for-you")?.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }, [location.hash]);
 
 
   return (
@@ -207,7 +220,7 @@ const Index = () => {
       </div>
 
       {/* For You — personalized recommendations */}
-      <div>
+      <div id="for-you" className="scroll-mt-4">
         <div className="flex items-center justify-between mb-3 px-5">
           <div className="flex items-center gap-2">
             <Sparkles size={18} className="text-primary" />
@@ -242,7 +255,7 @@ const Index = () => {
             <div className="flex gap-3 overflow-x-auto pb-2 px-5 scrollbar-hide">
               {publishedQuestsLoading ? (
                 <p className="py-4 text-xs text-muted-foreground">Loading quests...</p>
-              ) : displayedForYou.map((q) => (
+              ) : displayedForYou.length ? displayedForYou.map((q) => (
                 <button
                   key={q.id}
                   onClick={() => navigate(`/quest/${q.id}`)}
@@ -274,7 +287,9 @@ const Index = () => {
                     </div>
                   </div>
                 </button>
-              ))}
+              )) : (
+                <p className="py-4 text-xs text-muted-foreground">No published quests match this region yet.</p>
+              )}
               {publishedQuestsError && (
                 <span className="sr-only" role="status">Live quests unavailable. Showing existing recommendations.</span>
               )}
@@ -296,6 +311,9 @@ const Index = () => {
           initial={prefs}
           onClose={() => setEditingPrefs(false)}
           onDone={(p) => {
+            setRecentForYouIds(new Set(displayedForYou.flatMap((quest) =>
+              "databaseId" in quest ? [(quest as { databaseId: string }).databaseId] : [],
+            )));
             setPrefs(p);
             setEditingPrefs(false);
           }}

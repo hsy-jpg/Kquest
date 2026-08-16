@@ -15,6 +15,7 @@ function parseArgs(argv) {
     inputDir: resolve(value("--input-dir", DEFAULT_INPUT_DIR)),
     dryRun: argv.includes("--dry-run"),
     verifyOnly: argv.includes("--verify-only"),
+    allowBatch: argv.includes("--allow-batch"),
   };
 }
 
@@ -79,13 +80,21 @@ async function loadInputs(inputDir) {
   return { places, quests, reviews };
 }
 
-function validateInputs({ places, quests, reviews }) {
-  if (places.length !== 10) {
+function validateInputs({ places, quests, reviews }, allowBatch = false) {
+  if (!allowBatch && places.length !== 10) {
     throw new Error(`Fixture safety check failed: expected exactly 10 tour places, received ${places.length}`);
+  }
+  if (allowBatch && (places.length < 1 || places.length > 20000)) {
+    throw new Error(`Batch safety check failed: tour place count must be between 1 and 20000, received ${places.length}`);
   }
   for (const item of places) requireFields(item, ["sourceContentId", "title", "region", "contentTypeId", "localScore", "qualityScore", "selectionStatus"], `tour place ${item.sourceContentId ?? "unknown"}`);
   for (const item of quests) requireFields(item, ["questId", "sourceContentId", "title", "questType", "templateId", "steps", "classificationConfidence", "region"], `quest ${item.sourceContentId ?? "unknown"}`);
-  for (const item of reviews) requireFields(item, ["sourceContentId", "localScore", "qualityScore", "reviewFlags"], `review item ${item.sourceContentId ?? "unknown"}`);
+  for (const item of reviews) {
+    requireFields(item, ["sourceContentId", "localScore", "qualityScore"], `review item ${item.sourceContentId ?? "unknown"}`);
+    if (!Array.isArray(item.reviewFlags)) {
+      throw new Error(`review item ${item.sourceContentId ?? "unknown"} must provide reviewFlags as an array`);
+    }
+  }
   assertUnique(places, "sourceContentId", "tour-places.json");
   assertUnique(quests, "sourceContentId", "accepted-quests.json");
   assertUnique(reviews, "sourceContentId", "review-items.json");
@@ -117,6 +126,7 @@ function mapTourPlace(item) {
     local_score: Number(item.localScore),
     quality_score: Number(item.qualityScore),
     selection_status: item.selectionStatus,
+    detail_data: item.detailData && typeof item.detailData === "object" ? item.detailData : {},
     last_synced_at: new Date().toISOString(),
   };
 }
@@ -281,7 +291,7 @@ async function verifyImport(client, inputs) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const inputs = await loadInputs(args.inputDir);
-  validateInputs(inputs);
+  validateInputs(inputs, args.allowBatch);
   console.log(`Validated fixture: ${inputs.places.length} places, ${inputs.quests.length} quests, ${inputs.reviews.length} review items.`);
   if (args.dryRun) {
     console.log("Dry run complete. No Supabase connection or write was performed.");

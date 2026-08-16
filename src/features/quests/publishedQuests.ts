@@ -34,7 +34,8 @@ const PUBLISHED_QUEST_SELECT = `
     content_type,
     local_score,
     quality_score,
-    selection_status
+    selection_status,
+    detail_data
   )
 `;
 

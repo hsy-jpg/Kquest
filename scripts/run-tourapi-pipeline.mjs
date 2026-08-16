@@ -5,7 +5,7 @@ import { dirname, resolve } from "node:path";
 import { fill, selectVariant } from "./test-tour-quest-generation.mjs";
 
 const API_BASE = "https://apis.data.go.kr/B551011/EngService2";
-const DEFAULT_REGIONS = ["1", "6", "38", "32", "35"];
+const DEFAULT_REGIONS = ["1", "2", "3", "4", "5", "6", "7", "8", "31", "32", "33", "34", "35", "36", "37", "38", "39"];
 const DEFAULT_CONTENT_TYPES = ["75", "76", "78", "79", "80", "82", "85"];
 const REGION_NAMES = {
   "1": "Seoul", "2": "Incheon", "3": "Daejeon", "4": "Daegu", "5": "Gwangju",
@@ -19,13 +19,15 @@ function parseArgs(argv) {
     const index = argv.indexOf(name);
     return index >= 0 && argv[index + 1] ? argv[index + 1] : fallback;
   };
+  const all = argv.includes("--all");
   const maxItems = Number(value("--max-items", "100"));
-  if (!Number.isInteger(maxItems) || maxItems < 1 || maxItems > 5000) {
-    throw new Error("--max-items must be an integer between 1 and 5000");
+  if (!Number.isInteger(maxItems) || maxItems < 1 || maxItems > 20000) {
+    throw new Error("--max-items must be an integer between 1 and 20000");
   }
   return {
     regions: value("--regions", DEFAULT_REGIONS.join(",")).split(",").map(v => v.trim()).filter(Boolean),
     contentTypes: value("--content-types", DEFAULT_CONTENT_TYPES.join(",")).split(",").map(v => v.trim()).filter(Boolean),
+    all,
     maxItems,
     outputDir: resolve(value("--output-dir", "artifacts/kquest-pipeline")),
     detailsFile: value("--details-file", null),
@@ -102,6 +104,7 @@ async function mapLimit(values, limit, mapper) {
 }
 
 async function collectLists(args, serviceKey) {
+  if (args.all) return collectAllLists(args, serviceKey);
   const combinations = args.regions.flatMap(region => args.contentTypes.map(contentTypeId => ({ region, contentTypeId })));
   const perCombination = Math.max(1, Math.ceil(args.maxItems / combinations.length));
   const collected = [];
@@ -115,11 +118,51 @@ async function collectLists(args, serviceKey) {
       continue;
     }
     collected.push(...response.items.map(item => ({ ...item, _requestedRegion: combo.region })));
-    if (collected.length >= args.maxItems) break;
     await sleep(80);
   }
   const deduplicated = [...new Map(collected.filter(item => present(item.contentid)).map(item => [String(item.contentid), item])).values()];
-  return deduplicated.slice(0, args.maxItems);
+  const byRegion = new Map(args.regions.map(region => [region, []]));
+  for (const item of deduplicated) byRegion.get(String(item._requestedRegion))?.push(item);
+  const balanced = [];
+  for (let index = 0; balanced.length < args.maxItems; index += 1) {
+    let added = false;
+    for (const region of args.regions) {
+      const item = byRegion.get(region)?.[index];
+      if (!item) continue;
+      balanced.push(item);
+      added = true;
+      if (balanced.length === args.maxItems) break;
+    }
+    if (!added) break;
+  }
+  return balanced;
+}
+
+async function collectAllLists(args, serviceKey) {
+  const allowedTypes = new Set(args.contentTypes);
+  const collected = [];
+  for (const region of args.regions) {
+    let pageNo = 1;
+    let received = 0;
+    let totalCount = 0;
+    do {
+      const response = await requestApi("areaBasedList2", {
+        numOfRows: "100", pageNo: String(pageNo), areaCode: region, arrange: "Q",
+      }, serviceKey);
+      if (!response.ok) throw new Error(`[LIST_FAILED] region=${region} page=${pageNo}: ${response.error}`);
+      totalCount = response.totalCount;
+      received += response.items.length;
+      collected.push(...response.items
+        .filter(item => allowedTypes.has(String(item.contenttypeid)))
+        .map(item => ({ ...item, _requestedRegion: region })));
+      console.log(`[LIST] region=${REGION_NAMES[region] ?? region} page=${pageNo} ${Math.min(received, totalCount)}/${totalCount}`);
+      pageNo += 1;
+      await sleep(80);
+    } while (received < totalCount);
+  }
+  return [...new Map(collected
+    .filter(item => present(item.contentid))
+    .map(item => [String(item.contentid), item])).values()];
 }
 
 async function enrichItem(listItem, serviceKey) {
@@ -318,6 +361,12 @@ function dateState(item) {
 
 function decide(item, classification, scores) {
   const flags = [...classification.reviewFlags];
+  const exclusionSignal = [item.title, item.overview, item.lclsSystm3, item.cat3]
+    .filter(Boolean)
+    .join(" ");
+  if (/casino|country club|golf course|golf club/i.test(exclusionSignal)) {
+    flags.push("NON_LOCAL_COMMERCIAL_LEISURE");
+  }
   if (!item.sourceContentId || !item.title) flags.push("SOURCE_ID_OR_TITLE_MISSING");
   if (item.latitude === null || item.longitude === null || !item.address) flags.push("LOCATION_INCOMPLETE");
   if (!item.fetch.detailCommon2 || !item.fetch.detailIntro2 || !item.fetch.detailInfo2) flags.push("DETAIL_ENRICHMENT_INCOMPLETE");
@@ -330,9 +379,9 @@ function decide(item, classification, scores) {
   if (/Baengnokdam/i.test(item.title) && !item.detailInfo.some(detail => /difficulty|weather/i.test(`${detail.name} ${detail.text}`))) {
     flags.push("ROUTE_DIFFICULTY_OR_WEATHER_NOT_VERIFIED");
   }
-  const hardExcluded = flags.some(flag => ["NON_EXPERIENTIAL_STAY"].includes(flag)) || (classification.questType === "SHOPPING" && !classification.secondaryTags.includes("LOCAL_MARKET"));
+  const hardExcluded = flags.some(flag => ["NON_EXPERIENTIAL_STAY", "NON_LOCAL_COMMERCIAL_LEISURE"].includes(flag)) || (classification.questType === "SHOPPING" && !classification.secondaryTags.includes("LOCAL_MARKET"));
   const blocking = flags.some(flag => [
-    "SOURCE_ID_OR_TITLE_MISSING", "LOCATION_INCOMPLETE", "DETAIL_ENRICHMENT_INCOMPLETE", "GENERIC_FALLBACK",
+    "SOURCE_ID_OR_TITLE_MISSING", "LOCATION_INCOMPLETE", "GENERIC_FALLBACK",
     "PROGRAM_AVAILABILITY_UNKNOWN", "ACTIVE_TEMPLATE_SAFETY_REVIEW", "EVENT_START_MISSING", "EVENT_END_MISSING",
     "VENUE_MISSING", "ROUTE_DIFFICULTY_OR_WEATHER_NOT_VERIFIED", "LOCALITY_NOT_PROVEN",
   ].includes(flag));
@@ -427,6 +476,15 @@ function tourPlaceRecord(item) {
     localScore: item.localScore,
     qualityScore: item.qualityScore,
     selectionStatus: item.selectionStatus,
+    detailData: {
+      address: item.address,
+      tel: item.tel,
+      homepage: item.homepage,
+      operating: item.operating,
+      event: item.event,
+      experience: item.experience,
+      detailInfo: item.detailInfo,
+    },
   };
 }
 
@@ -441,18 +499,21 @@ async function main() {
   let sourceMode;
   if (args.detailsFile) {
     const document = JSON.parse(await readFile(resolve(args.detailsFile), "utf8"));
-    normalizedItems = fromCollectedDetails(document).slice(0, args.maxItems);
+    const collectedDetails = fromCollectedDetails(document);
+    normalizedItems = args.all ? collectedDetails : collectedDetails.slice(0, args.maxItems);
     sourceMode = "DETAILS_FILE";
   } else {
     const env = parseEnv(await readFile(resolve(".env"), "utf8"));
     const serviceKey = env.TOURAPI_SERVICE_KEY;
     if (!serviceKey) throw new Error("TOURAPI_SERVICE_KEY is missing from .env");
-    console.log(`Collecting up to ${args.maxItems} items from regions ${args.regions.join(", ")}...`);
+    console.log(`${args.all ? "Collecting all matching" : `Collecting up to ${args.maxItems}`} items from regions ${args.regions.join(", ")}...`);
     const listItems = await collectLists(args, serviceKey);
     console.log(`Enriching ${listItems.length} unique items with detailCommon2/detailIntro2/detailInfo2...`);
     normalizedItems = await mapLimit(listItems, 3, async (item, index) => {
       const enriched = await enrichItem(item, serviceKey);
-      console.log(`[${index + 1}/${listItems.length}] ${enriched.sourceContentId} ${enriched.title}`);
+      if ((index + 1) % 25 === 0 || index + 1 === listItems.length) {
+        console.log(`[DETAIL] ${index + 1}/${listItems.length} latest=${enriched.sourceContentId} ${enriched.title}`);
+      }
       return enriched;
     });
     sourceMode = "LIVE_API";
@@ -465,7 +526,7 @@ async function main() {
   const recentVariantIds = [];
   const quests = accepted.map(item => makeQuest(item, recentVariantIds));
   const createdAt = new Date().toISOString();
-  const metadata = { createdAt, source: "KTO EngService2", sourceMode, inputCount: evaluated.length, autoAcceptedCount: accepted.length, reviewCount: review.length, excludedCount: excluded.length, apiKeyStored: false };
+  const metadata = { createdAt, source: "KTO EngService2", sourceMode, collectionMode: args.all ? "ALL_PAGES" : "LIMITED", inputCount: evaluated.length, autoAcceptedCount: accepted.length, reviewCount: review.length, excludedCount: excluded.length, apiKeyStored: false };
   const tourPlacesPath = resolve(args.outputDir, "tour-places.json");
   const acceptedPath = resolve(args.outputDir, "accepted-quests.json");
   const reviewPath = resolve(args.outputDir, "review-items.json");

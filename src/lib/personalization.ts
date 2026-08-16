@@ -20,10 +20,22 @@ export const REGIONS = [
   { id: "near", emoji: "📍", label: "Near me" },
   { id: "korea", emoji: "🇰🇷", label: "Anywhere in Korea" },
   { id: "seoul", emoji: "🏙️", label: "Seoul" },
+  { id: "incheon", emoji: "🌉", label: "Incheon" },
   { id: "busan", emoji: "🌊", label: "Busan" },
+  { id: "daegu", emoji: "🌆", label: "Daegu" },
+  { id: "gwangju", emoji: "🎨", label: "Gwangju" },
+  { id: "daejeon", emoji: "🔬", label: "Daejeon" },
+  { id: "ulsan", emoji: "🐋", label: "Ulsan" },
+  { id: "sejong", emoji: "🏛️", label: "Sejong" },
+  { id: "gyeonggi", emoji: "🧭", label: "Gyeonggi-do" },
+  { id: "gangwon", emoji: "⛰️", label: "Gangwon-do" },
+  { id: "chungbuk", emoji: "🌿", label: "Chungcheongbuk-do" },
+  { id: "chungnam", emoji: "🌾", label: "Chungcheongnam-do" },
+  { id: "jeonbuk", emoji: "🏘️", label: "Jeollabuk-do" },
   { id: "jeju", emoji: "🍊", label: "Jeju" },
   { id: "jeonnam", emoji: "🍵", label: "Jeollanam-do" },
-  { id: "other", emoji: "🧭", label: "Other" },
+  { id: "gyeongbuk", emoji: "🏯", label: "Gyeongsangbuk-do" },
+  { id: "gyeongnam", emoji: "🌅", label: "Gyeongsangnam-do" },
 ] as const;
 
 export type Prefs = {

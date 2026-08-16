@@ -37,7 +37,23 @@ export interface PublishedQuestRecord {
     local_score: number;
     quality_score: number;
     selection_status: string;
+    detail_data?: unknown;
   } | null;
+}
+
+export interface QuestExperienceDetails {
+  about: string;
+  tips: string[];
+  budget: string;
+  hours: string;
+  restDate: string;
+  parking: string;
+  operatingGuide: string;
+  address: string;
+  homepage: string | null;
+  telephone: string | null;
+  naverMapUrl: string;
+  kakaoMapUrl: string;
 }
 
 export interface SupabaseQuestCard extends Quest {
@@ -84,6 +100,7 @@ export interface SupabaseQuestCard extends Quest {
     startAt: string | null;
     endAt: string | null;
   } | null;
+  experienceDetails: QuestExperienceDetails;
 }
 
 export type ActionType =
@@ -180,6 +197,60 @@ function isCompletionRule(value: unknown): value is SupabaseQuestCard["completio
     && typeof rule.proofType === "string";
 }
 
+function objectValue(value: unknown): Record<string, unknown> {
+  return value && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : {};
+}
+
+function textValue(value: unknown): string | null {
+  return typeof value === "string" && value.trim() ? value.trim() : null;
+}
+
+function deriveExperienceDetails(record: PublishedQuestRecord, description: string, category: Quest["category"]): QuestExperienceDetails {
+  const detail = objectValue(record.tour_places?.detail_data);
+  const operating = objectValue(detail.operating);
+  const experience = objectValue(detail.experience);
+  const event = objectValue(detail.event);
+  const detailInfo = Array.isArray(detail.detailInfo) ? detail.detailInfo.map(objectValue) : [];
+  const findInfo = (pattern: RegExp) => detailInfo
+    .map((item) => ({ name: textValue(item.name) ?? "", text: textValue(item.text) ?? "" }))
+    .find((item) => pattern.test(`${item.name} ${item.text}`))?.text ?? null;
+  const address = textValue(detail.address) ?? [record.district, record.region].filter(Boolean).join(", ");
+  const useTime = textValue(operating.useTime) ?? findInfo(/hours|opening|use time|operating/i);
+  const eventPeriod = [textValue(event.startDate), textValue(event.endDate)].filter(Boolean).join(" – ");
+  const restDate = textValue(operating.restDate) ?? findInfo(/closed|rest day|holiday/i);
+  const parking = textValue(operating.parking) ?? findInfo(/parking/i);
+  const budget = findInfo(/admission|entrance fee|fee|price|charge|cost/i);
+  const program = textValue(experience.program) ?? textValue(experience.guide) ?? findInfo(/program|experience|tour guide/i);
+  const tipsByCategory: Record<Quest["category"], string> = {
+    Food: "Check prices before ordering and ask about ingredients if you have dietary restrictions.",
+    Shopping: "Bring a reusable bag and confirm payment methods before purchasing.",
+    Nature: "Stay on marked public paths and check weather conditions before setting out.",
+    Festival: "Check the official event schedule and arrive early for popular programs.",
+    Nightlife: "Check the last public-transport departure time and drink responsibly.",
+    Culture: "Respect posted photography rules and keep voices low inside exhibition spaces.",
+  };
+  const tips = [
+    tipsByCategory[category],
+    restDate ? `Check the closing information before visiting: ${restDate}` : "Operating hours can change; check the official homepage before visiting.",
+    parking ? `Parking information: ${parking}` : "Parking information is unavailable, so public transportation is recommended when possible.",
+  ];
+  const mapQuery = encodeURIComponent(address || record.title);
+  return {
+    about: description,
+    tips,
+    budget: budget ?? "Admission or activity fees were not provided by TourAPI. Check the official homepage before visiting.",
+    hours: (useTime ?? eventPeriod) || "Operating hours were not provided by TourAPI. Check before visiting.",
+    restDate: restDate ?? "No regular closing-day information was provided.",
+    parking: parking ?? "No parking information was provided; public transportation is recommended when possible.",
+    operatingGuide: program ?? "Follow on-site notices and staff guidance for available programs and access.",
+    address: address || record.region,
+    homepage: textValue(detail.homepage),
+    telephone: textValue(detail.tel) ?? textValue(operating.informationCenter),
+    naverMapUrl: `https://map.naver.com/p/search/${mapQuery}`,
+    kakaoMapUrl: `https://map.kakao.com/link/search/${mapQuery}`,
+  };
+}
+
 export function adaptPublishedQuest(record: PublishedQuestRecord): SupabaseQuestCard {
   const description = record.description ?? record.tour_places?.description ?? "Explore this local place in Korea.";
   const category = CATEGORY_BY_TYPE[record.quest_type] ?? "Culture";
@@ -206,6 +277,7 @@ export function adaptPublishedQuest(record: PublishedQuestRecord): SupabaseQuest
   const choiceStep = sourceSteps.find((step) =>
     step.kind === "ACTION" && /choose|pick|select|record/i.test(step.prompt),
   );
+  const experienceDetails = deriveExperienceDetails(record, description, category);
 
   return {
     databaseId: record.id,
@@ -255,5 +327,6 @@ export function adaptPublishedQuest(record: PublishedQuestRecord): SupabaseQuest
       ? { required: true, prompt: choiceStep.prompt, responseType: "TEXT", options: null }
       : null,
     availability: null,
+    experienceDetails,
   };
 }

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, Clock, MapPin, Zap, Star, Users, Info, Lightbulb, Wallet, CalendarClock, Navigation, Languages } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Zap, Users, Info, Lightbulb, Wallet, CalendarClock, Navigation, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { quests, difficultyColor } from "@/data/quests";
 import { getQuestDetail } from "@/data/questDetails";
@@ -22,6 +22,7 @@ const QuestDetail = () => {
   const { data: publishedQuest, isLoading } = usePublishedQuest(id);
   const quest = publishedQuest ?? mockQuest;
   const detail = mockQuest ? getQuestDetail(mockQuest.id) : null;
+  const experienceDetail = publishedQuest?.experienceDetails ?? detail;
 
   useEffect(() => {
     if (!publishedQuest) return;
@@ -96,17 +97,6 @@ const QuestDetail = () => {
 
       {/* Content */}
       <div className="px-5 py-5 space-y-5 flex-1">
-        {/* Story */}
-        <div className="rounded-2xl bg-card border border-border p-4 shadow-sm">
-          <div className="flex items-center gap-2 mb-2">
-            <Star size={16} className="text-accent" />
-            <h2 className="font-bold text-sm">Your Story Begins</h2>
-          </div>
-          <p className="text-sm text-muted-foreground leading-relaxed italic">
-            "{quest.story}"
-          </p>
-        </div>
-
         {/* About */}
         <div>
           <h2 className="font-bold text-sm mb-2">About This Quest</h2>
@@ -160,7 +150,7 @@ const QuestDetail = () => {
         </div>
 
         {/* Quest Info Accordion */}
-        {detail && (
+        {experienceDetail && (
           <div className="rounded-2xl bg-card border border-border shadow-sm px-4">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="about" className="border-b border-border/60">
@@ -170,7 +160,7 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                  {detail.about}
+                  {experienceDetail.about}
                 </AccordionContent>
               </AccordionItem>
 
@@ -182,7 +172,7 @@ const QuestDetail = () => {
                 </AccordionTrigger>
                 <AccordionContent className="pb-4">
                   <ul className="space-y-2 text-sm text-muted-foreground leading-relaxed">
-                    {detail.tips.map((t, i) => (
+                    {experienceDetail.tips.map((t, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-accent">•</span>
                         <span>{t}</span>
@@ -199,7 +189,7 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                  {detail.budget}
+                  {experienceDetail.budget}
                 </AccordionContent>
               </AccordionItem>
 
@@ -210,7 +200,12 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                  {detail.hours}
+                  <div className="space-y-2">
+                    <p>{experienceDetail.hours}</p>
+                    {publishedQuest && <p><span className="font-bold text-foreground">Closed:</span> {publishedQuest.experienceDetails.restDate}</p>}
+                    {publishedQuest && <p><span className="font-bold text-foreground">Parking:</span> {publishedQuest.experienceDetails.parking}</p>}
+                    {publishedQuest && <p><span className="font-bold text-foreground">Programs:</span> {publishedQuest.experienceDetails.operatingGuide}</p>}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
 
@@ -221,7 +216,16 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                  {detail.howToGetThere}
+                  {publishedQuest ? (
+                    <div className="space-y-3">
+                      <p>{publishedQuest.experienceDetails.address}</p>
+                      <div className="flex flex-wrap gap-2">
+                        <a href={publishedQuest.experienceDetails.naverMapUrl} target="_blank" rel="noreferrer" className="rounded-lg bg-primary px-3 py-2 text-xs font-bold text-primary-foreground">Open Naver Map</a>
+                        <a href={publishedQuest.experienceDetails.kakaoMapUrl} target="_blank" rel="noreferrer" className="rounded-lg border border-border bg-card px-3 py-2 text-xs font-bold">Open Kakao Map</a>
+                        {publishedQuest.experienceDetails.homepage && <a href={publishedQuest.experienceDetails.homepage} target="_blank" rel="noreferrer" className="rounded-lg border border-border bg-card px-3 py-2 text-xs font-bold">Official Website</a>}
+                      </div>
+                    </div>
+                  ) : detail?.howToGetThere}
                 </AccordionContent>
               </AccordionItem>
 
@@ -232,7 +236,7 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="pb-4 space-y-4">
-                  {detail.commonSigns && detail.commonSigns.length > 0 && (
+                  {detail?.commonSigns && detail.commonSigns.length > 0 && (
                     <div className="space-y-1.5">
                       <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
                         Signs you'll see

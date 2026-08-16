@@ -17,7 +17,7 @@ const PersonalizationGate = ({ ready }: { ready: boolean }) => {
     <PersonalizationOnboarding
       onDone={() => {
         setShow(false);
-        navigate("/quests");
+        navigate("/#for-you", { replace: true });
       }}
     />
   );
