@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Soft Korean blue palette — inspired by traditional dancheong & cherry blossom */
+    --background: 210 60% 97%;
+    --foreground: 220 45% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 45% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 45% 18%;
+
+    /* Soft royal blue #4B7BD9 */
+    --primary: 217 64% 57%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft sky blue sub */
+    --secondary: 212 60% 78%;
+    --secondary-foreground: 220 45% 18%;
+
+    --muted: 210 45% 94%;
+    --muted-foreground: 218 20% 50%;
+
+    /* Warm cherry blossom pink accent */
+    --accent: 351 88% 85%;
+    --accent-foreground: 220 45% 18%;
+
+    --destructive: 0 78% 68%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 212 40% 90%;
+    --input: 212 40% 90%;
+    --ring: 217 64% 57%;
+
+    --radius: 1.25rem;
+
+    --success: 152 55% 55%;
+    --success-foreground: 0 0% 100%;
+
+    /* Gold accent for XP / rewards #F4B400 */
+    --xp: 44 96% 48%;
+    --xp-foreground: 220 45% 18%;
+
+    --nav-active: 217 64% 57%;
+    --nav-inactive: 218 25% 65%;
+
+    /* Korean palette extras */
+    --korean-deep: 220 56% 26%;       /* #2E4A7D */
+    --korean-cloud: 210 60% 95%;      /* #EAF2FB */
+    --korean-blossom: 351 86% 85%;    /* #F7B7C5 */
+    --korean-sun: 44 96% 60%;         /* warm gold */
+
+    --gradient-sky: linear-gradient(180deg, hsl(210 80% 95%), hsl(212 70% 88%));
+    --gradient-primary: linear-gradient(135deg, hsl(217 64% 57%), hsl(212 70% 70%));
+    --gradient-blossom: linear-gradient(135deg, hsl(351 88% 90%), hsl(210 70% 92%));
+    --shadow-soft: 0 8px 24px -8px hsl(217 64% 57% / 0.25);
+    --shadow-card: 0 4px 16px -6px hsl(220 56% 26% / 0.12);
+
+    --sidebar-background: 210 60% 98%;
+    --sidebar-foreground: 220 45% 25%;
+    --sidebar-primary: 217 64% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 50% 94%;
+    --sidebar-accent-foreground: 220 45% 18%;
+    --sidebar-border: 212 40% 90%;
+    --sidebar-ring: 217 64% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-nunito;
+  }
+}
