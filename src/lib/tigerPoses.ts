@@ -26,27 +26,39 @@ export const tigerPoseSrc: Record<TigerPose, string> = {
 };
 
 export interface FaceAnchor {
-  /** Center of the face, as a percentage of the image's height/width. */
+  /** Eye-line center, as a percentage of the image's height/width. */
   top: number;
   left: number;
-  /** Approximate face width, as a percentage of the image width — used to scale face items (hat/glasses) to the head size in that pose. */
+  /** Ear-to-ear face width, as a percentage of the image width — scales hat/glasses to the head size in that pose. */
   width: number;
 }
 
 /**
  * Every pose is a distinct illustration (not a rigged character), so the
- * head sits in a different spot in each one. Measured by eye from the
- * source art so hats/glasses land on the actual face instead of a
- * one-size-fits-all guess.
+ * head sits in a different spot in each one. `items` is only ever passed
+ * with pose="wave" (Tiger Wardrobe, ItemUnlock) or pose="face" (Profile
+ * header), so those two are measured precisely against the actual eye
+ * position; the rest are rough estimates kept for completeness.
  */
 export const FACE_ANCHORS: Record<TigerPose, FaceAnchor> = {
-  wave: { top: 16, left: 48, width: 40 },
-  camera: { top: 17, left: 52, width: 54 },
-  map: { top: 13, left: 48, width: 44 },
-  backpack: { top: 13, left: 46, width: 38 },
-  cup: { top: 17, left: 48, width: 46 },
-  cheer: { top: 14, left: 50, width: 42 },
-  face: { top: 60, left: 50, width: 58 },
+  wave: { top: 27, left: 60, width: 46 },
+  camera: { top: 24, left: 53, width: 50 },
+  map: { top: 20, left: 50, width: 42 },
+  backpack: { top: 14, left: 48, width: 38 },
+  cup: { top: 23, left: 50, width: 44 },
+  cheer: { top: 20, left: 50, width: 40 },
+  face: { top: 62, left: 50, width: 65 },
+};
+
+export interface BodyAnchor {
+  /** Torso center, as a percentage of the image's height/width — used to place outfit/backpack items. */
+  top: number;
+  left: number;
+}
+
+/** Only defined for poses that actually render body-slot items (outfit/backpack) today. */
+export const BODY_ANCHORS: Partial<Record<TigerPose, BodyAnchor>> = {
+  wave: { top: 58, left: 62 },
 };
 
 /**

@@ -1,5 +1,5 @@
 import { WardrobeItem } from "@/data/items";
-import { tigerPoseSrc, TigerPose, FaceAnchor, FACE_ANCHORS } from "@/lib/tigerPoses";
+import { tigerPoseSrc, TigerPose, FaceAnchor, FACE_ANCHORS, BODY_ANCHORS } from "@/lib/tigerPoses";
 
 interface TigerAvatarProps {
   items?: WardrobeItem[];
@@ -11,9 +11,9 @@ interface TigerAvatarProps {
 
 /** Rough emoji size relative to the avatar box, before pose/head scaling. */
 const BASE_SIZE_RATIO: Record<string, number> = {
-  "text-3xl": 0.16,
-  "text-4xl": 0.2,
-  "text-5xl": 0.26,
+  "text-3xl": 0.18,
+  "text-4xl": 0.22,
+  "text-5xl": 0.28,
 };
 
 /**
@@ -29,7 +29,8 @@ const TigerAvatar = ({
 }: TigerAvatarProps) => {
   const layered = [...items].sort((a, b) => slotOrder(a.slot) - slotOrder(b.slot));
   const src = tigerPoseSrc[pose];
-  const anchor = FACE_ANCHORS[pose];
+  const faceAnchor = FACE_ANCHORS[pose];
+  const bodyAnchor = BODY_ANCHORS[pose];
 
   return (
     <div
@@ -45,8 +46,14 @@ const TigerAvatar = ({
 
       {layered.map((item) => {
         const onFace = item.slot === "hat" || item.slot === "glasses";
-        const style = onFace ? faceItemStyle(item.slot, anchor) : item.style;
-        const headScale = onFace ? anchor.width / 40 : 1;
+        const onBody = (item.slot === "outfit" || item.slot === "backpack") && bodyAnchor;
+
+        const style = onFace
+          ? faceItemStyle(item.slot, faceAnchor)
+          : onBody
+            ? bodyItemStyle(bodyAnchor)
+            : item.style;
+        const headScale = onFace ? faceAnchor.width / 40 : 1;
         const fontSize = size * (BASE_SIZE_RATIO[item.sizeClass] ?? 0.18) * headScale;
 
         return (
@@ -64,11 +71,21 @@ const TigerAvatar = ({
   );
 };
 
-/** Positions hats/glasses relative to the pose's actual face, instead of the item's own generic style. */
+/** Positions hats/glasses on the pose's actual eye line, instead of the item's own generic style. */
 function faceItemStyle(slot: WardrobeItem["slot"], anchor: FaceAnchor): React.CSSProperties {
-  const verticalOffset = slot === "glasses" ? anchor.width * 0.12 : -anchor.width * 0.24;
+  // Glasses sit right on the eye line; a hat needs to clear the whole head above it.
+  const verticalOffset = slot === "glasses" ? anchor.width * 0.05 : -anchor.width * 0.55;
   return {
     top: `${anchor.top + verticalOffset}%`,
+    left: `${anchor.left}%`,
+    transform: "translate(-50%, -50%)",
+  };
+}
+
+/** Positions outfit/backpack items on the pose's torso, instead of the item's own generic style. */
+function bodyItemStyle(anchor: { top: number; left: number }): React.CSSProperties {
+  return {
+    top: `${anchor.top}%`,
     left: `${anchor.left}%`,
     transform: "translate(-50%, -50%)",
   };
