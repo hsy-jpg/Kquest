@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T13:55:27.562Z",
+    "source": "KTO EngService2",
+    "sourceMode": "DETAILS_FILE",
+    "inputCount": 10,
+    "autoAcceptedCount": 8,
+    "reviewCount": 1,
+    "excludedCount": 1,
+    "apiKeyStored": false
+  },
+  "items": [
+    {
+      "sourceContentId": "264591",
+      "title": "Baengnokdam Lake (한라산 백록담)",
+      "description": "Baengnokdam is a crater lake that sits on top of Hallasan Mountain at the center of Jeju Island. It spans 3 kilometers in circumference and 500 meters in diameter, and is surrounded by approximately 360 parasitic cones. At the peak, visitors can feel like floating on clouds.",
+      "region": "Jeju",
+      "district": "Seogwipo-si",
+      "latitude": 33.3444755049,
+      "longitude": 126.5364394223,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/95/3035595_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "NA",
+          "NA03",
+          "NA030500"
+        ],
+        "cat": [
+          "A01",
+          "A0101",
+          "A01010500"
+        ]
+      },
+      "proposedQuestType": "NATURE",
+      "secondaryTags": [
+        "LAKE",
+        "VOLCANIC_LANDSCAPE"
+      ],
+      "proposedTemplateId": "SAFE_VIEWPOINT_WALK_V1",
+      "localScore": 72,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "LOCAL_NATURE_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "ROUTE_DIFFICULTY_OR_WEATHER_NOT_VERIFIED"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Topyeong-dong, Seogwipo-si, Jejudo"
+      },
+      "operating": {
+        "useTime": "Refer to the official website",
+        "restDate": "N/A (Open all year round)",
+        "parking": "Available",
+        "informationCenter": "Hallsan National Park (Eorimok Trail) +82-64-713-9950"
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Mountain Not Access Period",
+          "text": "[Seongpanak Trail] \n May-August: Seongpanak Trail Entrance & Azalea Shelter restricted from 13:00\n November-February: Trail entrance starting from 06:00, Seonpanak Trail & Azalea Shelter restricted from 12:00, Baengnokdam restricted from 13:30\n [Gwaneumsa Temple Trail] \n May-August: Gwaneumsa Temple Trail Entrance & Samgakbong Shelter restricted from 13:00\n November-February: Trail entrance starting from 06:00, Gwaneumsa Temple Trail & Samgakbong Shelter restricted from 12:00, Baengnokdam restricted from 13:30"
+        },
+        {
+          "name": "Hiking Course",
+          "text": "[Seongpanak Trail]\n Seongpanak Visitors Center→Sokbat Shelter→Saraakoreum Entrance→Azalea Field Shelter→Dongneung Peak \n [Gwaneumsa Temple Trail]\n Gwaneumsa→Tamnagyegok Valley→Gaemimok→Samgakbong Shelter→Dongneung Peak"
+        },
+        {
+          "name": "Admission Fees",
+          "text": "Free"
+        },
+        {
+          "name": "Parking Fees",
+          "text": "- Two-wheel vehicles: 500 won\n- Small vehicles (displacement less than 1,000 cc): 1,000 won\n- Cars (loading capacity less than 4 tons): 1,800 won \n- Small bus (11-15 passengers): 3,000 won\n- Mid/Large bus (more than 16 passengers): 3,700 won"
+        },
+        {
+          "name": "Restrooms",
+          "text": "Available"
+        }
+      ],
+      "sourceModifiedTime": "20251031142954"
+    }
+  ]
+}
