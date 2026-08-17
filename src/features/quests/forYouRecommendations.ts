@@ -69,7 +69,7 @@ const REGION_ALIASES: Record<string, string[]> = {
 
 const normalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
-function regionMatches(prefRegion: string, quest: SupabaseQuestCard): boolean {
+export function questMatchesRegion(prefRegion: string, quest: SupabaseQuestCard): boolean {
   const target = normalize(`${quest.location} ${quest.region ?? ""} ${quest.district ?? ""}`);
   if (prefRegion === "korea" || prefRegion === "near") return false;
   return (REGION_ALIASES[prefRegion] ?? [prefRegion]).some((alias) => target.includes(normalize(alias)));
@@ -100,7 +100,7 @@ export function rankForYouQuests(
 ): RecommendedQuest[] {
   const hasStrictRegion = prefs.region !== "korea" && prefs.region !== "near";
   const eligibleQuests = hasStrictRegion
-    ? quests.filter((quest) => regionMatches(prefs.region, quest))
+    ? quests.filter((quest) => questMatchesRegion(prefs.region, quest))
     : quests;
   const byQuest = groupEvents(events);
   const questById = new Map(eligibleQuests.map((quest) => [quest.databaseId, quest]));
@@ -115,7 +115,7 @@ export function rankForYouQuests(
 
   const scored = eligibleQuests.map((quest): RecommendedQuest => {
     const text = questText(quest);
-    const region = regionMatches(prefs.region, quest) ? 4 : 0;
+    const region = questMatchesRegion(prefs.region, quest) ? 4 : 0;
     const activity = prefs.activities.some((value) => matchesAnyType(ACTIVITY_TYPES[value] ?? [], quest)) ? 3 : 0;
     const moodType = prefs.moods.some((value) => matchesAnyType(MOOD_TYPES[value] ?? [], quest));
     const moodKeyword = prefs.moods.some((value) => (MOOD_KEYWORDS[value] ?? []).some((keyword) => text.includes(keyword)));

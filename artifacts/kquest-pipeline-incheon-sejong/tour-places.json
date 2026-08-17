@@ -1,0 +1,2699 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T19:26:39.524Z",
+    "source": "KTO EngService2",
+    "sourceMode": "LIVE_API",
+    "collectionMode": "LIMITED",
+    "inputCount": 61,
+    "autoAcceptedCount": 27,
+    "reviewCount": 23,
+    "excludedCount": 11,
+    "apiKeyStored": false
+  },
+  "places": [
+    {
+      "sourceContentId": "1941657",
+      "title": "Incheon Asiad Main Stadium (인천아시아드주경기장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Seohae-gu",
+      "latitude": 37.5452400279,
+      "longitude": 126.665111319,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/48/2657648_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03020300",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE10",
+      "lclsSystm3": "VE100100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "806 Bongsu-daero, Seohae-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "806 Bongsu-daero, Seohae-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3544743",
+      "title": "SEMIPUBLIC (세미퍼블릭)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.601468632,
+      "longitude": 127.2972079462,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3524306_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030400",
+      "lclsSystm1": "EX",
+      "lclsSystm2": "EX02",
+      "lclsSystm3": "EX020400",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 62,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "3-1 Jochiwon-ro, Jochiwon-eup, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "3-1 Jochiwon-ro, Jochiwon-eup, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2948029",
+      "title": "Yeongjong Seaside Rail Bike (영종씨사이드 레일바이크)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4885061796,
+      "longitude": 126.5768542882,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/02/2609702_image2_1.JPG",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03022700",
+      "lclsSystm1": "LS",
+      "lclsSystm2": "LS01",
+      "lclsSystm3": "LS011900",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 52,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "75 Gueup-ro, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "75 Gueup-ro, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2815551",
+      "title": "Geumgang Pedestrian Bridge (금강보행교)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4836042238,
+      "longitude": 127.2888008038,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/2815016_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0205",
+      "cat3": "A02050100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE01",
+      "lclsSystm3": "VE010300",
+      "sourceModifiedTime": "20250807100456",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "Sejong-ri, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "Sejong-ri, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3100490",
+      "title": "Manjung Campground (만정캠핑장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.5154692369,
+      "longitude": 126.5499393322,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/87/3046887_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03021700",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC05",
+      "lclsSystm3": "AC050100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "279-20 Yeongjongsunhwan-ro, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "279-20 Yeongjongsunhwan-ro, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3459140",
+      "title": "Sejong Cultrual Center of Korean Tradition (세종전통문화체험관)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.506918272,
+      "longitude": 127.2918748936,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/01/3337101_image2_1.png",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030200",
+      "lclsSystm1": "EX",
+      "lclsSystm2": "EX01",
+      "lclsSystm3": "EX010100",
+      "sourceModifiedTime": "20250520213011",
+      "localScore": 62,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "94 Morongji-ro, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "94 Morongji-ro, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1321632",
+      "title": "Incheon Munhak Stadium (Incheon World Cup Stadium) (인천문학경기장(인천월드컵경기장))",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Michuhol-gu",
+      "latitude": 37.4366169207,
+      "longitude": 126.686465173,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/60/1869660_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03020300",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE10",
+      "lclsSystm3": "VE100100",
+      "sourceModifiedTime": "20240319172549",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "618 Maesohol-ro, Michuhol-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "618 Maesohol-ro, Michuhol-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1765687",
+      "title": "Geumgang Recreational Forest (Arboretum, Forest Museum) (금강자연휴양림(금강수목원,산림박물관))",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4354448235,
+      "longitude": 127.2305767737,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/1598617_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A01",
+      "cat2": "A0101",
+      "cat3": "A01010600",
+      "lclsSystm1": "NA",
+      "lclsSystm2": "NA04",
+      "lclsSystm3": "NA040600",
+      "sourceModifiedTime": "20250520212452",
+      "localScore": 72,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "110, Sallimbangmulgwan-gil, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "110, Sallimbangmulgwan-gil, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3099842",
+      "title": "Gyeyangsan Mountain Trail (계양산둘레길)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Gyeyang-gu",
+      "latitude": 37.5543315789,
+      "longitude": 126.7182812107,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/58/3039058_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03022700",
+      "lclsSystm1": "LS",
+      "lclsSystm2": "LS01",
+      "lclsSystm3": "LS011900",
+      "sourceModifiedTime": "20240215164823",
+      "localScore": 52,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "Danam-dong, Gyeyang-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "Danam-dong, Gyeyang-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3103102",
+      "title": "Jocheon Lotus Park (조천연꽃공원)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.5853122145,
+      "longitude": 127.3007052959,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/13/3027713_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0202",
+      "cat3": "A02020700",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE03",
+      "lclsSystm3": "VE030100",
+      "sourceModifiedTime": "20250520203212",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "226 Beonam-ri, Jochiwon-eup, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "226 Beonam-ri, Jochiwon-eup, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1938790",
+      "title": "[Ganghwa Nadeul-gil Course 7] Setting Sun Trail ([강화 나들길 제7코스] 낙조보러 가는 길)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/22/1895222_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03022700",
+      "lclsSystm1": "LS",
+      "lclsSystm2": "LS01",
+      "lclsSystm3": "LS011900",
+      "sourceModifiedTime": "20221229141359",
+      "localScore": 52,
+      "qualityScore": 65,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "24, Cheonghadong-gil, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2944983",
+      "title": "BOK Art Center (비오케이아트센터)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4924201361,
+      "longitude": 127.3032714889,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/2758577_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030400",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE12",
+      "lclsSystm3": "VE120300",
+      "sourceModifiedTime": "20250520202409",
+      "localScore": 72,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "12, Gukchaegyeonguwon 3-ro, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "12, Gukchaegyeonguwon 3-ro, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1938779",
+      "title": "[Ganghwa Nadeul-gil Course 8] Bird Watching Trail ([강화 나들길 제8코스] 철새 보러 가는 길)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/32/1895232_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03022700",
+      "lclsSystm1": "LS",
+      "lclsSystm2": "LS01",
+      "lclsSystm3": "LS011900",
+      "sourceModifiedTime": "20221111174618",
+      "localScore": 52,
+      "qualityScore": 65,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "24, Cheonghadong-gil, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1795298",
+      "title": "Jeonuihyanggyo Confucian School (전의향교)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6805106171,
+      "longitude": 127.2007894471,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/83/1599783_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0201",
+      "cat3": "A02010700",
+      "lclsSystm1": "HS",
+      "lclsSystm2": "HS01",
+      "lclsSystm3": "HS010900",
+      "sourceModifiedTime": "20250520201821",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "5-18, Bukchon 1-gil, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "5-18, Bukchon 1-gil, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1938812",
+      "title": "[Ganghwa Nadeul-gil Course 1] Simdo History & Culture Trail ([강화 나들길 제1코스] 심도역사문화길)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/97/1895197_image2_1.jpg",
+      "contentTypeId": "75",
+      "cat1": "A03",
+      "cat2": "A0302",
+      "cat3": "A03022700",
+      "lclsSystm1": "LS",
+      "lclsSystm2": "LS01",
+      "lclsSystm3": "LS011900",
+      "sourceModifiedTime": "20220927110708",
+      "localScore": 52,
+      "qualityScore": 65,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "24, Cheonghadong-gil, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1795269",
+      "title": "Haposeowon Confucian Academy (합호서원)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": null,
+      "latitude": 36.5230337201,
+      "longitude": 127.3272851683,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/1599773_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0201",
+      "cat3": "A02010700",
+      "lclsSystm1": "HS",
+      "lclsSystm2": "HS01",
+      "lclsSystm3": "HS010900",
+      "sourceModifiedTime": "20250520201434",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "262-6, Wonhapgang 1-gil, Yeondong-myeon, Sejong",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "262-6, Wonhapgang 1-gil, Yeondong-myeon, Sejong"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "264305",
+      "title": "Wolmido Island (월미도)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4754052899,
+      "longitude": 126.5975833151,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/1577671_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A01",
+      "cat2": "A0101",
+      "cat3": "A01011300",
+      "lclsSystm1": "NA",
+      "lclsSystm2": "NA02",
+      "lclsSystm3": "NA020500",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 72,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "36 Wolmimunhwa-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "36 Wolmimunhwa-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3459310",
+      "title": "Sejong Traditional Paste Museum (세종전통장류박물관)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6757594261,
+      "longitude": 127.2593343131,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/20/2792020_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070100",
+      "sourceModifiedTime": "20250520212855",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "90-43 Baeil-gil, Jeondong-myeon, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "90-43 Baeil-gil, Jeondong-myeon, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "264513",
+      "title": "Incheon Chinatown (인천 차이나타운)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4738502955,
+      "longitude": 126.6191619441,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/3304277_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030600",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE04",
+      "lclsSystm3": "VE040100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 72,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "20 Chinatown-ro 59beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "20 Chinatown-ro 59beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2710294",
+      "title": "Haklimjae (학림재)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.551050293,
+      "longitude": 127.1899300638,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/56/2707656_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02011600",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC03",
+      "lclsSystm3": "AC030200",
+      "sourceModifiedTime": "20250520211142",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "75-3 , Taesan-gil, , Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "75-3 , Taesan-gil, , Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "264515",
+      "title": "Incheon Jayu Park (자유공원 (인천))",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4755084896,
+      "longitude": 126.6221921771,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/84/3396084_image2_1.JPG",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0202",
+      "cat3": "A02020700",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE03",
+      "lclsSystm3": "VE030100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "46 Jemullyang-ro 232beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "46 Jemullyang-ro 232beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1795079",
+      "title": "Wondumak (원두막)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6070975107,
+      "longitude": 127.2392268876,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/99/1886299_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20250818183956",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "154, Ansan-gil, Yeonseo-myeon, , Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "154, Ansan-gil, Yeonseo-myeon, , Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1002282",
+      "title": "Wolmi Park (월미공원)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.47651916,
+      "longitude": 126.6038632662,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/85/1577685_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0202",
+      "cat3": "A02020700",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE03",
+      "lclsSystm3": "VE030100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "131-22 Wolmi-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "131-22 Wolmi-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1795141",
+      "title": "Sanjang Garden (산장가든)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6002959171,
+      "longitude": 127.261938922,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/1022627_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20250520203614",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "1131-7 Dosingobok-ro, Yeonseo-myeon, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "1131-7 Dosingobok-ro, Yeonseo-myeon, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1230376",
+      "title": "Incheon Yonggungsa Temple (용궁사 (인천))",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4971570919,
+      "longitude": 126.5279807341,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/38/1577738_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0201",
+      "cat3": "A02010800",
+      "lclsSystm1": "HS",
+      "lclsSystm2": "HS03",
+      "lclsSystm3": "HS030100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "199-1, Unnam-ro, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "199-1, Unnam-ro, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3103110",
+      "title": "Kong Daebak (콩대박)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4790473974,
+      "longitude": 127.3442570683,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/1999573_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20250520203243",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "9 Daebak-gil, Geumnam-myeon, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "9 Daebak-gil, Geumnam-myeon, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1351495",
+      "title": "Sudokwon Landfill Site Wildflower Complex Dream Park (수도권 매립지 야생화단지 드림파크)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Geomdan-gu",
+      "latitude": 37.5732892425,
+      "longitude": 126.6481593065,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/38/2676038_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0204",
+      "cat3": "A02040800",
+      "lclsSystm1": "EX",
+      "lclsSystm2": "EX06",
+      "lclsSystm3": "EX061000",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 62,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "61 Geowol-ro, Geomdan-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "61 Geowol-ro, Geomdan-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3103106",
+      "title": "La Foresta (라포레스타)",
+      "description": null,
+      "overview": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.5953329487,
+      "longitude": 127.2816650645,
+      "image": null,
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020900",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD05",
+      "lclsSystm3": "FD050100",
+      "sourceModifiedTime": "20250520203228",
+      "localScore": 24,
+      "qualityScore": 60,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "130 Daecheop-ro, Yeonseo-myeon, Sejong-si",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "130 Daecheop-ro, Yeonseo-myeon, Sejong-si"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1898560",
+      "title": "Wolmi Zzang Land (Wolmi Theme Park) (월미짱랜드)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4714834966,
+      "longitude": 126.5960474521,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/41/3518141_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0202",
+      "cat3": "A02020600",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE02",
+      "lclsSystm3": "VE020100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "81 Wolmimunhwa-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "81 Wolmimunhwa-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1905314",
+      "title": "Geojampo Beach (거잠포해변)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4221334646,
+      "longitude": 126.4254532761,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/29/2661929_image2_1.JPG",
+      "contentTypeId": "76",
+      "cat1": "A01",
+      "cat2": "A0101",
+      "cat3": "A01011200",
+      "lclsSystm1": "NA",
+      "lclsSystm2": "NA02",
+      "lclsSystm3": "NA020900",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 72,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "11, Jamjindo-gil, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "11, Jamjindo-gil, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1941667",
+      "title": "Geomdan Prehistory Museum (인천 검단선사박물관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Geomdan-gu",
+      "latitude": 37.5944210109,
+      "longitude": 126.6986402152,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/24/1579224_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "7, Gosanhu-ro 121beon-gil, Geomdan-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "7, Gosanhu-ro 121beon-gil, Geomdan-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2034160",
+      "title": "Jjajangmyeon Museum (짜장면박물관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4748446068,
+      "longitude": 126.6181814505,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/05/3353105_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "56-14 Chinatown-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "56-14 Chinatown-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3078406",
+      "title": "Daebul Hotel Exhibition Hall (대불호텔전시관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4736114488,
+      "longitude": 126.6199896528,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/49/2999549_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060300",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070300",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "101 Sinpo-ro 23beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "101 Sinpo-ro 23beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3547322",
+      "title": "Incheon Art Platform (인천 아트플랫폼)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4726449029,
+      "longitude": 126.6204590814,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/3529917_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060600",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE06",
+      "lclsSystm3": "VE060100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "3 Jemullyang-ro 218beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "3 Jemullyang-ro 218beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3547339",
+      "title": "Incheon Open Port Museum (인천개항박물관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4733725987,
+      "longitude": 126.6206090478,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/62/3357262_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "89 Sinpo-ro 23beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "89 Sinpo-ro 23beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3547447",
+      "title": "Incheon National Maritime Museum (국립인천해양박물관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4702419733,
+      "longitude": 126.5959919369,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/55/3532255_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060100",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "294 Wolmi-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "294 Wolmi-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3547456",
+      "title": "Noodle Platform (누들플랫폼)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4725699657,
+      "longitude": 126.6235365804,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/62/3379462_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060300",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070300",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "36 Sinpo-ro 27beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "36 Sinpo-ro 27beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1914508",
+      "title": "Incheon Urban History Museum (인천도시역사관)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeonsu-gu",
+      "latitude": 37.3928266701,
+      "longitude": 126.6358737757,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/84/3073284_image2_1.jpg",
+      "contentTypeId": "78",
+      "cat1": "A02",
+      "cat2": "A0206",
+      "cat3": "A02060300",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE07",
+      "lclsSystm3": "VE070300",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 65,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "238 Incheon Tower-daero, Yeonsu-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "238 Incheon Tower-daero, Yeonsu-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1244616",
+      "title": "Sinpo International Market (신포국제시장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4714562812,
+      "longitude": 126.6277834463,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3517706_image2_1.jpg",
+      "contentTypeId": "79",
+      "cat1": "A04",
+      "cat2": "A0401",
+      "cat3": "A04010200",
+      "lclsSystm1": "SH",
+      "lclsSystm2": "SH06",
+      "lclsSystm3": "SH060200",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 69,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "11-5 Uhyeon-ro 49beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "11-5 Uhyeon-ro 49beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "273741",
+      "title": "Sorae Fish Market (소래포구 종합어시장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Namdong-gu",
+      "latitude": 37.3987749898,
+      "longitude": 126.7372004899,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/12/3524212_image2_1.jpg",
+      "contentTypeId": "79",
+      "cat1": "A04",
+      "cat2": "A0401",
+      "cat3": "A04010200",
+      "lclsSystm1": "SH",
+      "lclsSystm2": "SH06",
+      "lclsSystm3": "SH060200",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 69,
+      "qualityScore": 75,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "12 Soraeyeok-ro, Namdong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "12 Soraeyeok-ro, Namdong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2818720",
+      "title": "Triple Street (트리플스트리트)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeonsu-gu",
+      "latitude": 37.3798397316,
+      "longitude": 126.660969071,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/09/3497309_image2_1.jpg",
+      "contentTypeId": "79",
+      "cat1": "A04",
+      "cat2": "A0401",
+      "cat3": "A04010600",
+      "lclsSystm1": "SH",
+      "lclsSystm2": "SH05",
+      "lclsSystm3": "SH050200",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "33-3 Songdogwahak-ro 16beon-gil, Yeonsu-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "33-3 Songdogwahak-ro 16beon-gil, Yeonsu-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2948317",
+      "title": "Gyodongdo Daeryong Market (교동도 대룡시장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7802669895,
+      "longitude": 126.2809399586,
+      "image": null,
+      "contentTypeId": "79",
+      "cat1": "A04",
+      "cat2": "A0401",
+      "cat3": "A04010200",
+      "lclsSystm1": "SH",
+      "lclsSystm2": "SH06",
+      "lclsSystm3": "SH060200",
+      "sourceModifiedTime": "20250618160933",
+      "localScore": 69,
+      "qualityScore": 60,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "35 Gyodongnam-ro, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "35 Gyodongnam-ro, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1359488",
+      "title": "Hotel June Incheon Airport (호텔 준)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4944901136,
+      "longitude": 126.4925562658,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/86/1355486_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010100",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC01",
+      "lclsSystm3": "AC010100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "18, Sindosinam-ro 150beon-gil, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "18, Sindosinam-ro 150beon-gil, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3089839",
+      "title": "Inspire Entertainment Resort (인스파이어 엔터테인먼트 리조트)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4657083226,
+      "longitude": 126.389349822,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/3073488_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010100",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC01",
+      "lclsSystm3": "AC010100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "127 Gonghangmunhwa-ro, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "127 Gonghangmunhwa-ro, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3486250",
+      "title": "Mitasuya Ryokan Hotel Incheon Seo-gu Office Branch (미타스야 료칸 호텔 인천서구청역점)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Seohae-gu",
+      "latitude": 37.5448235749,
+      "longitude": 126.6744493671,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/3484227_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010900",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC04",
+      "lclsSystm3": "AC040100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "20 Seogot-ro 301beon-gil, Seohae-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "20 Seogot-ro 301beon-gil, Seohae-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3486101",
+      "title": "The Hyoosik Aank Hotel Incheon Guwol (더휴식 아늑호텔 인천구월점)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Namdong-gu",
+      "latitude": 37.4524625835,
+      "longitude": 126.7023993906,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/3483616_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010900",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC04",
+      "lclsSystm3": "AC040100",
+      "sourceModifiedTime": "20250408141432",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "15 Yesul-ro 204beon-gil, Namdong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "15 Yesul-ro 204beon-gil, Namdong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2710310",
+      "title": "Gloucester Hotel Incheon (글로스터호텔 인천)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Namdong-gu",
+      "latitude": 37.4003664411,
+      "longitude": 126.7354756026,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/69/2707769_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010100",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC01",
+      "lclsSystm3": "AC010100",
+      "sourceModifiedTime": "20241223185724",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "36 , Soraeyeok-ro, Namdong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "36 , Soraeyeok-ro, Namdong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2595261",
+      "title": "The Beautiful House With Sunset (노을내리는아름다운집)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.6888558751,
+      "longitude": 126.3060540755,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/2594673_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010700",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC03",
+      "lclsSystm3": "AC030100",
+      "sourceModifiedTime": "20241223185417",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "933-1 , Samsannam-ro, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "933-1 , Samsannam-ro, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "2597018",
+      "title": "Golden Grass (옛날에금잔디)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7160902665,
+      "longitude": 126.389265134,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/23/2451823_image2_1.jpg",
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02011600",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC03",
+      "lclsSystm3": "AC030200",
+      "sourceModifiedTime": "20241223185013",
+      "localScore": 0,
+      "qualityScore": 75,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "18-1 , Ganghwaseo-ro 225beon-gil, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "18-1 , Ganghwaseo-ro 225beon-gil, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3337786",
+      "title": "Sky & Sea Hotel (인천영종도 하늘과바다호텔)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4903254941,
+      "longitude": 126.5814843707,
+      "image": null,
+      "contentTypeId": "80",
+      "cat1": "B02",
+      "cat2": "B0201",
+      "cat3": "B02010900",
+      "lclsSystm1": "AC",
+      "lclsSystm2": "AC04",
+      "lclsSystm3": "AC040100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 0,
+      "qualityScore": 60,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "36 Eunhasu-ro 29beon-gil, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "36 Eunhasu-ro 29beon-gil, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3422117",
+      "title": "Sinseung Banjeom (신승반점)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": null,
+      "latitude": 37.4755556282,
+      "longitude": 126.6177620245,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/2845104_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020400",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD02",
+      "lclsSystm3": "FD020100",
+      "sourceModifiedTime": "20260701150640",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "인천광역시 제물포구 차이나타운로44번길 31-3",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "인천광역시 제물포구 차이나타운로44번길 31-3"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "274305",
+      "title": "Yejeon (예전)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4743942975,
+      "longitude": 126.5976416708,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/1924482_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020200",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD02",
+      "lclsSystm3": "FD020300",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "43-2, Wolmimunhwa-ro, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "43-2, Wolmimunhwa-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3105546",
+      "title": "Taehwawon (태화원)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4740752591,
+      "longitude": 126.6185731027,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/79/728579_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "10 Chinatown-ro 59beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "10 Chinatown-ro 59beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3412965",
+      "title": "Cafe Rim (카페 림)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4393229658,
+      "longitude": 126.4158814558,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/03/2875703_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020900",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD05",
+      "lclsSystm3": "FD050100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "45-1 Masiran-ro 170beon-gil, Yeongjong-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "45-1 Masiran-ro 170beon-gil, Yeongjong-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3422060",
+      "title": "Samdae Incheon Gejang (삼대인천게장)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4742451482,
+      "longitude": 126.6449290266,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/65/2835465_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "22 Geumgok-ro 81beon-gil, Jemulpo-gu, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "22 Geumgok-ro 81beon-gil, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3340204",
+      "title": "Mung Hit (멍때림)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.6071699975,
+      "longitude": 126.4101967937,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/60/2836860_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020900",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD05",
+      "lclsSystm3": "FD050100",
+      "sourceModifiedTime": "20251029132612",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "1970-34 Haeannam-ro, Hwado-myeon, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "1970-34 Haeannam-ro, Hwado-myeon, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3544866",
+      "title": "Maeheon 1935 (매헌1935)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.743980353,
+      "longitude": 126.4844417419,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/3524317_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "25 Sinmun-gil, Ganghwa-eup, Ganghwa-gun, Incheon",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "25 Sinmun-gil, Ganghwa-eup, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3422116",
+      "title": "Dontarae Gejang Jeongsik (돈타래게장정식)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": null,
+      "latitude": 37.4730406988,
+      "longitude": 126.6995962957,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/35/2790235_image2_1.jpg",
+      "contentTypeId": "82",
+      "cat1": "A05",
+      "cat2": "A0502",
+      "cat3": "A05020100",
+      "lclsSystm1": "FD",
+      "lclsSystm2": "FD01",
+      "lclsSystm3": "FD010100",
+      "sourceModifiedTime": "20241202094947",
+      "localScore": 24,
+      "qualityScore": 75,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "인천광역시 부평구 열우물로 59 (십정동)",
+        "tel": null,
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "인천광역시 부평구 열우물로 59"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3507211",
+      "title": "Incheon Local Festa (Jemulpo Wave Market) (인천 로컬 페스타 (제물포 웨이브 마켓))",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4761360618,
+      "longitude": 126.6146650689,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/19/3547219_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "A02",
+      "cat2": "A0208",
+      "cat3": "A02081300",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV03",
+      "lclsSystm3": "EV030400",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 71,
+      "qualityScore": 80,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "33 Wolmi-ro, Jemulpo-gu, Incheon",
+        "tel": "+82-10-2258-9475",
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "33 Wolmi-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3536904",
+      "title": "Oh Slow Vintage Market (오슬로우 빈티지 마켓)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4761360618,
+      "longitude": 126.6146650689,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/21/3522321_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "A02",
+      "cat2": "A0208",
+      "cat3": "A02081300",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV03",
+      "lclsSystm3": "EV030400",
+      "sourceModifiedTime": "20260630184411",
+      "localScore": 71,
+      "qualityScore": 80,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "33 Wolmi-ro, Jemulpo-gu, Incheon",
+        "tel": "+82-10-2258-9475",
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "33 Wolmi-ro, Jemulpo-gu, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "3565917",
+      "title": "Ganghwa Yango Ice Fishing Festival (강화 양오 빙어축제)",
+      "description": null,
+      "overview": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.8001203087,
+      "longitude": 126.4438911127,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/08/3051908_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "A02",
+      "cat2": "A0207",
+      "cat3": "A02070200",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010600",
+      "sourceModifiedTime": "20251112171205",
+      "localScore": 53,
+      "qualityScore": 80,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "161 Jeonmang-daero 423beon-gil, Songhae-myeon, Ganghwa-gun, Incheon",
+        "tel": "+82-10-4075-5851",
+        "homepage": null,
+        "operating": {
+          "useTime": null,
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "161 Jeonmang-daero 423beon-gil, Songhae-myeon, Ganghwa-gun, Incheon"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    }
+  ]
+}

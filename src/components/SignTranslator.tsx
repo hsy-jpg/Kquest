@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
-import { Camera, Loader2, Sparkles, X } from "lucide-react";
+import { Camera, Loader2, Sparkles, Upload, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 
 const SignTranslator = () => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const uploadInputRef = useRef<HTMLInputElement>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [translation, setTranslation] = useState<string | null>(null);
@@ -41,6 +42,7 @@ const SignTranslator = () => {
     } finally {
       setLoading(false);
       if (inputRef.current) inputRef.current.value = "";
+      if (uploadInputRef.current) uploadInputRef.current.value = "";
     }
   };
 
@@ -65,16 +67,23 @@ const SignTranslator = () => {
         className="hidden"
         onChange={handleFile}
       />
+      <input
+        ref={uploadInputRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={handleFile}
+      />
 
       {!preview && (
-        <Button
-          onClick={() => inputRef.current?.click()}
-          className="w-full rounded-xl font-bold gap-2 h-12"
-        >
-          <Sparkles size={16} />
-          <Camera size={16} />
-          AI Sign Translation
-        </Button>
+        <div className="grid grid-cols-2 gap-2">
+          <Button onClick={() => inputRef.current?.click()} className="rounded-xl font-bold gap-2 h-12">
+            <Camera size={16} /> Take Photo
+          </Button>
+          <Button variant="outline" onClick={() => uploadInputRef.current?.click()} className="rounded-xl font-bold gap-2 h-12">
+            <Upload size={16} /> Upload Image
+          </Button>
+        </div>
       )}
 
       {preview && (
@@ -109,9 +118,9 @@ const SignTranslator = () => {
                 variant="outline"
                 size="sm"
                 className="mt-3 w-full rounded-xl font-bold text-xs"
-                onClick={() => inputRef.current?.click()}
+                onClick={() => uploadInputRef.current?.click()}
               >
-                <Camera size={14} className="mr-1.5" /> Try another sign
+                <Sparkles size={14} className="mr-1.5" /> Try another sign
               </Button>
             )}
           </div>

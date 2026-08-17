@@ -1,0 +1,3904 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T19:20:47.982Z",
+    "source": "KTO EngService2",
+    "sourceMode": "LIVE_API",
+    "collectionMode": "LIMITED",
+    "inputCount": 170,
+    "autoAcceptedCount": 83,
+    "reviewCount": 49,
+    "excludedCount": 38,
+    "apiKeyStored": false
+  },
+  "quests": [
+    {
+      "questId": "kq-kto-3418437-culture-one-object",
+      "sourceContentId": "3418437",
+      "title": "Discover Runner Station at Yeouinaru Station (여의나루역 러너스테이션)",
+      "description": "Explore Runner Station at Yeouinaru Station (여의나루역 러너스테이션) through a respectful, place-based mission.",
+      "region": "Seoul",
+      "district": "Yeongdeungpo-gu",
+      "latitude": 37.527152424,
+      "longitude": 126.9314153136,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/3413104_image2_1.png",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Runner Station at Yeouinaru Station (여의나루역 러너스테이션) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Runner Station at Yeouinaru Station (여의나루역 러너스테이션).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251106164415"
+    },
+    {
+      "questId": "kq-kto-1941657-culture-one-object",
+      "sourceContentId": "1941657",
+      "title": "Discover Incheon Asiad Main Stadium (인천아시아드주경기장)",
+      "description": "Explore Incheon Asiad Main Stadium (인천아시아드주경기장) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Seohae-gu",
+      "latitude": 37.5452400279,
+      "longitude": 126.665111319,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/48/2657648_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Incheon Asiad Main Stadium (인천아시아드주경기장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Incheon Asiad Main Stadium (인천아시아드주경기장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3546902-culture-one-object",
+      "sourceContentId": "3546902",
+      "title": "Discover Daejeon Hanhwa Life Ballpark (대전 한화생명 볼파크)",
+      "description": "Explore Daejeon Hanhwa Life Ballpark (대전 한화생명 볼파크) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Jung-gu",
+      "latitude": 36.3185923049,
+      "longitude": 127.4310258892,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/86/2767186_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-topic",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daejeon Hanhwa Life Ballpark (대전 한화생명 볼파크) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public exhibition title or topic that interests you.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public information panel only where permitted.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Write one question you would ask about the topic.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3303059-culture-one-object",
+      "sourceContentId": "3303059",
+      "title": "Discover Smob - Daejeon Branch (스몹 대전)",
+      "description": "Explore Smob - Daejeon Branch (스몹 대전) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Yuseong-gu",
+      "latitude": 36.3751488554,
+      "longitude": 127.3820815082,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/19/3116119_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-building",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Smob - Daejeon Branch (스몹 대전) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one feature showing how the building supports culture or art.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an exterior architectural feature or entrance sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the building affects your expectation of what is inside.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20240523110930"
+    },
+    {
+      "questId": "kq-kto-1751286-nature-detail-hunt",
+      "sourceContentId": "1751286",
+      "title": "Discover Palgongsan National Park (Donghwasa Temple District) (팔공산국립공원(동화사지구))",
+      "description": "Explore Palgongsan National Park (Donghwasa Temple District) (팔공산국립공원(동화사지구)) through a respectful, place-based mission.",
+      "region": "Daegu",
+      "district": "Dong-gu",
+      "latitude": 35.9899388189,
+      "longitude": 128.6961615543,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/41/655641_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Palgongsan National Park (Donghwasa Temple District) (팔공산국립공원(동화사지구)) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20250811165118"
+    },
+    {
+      "questId": "kq-kto-2815551-culture-one-object",
+      "sourceContentId": "2815551",
+      "title": "Discover Geumgang Pedestrian Bridge (금강보행교)",
+      "description": "Explore Geumgang Pedestrian Bridge (금강보행교) through a respectful, place-based mission.",
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4836042238,
+      "longitude": 127.2888008038,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/2815016_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Geumgang Pedestrian Bridge (금강보행교) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Geumgang Pedestrian Bridge (금강보행교).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250807100456"
+    },
+    {
+      "questId": "kq-kto-264305-nature-detail-hunt",
+      "sourceContentId": "264305",
+      "title": "Discover Wolmido Island (월미도)",
+      "description": "Explore Wolmido Island (월미도) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4754052899,
+      "longitude": 126.5975833151,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/1577671_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-sound",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Wolmido Island (월미도) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Pause at a permitted point and identify two non-human sounds.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the landscape connected to one of the sounds.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the sound changed your impression of Wolmido Island (월미도).",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-789741-culture-one-object",
+      "sourceContentId": "789741",
+      "title": "Discover Daejeon Expo Park (대전엑스포과학공원)",
+      "description": "Explore Daejeon Expo Park (대전엑스포과학공원) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Yuseong-gu",
+      "latitude": 36.3775458553,
+      "longitude": 127.3849895164,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/3486427_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daejeon Expo Park (대전엑스포과학공원) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Daejeon Expo Park (대전엑스포과학공원).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-2671767-street-detail-hunt",
+      "sourceContentId": "2671767",
+      "title": "Discover Daegu Dongseong-ro Street (대구 동성로거리)",
+      "description": "Explore Daegu Dongseong-ro Street (대구 동성로거리) through a respectful, place-based mission.",
+      "region": "Daegu",
+      "district": "Jung-gu",
+      "latitude": 35.8702143803,
+      "longitude": 128.5940850103,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/3349377_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daegu Dongseong-ro Street (대구 동성로거리) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one sign, facade, or public-space detail that gives Daegu Dongseong-ro Street (대구 동성로거리) its character.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph only public-facing details and avoid recognizable faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe what this detail reveals about the neighborhood.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20250811144313"
+    },
+    {
+      "questId": "kq-kto-1178633-culture-one-object",
+      "sourceContentId": "1178633",
+      "title": "Discover Jungoe Park (중외공원)",
+      "description": "Explore Jungoe Park (중외공원) through a respectful, place-based mission.",
+      "region": "Gwangju",
+      "district": "Buk-gu",
+      "latitude": 35.1814981787,
+      "longitude": 126.8842958259,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/72/2675672_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jungoe Park (중외공원) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Jungoe Park (중외공원).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3517139-street-detail-hunt",
+      "sourceContentId": "3517139",
+      "title": "Discover Mangmidangil Street (망미단길)",
+      "description": "Explore Mangmidangil Street (망미단길) through a respectful, place-based mission.",
+      "region": "Busan",
+      "district": "Suyeong-gu",
+      "latitude": 35.1721721081,
+      "longitude": 129.1182806404,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/49/3033449_image2_1.JPG",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-reuse",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Mangmidangil Street (망미단길) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one reused structure, public design, or gathering space at Mangmidangil Street (망미단길).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public design feature while respecting nearby businesses and residents.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the space differs from an ordinary commercial complex.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251117112447"
+    },
+    {
+      "questId": "kq-kto-3586184-street-detail-hunt",
+      "sourceContentId": "3586184",
+      "title": "Discover Jangsaengpo Culture Warehouse (장생포 문화창고)",
+      "description": "Explore Jangsaengpo Culture Warehouse (장생포 문화창고) through a respectful, place-based mission.",
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5035257033,
+      "longitude": 129.3673164077,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/3072288_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-history",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jangsaengpo Culture Warehouse (장생포 문화창고) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one marker or building detail that suggests the areas past.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public marker without including residents or private interiors.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe one place where old and new elements appear together.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251218134900"
+    },
+    {
+      "questId": "kq-kto-3459310-culture-one-object",
+      "sourceContentId": "3459310",
+      "title": "Discover Sejong Traditional Paste Museum (세종전통장류박물관)",
+      "description": "Explore Sejong Traditional Paste Museum (세종전통장류박물관) through a respectful, place-based mission.",
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6757594261,
+      "longitude": 127.2593343131,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/20/2792020_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Sejong Traditional Paste Museum (세종전통장류박물관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Sejong Traditional Paste Museum (세종전통장류박물관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250520212855"
+    },
+    {
+      "questId": "kq-kto-815994-street-detail-hunt",
+      "sourceContentId": "815994",
+      "title": "Discover Petite France (쁘띠프랑스)",
+      "description": "Explore Petite France (쁘띠프랑스) through a respectful, place-based mission.",
+      "region": "Gyeonggi",
+      "district": "Gapyeong-gun",
+      "latitude": 37.7153712493,
+      "longitude": 127.4903145832,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/2570517_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-stairs",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Petite France (쁘띠프랑스) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice how one public detail changes as you move along the steps at Petite France (쁘띠프랑스).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a street detail while avoiding residents, windows, and vehicle plates.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the steps connect different parts of the neighborhood.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251216154142"
+    },
+    {
+      "questId": "kq-kto-3403428-street-detail-hunt",
+      "sourceContentId": "3403428",
+      "title": "Discover Sogeumsan Mountain Grand Valley (소금산그랜드밸리)",
+      "description": "Explore Sogeumsan Mountain Grand Valley (소금산그랜드밸리) through a respectful, place-based mission.",
+      "region": "Gangwon",
+      "district": "Wonju-si",
+      "latitude": 37.3625185087,
+      "longitude": 127.8350852657,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/3494827_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Sogeumsan Mountain Grand Valley (소금산그랜드밸리) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one sign, facade, or public-space detail that gives Sogeumsan Mountain Grand Valley (소금산그랜드밸리) its character.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph only public-facing details and avoid recognizable faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe what this detail reveals about the neighborhood.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251216172352"
+    },
+    {
+      "questId": "kq-kto-1761788-nature-detail-hunt",
+      "sourceContentId": "1761788",
+      "title": "Discover Danyang Ondaldonggul Cave (단양 온달동굴)",
+      "description": "Explore Danyang Ondaldonggul Cave (단양 온달동굴) through a respectful, place-based mission.",
+      "region": "Chungbuk",
+      "district": "Danyang-gun",
+      "latitude": 37.0628736682,
+      "longitude": 128.492343254,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/25/2534325_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-forest-texture",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Danyang Ondaldonggul Cave (단양 온달동굴) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Stay on the path and find two textures around Danyang Ondaldonggul Cave (단양 온달동굴).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph one natural texture without collecting plants.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one color, sound, or texture that defined your visit.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251215164508"
+    },
+    {
+      "questId": "kq-kto-3410634-nature-detail-hunt",
+      "sourceContentId": "3410634",
+      "title": "Explore the forest at Sangju Maengmundong Pine Forest (상주 맥문동 솔숲)",
+      "description": "Explore Sangju Maengmundong Pine Forest (상주 맥문동 솔숲) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Sangju-si",
+      "latitude": 36.5441975658,
+      "longitude": 127.9222896689,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/65/3407865_image2_1.png",
+      "questType": "NATURE",
+      "secondaryTags": [
+        "FOREST"
+      ],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-season-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Sangju Maengmundong Pine Forest (상주 맥문동 솔숲) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Compare two naturally occurring colors visible at Sangju Maengmundong Pine Forest (상주 맥문동 솔숲).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a seasonal detail from the public path.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose the color that best represents the visit and explain why.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251106160024"
+    },
+    {
+      "questId": "kq-kto-264203-culture-one-object",
+      "sourceContentId": "264203",
+      "title": "Discover Oedo-Botania (외도 보타니아)",
+      "description": "Explore Oedo-Botania (외도 보타니아) through a respectful, place-based mission.",
+      "region": "Gyeongnam",
+      "district": "Geoje-si",
+      "latitude": 34.769476358,
+      "longitude": 128.7113935264,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/93/2612893_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Oedo-Botania (외도 보타니아) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Oedo-Botania (외도 보타니아).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251216172723"
+    },
+    {
+      "questId": "kq-kto-3591140-nature-detail-hunt",
+      "sourceContentId": "3591140",
+      "title": "Discover Myeongdo Island (명도)",
+      "description": "Explore Myeongdo Island (명도) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Gunsan-si",
+      "latitude": 35.8498521507,
+      "longitude": 126.3482766934,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/32/3590232_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Myeongdo Island (명도) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260102145747"
+    },
+    {
+      "questId": "kq-kto-264279-nature-detail-hunt",
+      "sourceContentId": "264279",
+      "title": "Discover Hongdo Island (홍도)",
+      "description": "Explore Hongdo Island (홍도) through a respectful, place-based mission.",
+      "region": "Jeonnam",
+      "district": "Sinan-gun",
+      "latitude": 34.6819855672,
+      "longitude": 125.1920717233,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/20/1704120_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Hongdo Island (홍도) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3498842-culture-one-object",
+      "sourceContentId": "3498842",
+      "title": "Discover Songhyeon Green Plaza (열린송현 녹지광장)",
+      "description": "Explore Songhyeon Green Plaza (열린송현 녹지광장) through a respectful, place-based mission.",
+      "region": "Seoul",
+      "district": "Jongno-gu",
+      "latitude": 37.5774891325,
+      "longitude": 126.9811704675,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/47/3083147_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Songhyeon Green Plaza (열린송현 녹지광장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Songhyeon Green Plaza (열린송현 녹지광장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251111112350"
+    },
+    {
+      "questId": "kq-kto-264513-street-detail-hunt",
+      "sourceContentId": "264513",
+      "title": "Discover Incheon Chinatown (인천 차이나타운)",
+      "description": "Explore Incheon Chinatown (인천 차이나타운) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4738502955,
+      "longitude": 126.6191619441,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/3304277_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Incheon Chinatown (인천 차이나타운) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one sign, facade, or public-space detail that gives Incheon Chinatown (인천 차이나타운) its character.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph only public-facing details and avoid recognizable faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe what this detail reveals about the neighborhood.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3454831-culture-one-object",
+      "sourceContentId": "3454831",
+      "title": "Discover Daejeon Expo Aquarium (대전 엑스포 아쿠아리움)",
+      "description": "Explore Daejeon Expo Aquarium (대전 엑스포 아쿠아리움) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Yuseong-gu",
+      "latitude": 36.3751571874,
+      "longitude": 127.3820481776,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/47/3371547_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daejeon Expo Aquarium (대전 엑스포 아쿠아리움) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Daejeon Expo Aquarium (대전 엑스포 아쿠아리움).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3407902-culture-one-object",
+      "sourceContentId": "3407902",
+      "title": "Discover Keisung Middle School (계성중학교)",
+      "description": "Explore Keisung Middle School (계성중학교) through a respectful, place-based mission.",
+      "region": "Daegu",
+      "district": "Jung-gu",
+      "latitude": 35.8682310503,
+      "longitude": 128.5820750124,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/80/3095280_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-topic",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Keisung Middle School (계성중학교) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public exhibition title or topic that interests you.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public information panel only where permitted.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Write one question you would ask about the topic.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251106140914"
+    },
+    {
+      "questId": "kq-kto-1211999-safe-viewpoint-walk",
+      "sourceContentId": "1211999",
+      "title": "Explore the lake and surrounding terrain at Gwangjuho Lake Eco Park (광주호 호수생태원)",
+      "description": "Explore Gwangjuho Lake Eco Park (광주호 호수생태원) through a respectful, place-based mission.",
+      "region": "Gwangju",
+      "district": "Buk-gu",
+      "latitude": 35.1833693693,
+      "longitude": 126.9998855586,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/05/3515105_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [
+        "LAKE",
+        "VOLCANIC_LANDSCAPE"
+      ],
+      "templateId": "SAFE_VIEWPOINT_WALK_V1",
+      "selectedVariantId": "SAFE_VIEWPOINT_WALK_V1:view-lake",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gwangjuho Lake Eco Park (광주호 호수생태원) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From a permitted viewpoint, observe how water and terrain meet at Gwangjuho Lake Eco Park (광주호 호수생태원).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the view only from a marked public path or viewpoint.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one change in color, weather, or terrain.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3516784-street-detail-hunt",
+      "sourceContentId": "3516784",
+      "title": "Discover B-Con Ground (비콘그라운드)",
+      "description": "Explore B-Con Ground (비콘그라운드) through a respectful, place-based mission.",
+      "region": "Busan",
+      "district": "Suyeong-gu",
+      "latitude": 35.1719386413,
+      "longitude": 129.1096508423,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/70/3498770_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-reuse",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit B-Con Ground (비콘그라운드) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one reused structure, public design, or gathering space at B-Con Ground (비콘그라운드).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public design feature while respecting nearby businesses and residents.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the space differs from an ordinary commercial complex.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251117112216"
+    },
+    {
+      "questId": "kq-kto-3585818-culture-one-object",
+      "sourceContentId": "3585818",
+      "title": "Discover Ulsan Lotte Grand Wheel (울산 롯데 그랜드 휠)",
+      "description": "Explore Ulsan Lotte Grand Wheel (울산 롯데 그랜드 휠) through a respectful, place-based mission.",
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5392517022,
+      "longitude": 129.3385512421,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/64/3065264_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-building",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Ulsan Lotte Grand Wheel (울산 롯데 그랜드 휠) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one feature showing how the building supports culture or art.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an exterior architectural feature or entrance sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the building affects your expectation of what is inside.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251217170619"
+    },
+    {
+      "questId": "kq-kto-3339759-culture-one-object",
+      "sourceContentId": "3339759",
+      "title": "Discover Goseong Hwaamsa Temple (화암사(고성))",
+      "description": "Explore Goseong Hwaamsa Temple (화암사(고성)) through a respectful, place-based mission.",
+      "region": "Gangwon",
+      "district": "Goseong-gun",
+      "latitude": 38.2264358406,
+      "longitude": 128.4699434022,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/19/3016719_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Goseong Hwaamsa Temple (화암사(고성)) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Goseong Hwaamsa Temple (화암사(고성)).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251216141521"
+    },
+    {
+      "questId": "kq-kto-3340538-street-detail-hunt",
+      "sourceContentId": "3340538",
+      "title": "Discover Mosan Airfield (모산비행장)",
+      "description": "Explore Mosan Airfield (모산비행장) through a respectful, place-based mission.",
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 37.1628487157,
+      "longitude": 128.2201230686,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/2945704_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Mosan Airfield (모산비행장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one sign, facade, or public-space detail that gives Mosan Airfield (모산비행장) its character.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph only public-facing details and avoid recognizable faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe what this detail reveals about the neighborhood.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "sourceModifiedTime": "20251029152420"
+    },
+    {
+      "questId": "kq-kto-800135-culture-one-object",
+      "sourceContentId": "800135",
+      "title": "Discover Five-story Stone Pagoda at Jeongnimsa Temple Site [UNESCO World Heritage] (부여 정림사지 오층석탑 [유네스코 세계문화유산])",
+      "description": "Explore Five-story Stone Pagoda at Jeongnimsa Temple Site [UNESCO World Heritage] (부여 정림사지 오층석탑 [유네스코 세계문화유산]) through a respectful, place-based mission.",
+      "region": "Chungnam",
+      "district": "Buyeo-gun",
+      "latitude": 36.2797320991,
+      "longitude": 126.9132621678,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/52/2671452_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Five-story Stone Pagoda at Jeongnimsa Temple Site [UNESCO World Heritage] (부여 정림사지 오층석탑 [유네스코 세계문화유산]) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Five-story Stone Pagoda at Jeongnimsa Temple Site [UNESCO World Heritage] (부여 정림사지 오층석탑 [유네스코 세계문화유산]).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3423603-nature-detail-hunt",
+      "sourceContentId": "3423603",
+      "title": "Explore the forest at Gyeongbuk Millennium Forest Garden (경북천년숲정원)",
+      "description": "Explore Gyeongbuk Millennium Forest Garden (경북천년숲정원) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Gyeongju-si",
+      "latitude": 35.8119525052,
+      "longitude": 129.2421547209,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/89/3032489_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [
+        "FOREST"
+      ],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-sound",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gyeongbuk Millennium Forest Garden (경북천년숲정원) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Pause at a permitted point and identify two non-human sounds.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the landscape connected to one of the sounds.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the sound changed your impression of Gyeongbuk Millennium Forest Garden (경북천년숲정원).",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251106132820"
+    },
+    {
+      "questId": "kq-kto-3406175-nature-detail-hunt",
+      "sourceContentId": "3406175",
+      "title": "Discover Gujora Fortress Sound of the Breeze Path (샛바람소리길)",
+      "description": "Explore Gujora Fortress Sound of the Breeze Path (샛바람소리길) through a respectful, place-based mission.",
+      "region": "Gyeongnam",
+      "district": "Geoje-si",
+      "latitude": 34.8050359752,
+      "longitude": 128.6946245966,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/3099988_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gujora Fortress Sound of the Breeze Path (샛바람소리길) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251106131329"
+    },
+    {
+      "questId": "kq-kto-264298-culture-one-object",
+      "sourceContentId": "264298",
+      "title": "Discover Buan Naesosa Temple (내소사 (부안))",
+      "description": "Explore Buan Naesosa Temple (내소사 (부안)) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Buan-gun",
+      "latitude": 35.6178048314,
+      "longitude": 126.5876028523,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/36/2678636_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Buan Naesosa Temple (내소사 (부안)) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Buan Naesosa Temple (내소사 (부안)).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251216144359"
+    },
+    {
+      "questId": "kq-kto-264282-nature-detail-hunt",
+      "sourceContentId": "264282",
+      "title": "Explore the coastal cliffs at Jindo Mysterious Sea Route (진도 신비의 바닷길)",
+      "description": "Explore Jindo Mysterious Sea Route (진도 신비의 바닷길) through a respectful, place-based mission.",
+      "region": "Jeonnam",
+      "district": "Jindo-gun",
+      "latitude": 34.427246472,
+      "longitude": 126.3513750668,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/38/1993038_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [
+        "COAST",
+        "CLIFF"
+      ],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jindo Mysterious Sea Route (진도 신비의 바닷길) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3409589-nature-detail-hunt",
+      "sourceContentId": "3409589",
+      "title": "Discover Hallim Port (한림항)",
+      "description": "Explore Hallim Port (한림항) through a respectful, place-based mission.",
+      "region": "Jeju",
+      "district": "Jeju-si",
+      "latitude": 33.4190907055,
+      "longitude": 126.2625726517,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/20/2800520_image2_1.jpg",
+      "questType": "NATURE",
+      "secondaryTags": [],
+      "templateId": "NATURE_DETAIL_HUNT_V1",
+      "selectedVariantId": "NATURE_DETAIL_HUNT_V1:nature-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Hallim Port (한림항) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "From the public path, find one small landscape detail and one wide view.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a natural feature without leaving the path or approaching wildlife.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one observation that could change in another season.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 72,
+      "qualityScore": 75,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251216165354"
+    },
+    {
+      "questId": "kq-kto-3114591-culture-one-object",
+      "sourceContentId": "3114591",
+      "title": "Discover e-Sports Hall of Fame (e스포츠 명예의 전당)",
+      "description": "Explore e-Sports Hall of Fame (e스포츠 명예의 전당) through a respectful, place-based mission.",
+      "region": "Seoul",
+      "district": "Mapo-gu",
+      "latitude": 37.5757793646,
+      "longitude": 126.8899871626,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/36/2825236_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit e-Sports Hall of Fame (e스포츠 명예의 전당) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at e-Sports Hall of Fame (e스포츠 명예의 전당).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251117145140"
+    },
+    {
+      "questId": "kq-kto-1941667-culture-one-object",
+      "sourceContentId": "1941667",
+      "title": "Discover Geomdan Prehistory Museum (인천 검단선사박물관)",
+      "description": "Explore Geomdan Prehistory Museum (인천 검단선사박물관) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Geomdan-gu",
+      "latitude": 37.5944210109,
+      "longitude": 126.6986402152,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/24/1579224_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-topic",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Geomdan Prehistory Museum (인천 검단선사박물관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public exhibition title or topic that interests you.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public information panel only where permitted.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Write one question you would ask about the topic.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-268142-culture-one-object",
+      "sourceContentId": "268142",
+      "title": "Discover National Science Museum (국립중앙과학관)",
+      "description": "Explore National Science Museum (국립중앙과학관) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Yuseong-gu",
+      "latitude": 36.3754709184,
+      "longitude": 127.3751904492,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/36/2646336_image2_1.bmp",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit National Science Museum (국립중앙과학관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at National Science Museum (국립중앙과학관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3022724-culture-one-object",
+      "sourceContentId": "3022724",
+      "title": "Discover Suchang Youth Mansion (수창청춘맨숀)",
+      "description": "Explore Suchang Youth Mansion (수창청춘맨숀) through a respectful, place-based mission.",
+      "region": "Daegu",
+      "district": "Jung-gu",
+      "latitude": 35.8753663747,
+      "longitude": 128.5832413777,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/09/3403609_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Suchang Youth Mansion (수창청춘맨숀) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Suchang Youth Mansion (수창청춘맨숀).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250811151625"
+    },
+    {
+      "questId": "kq-kto-789763-culture-one-object",
+      "sourceContentId": "789763",
+      "title": "Discover Kimdaejung Convention Center (김대중컨벤션센터)",
+      "description": "Explore Kimdaejung Convention Center (김대중컨벤션센터) through a respectful, place-based mission.",
+      "region": "Gwangju",
+      "district": "Seo-gu",
+      "latitude": 35.1467624742,
+      "longitude": 126.8405033459,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/11/1559711_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-building",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Kimdaejung Convention Center (김대중컨벤션센터) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one feature showing how the building supports culture or art.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an exterior architectural feature or entrance sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the building affects your expectation of what is inside.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-2589751-culture-one-object",
+      "sourceContentId": "2589751",
+      "title": "Discover Busan National Science Museum (국립부산과학관)",
+      "description": "Explore Busan National Science Museum (국립부산과학관) through a respectful, place-based mission.",
+      "region": "Busan",
+      "district": "Gijang-gun",
+      "latitude": 35.2046146711,
+      "longitude": 129.2127159794,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/21/3511021_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Busan National Science Museum (국립부산과학관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Busan National Science Museum (국립부산과학관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3586004-culture-one-object",
+      "sourceContentId": "3586004",
+      "title": "Discover Ulsan Art Museum (울산시립미술관)",
+      "description": "Explore Ulsan Art Museum (울산시립미술관) through a respectful, place-based mission.",
+      "region": "Ulsan",
+      "district": "Jung-gu",
+      "latitude": 35.5578909416,
+      "longitude": 129.3209355873,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/02/3084302_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Ulsan Art Museum (울산시립미술관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Ulsan Art Museum (울산시립미술관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251217180312"
+    },
+    {
+      "questId": "kq-kto-3395205-culture-one-object",
+      "sourceContentId": "3395205",
+      "title": "Discover Kyung Hee University Global Campus Outdoor Theater(경희대학교 국제캠퍼스 노천극장)",
+      "description": "Explore Kyung Hee University Global Campus Outdoor Theater(경희대학교 국제캠퍼스 노천극장) through a respectful, place-based mission.",
+      "region": "Gyeonggi",
+      "district": "Giheung-gu",
+      "latitude": 37.2480013599,
+      "longitude": 127.0808817927,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/2945688_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Kyung Hee University Global Campus Outdoor Theater(경희대학교 국제캠퍼스 노천극장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Kyung Hee University Global Campus Outdoor Theater(경희대학교 국제캠퍼스 노천극장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251105140818"
+    },
+    {
+      "questId": "kq-kto-3591045-culture-one-object",
+      "sourceContentId": "3591045",
+      "title": "Discover INART Pyeongchang (이나트(INART) 평창)",
+      "description": "Explore INART Pyeongchang (이나트(INART) 평창) through a respectful, place-based mission.",
+      "region": "Gangwon",
+      "district": "Pyeongchang-gun",
+      "latitude": 37.6424686139,
+      "longitude": 128.6714098194,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/00/3588500_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit INART Pyeongchang (이나트(INART) 평창) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at INART Pyeongchang (이나트(INART) 평창).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251231164414"
+    },
+    {
+      "questId": "kq-kto-2948291-culture-one-object",
+      "sourceContentId": "2948291",
+      "title": "Discover Museum of Modern and Contemporary Art Cheongju [MMCA Cheongju] (국립현대미술관(청주관))",
+      "description": "Explore Museum of Modern and Contemporary Art Cheongju [MMCA Cheongju] (국립현대미술관(청주관)) through a respectful, place-based mission.",
+      "region": "Chungbuk",
+      "district": "Cheongwon-gu",
+      "latitude": 36.6555769823,
+      "longitude": 127.4902363546,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/49/2596449_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Museum of Modern and Contemporary Art Cheongju [MMCA Cheongju] (국립현대미술관(청주관)) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Museum of Modern and Contemporary Art Cheongju [MMCA Cheongju] (국립현대미술관(청주관)).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251024154011"
+    },
+    {
+      "questId": "kq-kto-3459108-culture-one-object",
+      "sourceContentId": "3459108",
+      "title": "Discover Former Gongju-eup Office (옛 공주읍사무소)",
+      "description": "Explore Former Gongju-eup Office (옛 공주읍사무소) through a respectful, place-based mission.",
+      "region": "Chungnam",
+      "district": "Gongju-si",
+      "latitude": 36.4544740602,
+      "longitude": 127.1219721109,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3390706_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Former Gongju-eup Office (옛 공주읍사무소) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Former Gongju-eup Office (옛 공주읍사무소).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250204154703"
+    },
+    {
+      "questId": "kq-kto-985137-culture-one-object",
+      "sourceContentId": "985137",
+      "title": "Discover Rasunjae (라선재)",
+      "description": "Explore Rasunjae (라선재) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Gyeongju-si",
+      "latitude": 35.880535249,
+      "longitude": 129.1796554673,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/89/3033989_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Rasunjae (라선재) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Rasunjae (라선재).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251117094019"
+    },
+    {
+      "questId": "kq-kto-3467909-culture-one-object",
+      "sourceContentId": "3467909",
+      "title": "Discover Geoje Sea World (거제씨월드)",
+      "description": "Explore Geoje Sea World (거제씨월드) through a respectful, place-based mission.",
+      "region": "Gyeongnam",
+      "district": "Geoje-si",
+      "latitude": 34.8359187617,
+      "longitude": 128.7014870699,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/44/2735244_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Geoje Sea World (거제씨월드) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Geoje Sea World (거제씨월드).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250114140428"
+    },
+    {
+      "questId": "kq-kto-3389965-culture-one-object",
+      "sourceContentId": "3389965",
+      "title": "Discover Saemangeum Promotion Hall (새만금홍보관)",
+      "description": "Explore Saemangeum Promotion Hall (새만금홍보관) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Buan-gun",
+      "latitude": 35.6966759319,
+      "longitude": 126.5589950731,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/38/2946038_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Saemangeum Promotion Hall (새만금홍보관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Saemangeum Promotion Hall (새만금홍보관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251105130947"
+    },
+    {
+      "questId": "kq-kto-268224-culture-one-object",
+      "sourceContentId": "268224",
+      "title": "Discover Korea Bamboo Museum (한국대나무박물관)",
+      "description": "Explore Korea Bamboo Museum (한국대나무박물관) through a respectful, place-based mission.",
+      "region": "Jeonnam",
+      "district": "Damyang-gun",
+      "latitude": 35.309513061,
+      "longitude": 126.9772427091,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/07/2367307_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Korea Bamboo Museum (한국대나무박물관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Korea Bamboo Museum (한국대나무박물관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3586185-culture-one-object",
+      "sourceContentId": "3586185",
+      "title": "Discover Chocolate Land (초콜릿랜드)",
+      "description": "Explore Chocolate Land (초콜릿랜드) through a respectful, place-based mission.",
+      "region": "Jeju",
+      "district": "Seogwipo-si",
+      "latitude": 33.2500811981,
+      "longitude": 126.4129744714,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/3023917_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Chocolate Land (초콜릿랜드) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Chocolate Land (초콜릿랜드).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251218140513"
+    },
+    {
+      "questId": "kq-kto-3566484-culture-one-object",
+      "sourceContentId": "3566484",
+      "title": "Discover NKDB North Korean Human Rights Exhibition Hall (북한인권전시실)",
+      "description": "Explore NKDB North Korean Human Rights Exhibition Hall (북한인권전시실) through a respectful, place-based mission.",
+      "region": "Seoul",
+      "district": "Jongno-gu",
+      "latitude": 37.5697262577,
+      "longitude": 126.9874062304,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/78/3562378_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-topic",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit NKDB North Korean Human Rights Exhibition Hall (북한인권전시실) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public exhibition title or topic that interests you.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public information panel only where permitted.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Write one question you would ask about the topic.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251113180112"
+    },
+    {
+      "questId": "kq-kto-2034160-culture-one-object",
+      "sourceContentId": "2034160",
+      "title": "Discover Jjajangmyeon Museum (짜장면박물관)",
+      "description": "Explore Jjajangmyeon Museum (짜장면박물관) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4748446068,
+      "longitude": 126.6181814505,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/05/3353105_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jjajangmyeon Museum (짜장면박물관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Jjajangmyeon Museum (짜장면박물관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-997155-culture-one-object",
+      "sourceContentId": "997155",
+      "title": "Discover Leeungno Museum (이응노 미술관)",
+      "description": "Explore Leeungno Museum (이응노 미술관) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Seo-gu",
+      "latitude": 36.3668637804,
+      "longitude": 127.3870118474,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/29/2834129_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Leeungno Museum (이응노 미술관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Leeungno Museum (이응노 미술관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-1271098-market-local-food-hunt",
+      "sourceContentId": "1271098",
+      "title": "Explore the market area at Daegu Seomun Market & Seomun Night Market (대구 서문시장 & 서문시장 야시장)",
+      "description": "Explore Daegu Seomun Market & Seomun Night Market (대구 서문시장 & 서문시장 야시장) through a respectful, place-based mission.",
+      "region": "Daegu",
+      "district": "Jung-gu",
+      "latitude": 35.8689226144,
+      "longitude": 128.5807862176,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/50/3039250_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daegu Seomun Market & Seomun Night Market (대구 서문시장 & 서문시장 야시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Daegu Seomun Market & Seomun Night Market (대구 서문시장 & 서문시장 야시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Daegu Seomun Market & Seomun Night Market (대구 서문시장 & 서문시장 야시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250811102541"
+    },
+    {
+      "questId": "kq-kto-1177654-culture-one-object",
+      "sourceContentId": "1177654",
+      "title": "Discover Gwangju Arts Center (광주예술의전당)",
+      "description": "Explore Gwangju Arts Center (광주예술의전당) through a respectful, place-based mission.",
+      "region": "Gwangju",
+      "district": "Buk-gu",
+      "latitude": 35.1779374203,
+      "longitude": 126.881387839,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/3033588_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-building",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gwangju Arts Center (광주예술의전당) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one feature showing how the building supports culture or art.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an exterior architectural feature or entrance sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the building affects your expectation of what is inside.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3516758-culture-one-object",
+      "sourceContentId": "3516758",
+      "title": "Discover Busan Modern & Contemporary History Museum - Main Building (부산근현대역사관 본관)",
+      "description": "Explore Busan Modern & Contemporary History Museum - Main Building (부산근현대역사관 본관) through a respectful, place-based mission.",
+      "region": "Busan",
+      "district": "Jung-gu",
+      "latitude": 35.1027616225,
+      "longitude": 129.032190027,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/37/3428637_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Busan Modern & Contemporary History Museum - Main Building (부산근현대역사관 본관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Busan Modern & Contemporary History Museum - Main Building (부산근현대역사관 본관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250804174915"
+    },
+    {
+      "questId": "kq-kto-3585484-culture-one-object",
+      "sourceContentId": "3585484",
+      "title": "Discover Whales Fantasium (웨일즈 판타지움)",
+      "description": "Explore Whales Fantasium (웨일즈 판타지움) through a respectful, place-based mission.",
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5059562836,
+      "longitude": 129.3831260722,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/3079177_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Whales Fantasium (웨일즈 판타지움) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Whales Fantasium (웨일즈 판타지움).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251217143557"
+    },
+    {
+      "questId": "kq-kto-3112401-culture-one-object",
+      "sourceContentId": "3112401",
+      "title": "Discover Korean Modern Music Hall (한국근현대음악관)",
+      "description": "Explore Korean Modern Music Hall (한국근현대음악관) through a respectful, place-based mission.",
+      "region": "Gyeonggi",
+      "district": "Pyeongtaek-si",
+      "latitude": 36.9212584984,
+      "longitude": 126.9208719893,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/35/2816535_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Korean Modern Music Hall (한국근현대음악관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Korean Modern Music Hall (한국근현대음악관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251029102500"
+    },
+    {
+      "questId": "kq-kto-3512502-culture-one-object",
+      "sourceContentId": "3512502",
+      "title": "Discover Pencil Museum (연필뮤지엄)",
+      "description": "Explore Pencil Museum (연필뮤지엄) through a respectful, place-based mission.",
+      "region": "Gangwon",
+      "district": "Donghae-si",
+      "latitude": 37.5475463518,
+      "longitude": 129.106323638,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/33/3497933_image2_1.JPG",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Pencil Museum (연필뮤지엄) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Pencil Museum (연필뮤지엄).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250724143841"
+    },
+    {
+      "questId": "kq-kto-1918567-culture-one-object",
+      "sourceContentId": "1918567",
+      "title": "Discover Jeong Jiyong Memorial Hall (정지용 문학관)",
+      "description": "Explore Jeong Jiyong Memorial Hall (정지용 문학관) through a respectful, place-based mission.",
+      "region": "Chungbuk",
+      "district": "Okcheon-gun",
+      "latitude": 36.3149342963,
+      "longitude": 127.5816069833,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/10/2622310_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jeong Jiyong Memorial Hall (정지용 문학관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign, theme, or exterior detail that represents Jeong Jiyong Memorial Hall (정지용 문학관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Use the exterior or entrance sign unless photography rules are confirmed.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one cultural detail you would tell a friend about.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250821140406"
+    },
+    {
+      "questId": "kq-kto-804441-culture-one-object",
+      "sourceContentId": "804441",
+      "title": "Discover Wooyang Museum of Contemporary Art (우양미술관)",
+      "description": "Explore Wooyang Museum of Contemporary Art (우양미술관) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Gyeongju-si",
+      "latitude": 35.8416444278,
+      "longitude": 129.2859611482,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/80/2551280_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Wooyang Museum of Contemporary Art (우양미술관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Wooyang Museum of Contemporary Art (우양미술관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250612163426"
+    },
+    {
+      "questId": "kq-kto-1901972-culture-one-object",
+      "sourceContentId": "1901972",
+      "title": "Discover The Jeon Hyuck Lim Mueseum of Art (전혁림 미술관)",
+      "description": "Explore The Jeon Hyuck Lim Mueseum of Art (전혁림 미술관) through a respectful, place-based mission.",
+      "region": "Gyeongnam",
+      "district": "Tongyeong-si",
+      "latitude": 34.8265230043,
+      "longitude": 128.415151118,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/808071_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit The Jeon Hyuck Lim Mueseum of Art (전혁림 미술관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at The Jeon Hyuck Lim Mueseum of Art (전혁림 미술관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20250113170046"
+    },
+    {
+      "questId": "kq-kto-3337250-culture-one-object",
+      "sourceContentId": "3337250",
+      "title": "Discover Jeonju Digital Independent Movie Cinema (전주디지털독립영화관)",
+      "description": "Explore Jeonju Digital Independent Movie Cinema (전주디지털독립영화관) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Wansan-gu",
+      "latitude": 35.8184026214,
+      "longitude": 127.1427315912,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/2947116_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-building",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jeonju Digital Independent Movie Cinema (전주디지털독립영화관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one feature showing how the building supports culture or art.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an exterior architectural feature or entrance sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the building affects your expectation of what is inside.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251029170225"
+    },
+    {
+      "questId": "kq-kto-813573-culture-one-object",
+      "sourceContentId": "813573",
+      "title": "Discover Gangjin Goryeo Celadon Museum (강진 고려청자박물관)",
+      "description": "Explore Gangjin Goryeo Celadon Museum (강진 고려청자박물관) through a respectful, place-based mission.",
+      "region": "Jeonnam",
+      "district": "Gangjin-gun",
+      "latitude": 34.5087280332,
+      "longitude": 126.8009030607,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/2642406_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gangjin Goryeo Celadon Museum (강진 고려청자박물관) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Gangjin Goryeo Celadon Museum (강진 고려청자박물관).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-2949520-culture-one-object",
+      "sourceContentId": "2949520",
+      "title": "Discover Arte Museum Jeju (아르떼뮤지엄 제주)",
+      "description": "Explore Arte Museum Jeju (아르떼뮤지엄 제주) through a respectful, place-based mission.",
+      "region": "Jeju",
+      "district": "Jeju-si",
+      "latitude": 33.3967250327,
+      "longitude": 126.3449882076,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/3019416_image2_1.jpg",
+      "questType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "templateId": "CULTURE_ONE_OBJECT_V1",
+      "selectedVariantId": "CULTURE_ONE_OBJECT_V1:culture-artwork",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Arte Museum Jeju (아르떼뮤지엄 제주) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Choose one artwork, exhibition theme, or architectural detail at Arte Museum Jeju (아르떼뮤지엄 제주).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Unless indoor photography is explicitly allowed, photograph only the entrance or exterior.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Explain in one sentence why you chose that detail.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 65,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "sourceModifiedTime": "20251215171704"
+    },
+    {
+      "questId": "kq-kto-1244616-market-local-food-hunt",
+      "sourceContentId": "1244616",
+      "title": "Explore the market area at Sinpo International Market (신포국제시장)",
+      "description": "Explore Sinpo International Market (신포국제시장) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4714562812,
+      "longitude": 126.6277834463,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3517706_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Sinpo International Market (신포국제시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice two colors or display styles in the public aisles of Sinpo International Market (신포국제시장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public market detail without focusing on a single vendor.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one detail that makes this market feel connected to Incheon.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-2494513-market-local-food-hunt",
+      "sourceContentId": "2494513",
+      "title": "Explore the market area at 1913 Songjeong Station Market (1913송정역시장)",
+      "description": "Explore 1913 Songjeong Station Market (1913송정역시장) through a respectful, place-based mission.",
+      "region": "Gwangju",
+      "district": "Gwangsan-gu",
+      "latitude": 35.1364739302,
+      "longitude": 126.791935676,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/96/2617796_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit 1913 Songjeong Station Market (1913송정역시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3585695-market-local-food-hunt",
+      "sourceContentId": "3585695",
+      "title": "Explore the market area at Eonyang Alps Market Town (언양알프스시장)",
+      "description": "Explore Eonyang Alps Market Town (언양알프스시장) through a respectful, place-based mission.",
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.5637421696,
+      "longitude": 129.1253163948,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/10/3549510_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-safe-general",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Eonyang Alps Market Town (언양알프스시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public sign or shared-space detail that gives Eonyang Alps Market Town (언양알프스시장) its character.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the entrance or a public-space detail; avoid faces and private transactions.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one thing you noticed without buying anything.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251217163934"
+    },
+    {
+      "questId": "kq-kto-3402807-market-local-food-hunt",
+      "sourceContentId": "3402807",
+      "title": "Explore the market area at Paldalmun Market (팔달문시장)",
+      "description": "Explore Paldalmun Market (팔달문시장) through a respectful, place-based mission.",
+      "region": "Gyeonggi",
+      "district": "Paldal-gu",
+      "latitude": 37.277424593,
+      "longitude": 127.0172339661,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/95/2752795_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Paldalmun Market (팔달문시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice two colors or display styles in the public aisles of Paldalmun Market (팔달문시장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public market detail without focusing on a single vendor.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one detail that makes this market feel connected to Gyeonggi.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251028101135"
+    },
+    {
+      "questId": "kq-kto-2946899-market-local-food-hunt",
+      "sourceContentId": "2946899",
+      "title": "Explore the market area at Maze Art Wonju Jungang Market (미로예술 원주중앙시장)",
+      "description": "Explore Maze Art Wonju Jungang Market (미로예술 원주중앙시장) through a respectful, place-based mission.",
+      "region": "Gangwon",
+      "district": "Wonju-si",
+      "latitude": 37.3500665099,
+      "longitude": 127.9492169912,
+      "image": null,
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Maze Art Wonju Jungang Market (미로예술 원주중앙시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Maze Art Wonju Jungang Market (미로예술 원주중앙시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Maze Art Wonju Jungang Market (미로예술 원주중앙시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 60,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251027092204"
+    },
+    {
+      "questId": "kq-kto-273737-market-local-food-hunt",
+      "sourceContentId": "273737",
+      "title": "Explore the market area at Geumsan Ginseng Market (금산인삼약령시장)",
+      "description": "Explore Geumsan Ginseng Market (금산인삼약령시장) through a respectful, place-based mission.",
+      "region": "Chungnam",
+      "district": "Geumsan-gun",
+      "latitude": 36.1000934111,
+      "longitude": 127.4963759631,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/52/3045152_image2_1.JPG",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Geumsan Ginseng Market (금산인삼약령시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Geumsan Ginseng Market (금산인삼약령시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Geumsan Ginseng Market (금산인삼약령시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20240822132834"
+    },
+    {
+      "questId": "kq-kto-1945431-market-local-food-hunt",
+      "sourceContentId": "1945431",
+      "title": "Explore the market area at Gyeongju Jungang Market (경주 중앙시장)",
+      "description": "Explore Gyeongju Jungang Market (경주 중앙시장) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Gyeongju-si",
+      "latitude": 35.844034328,
+      "longitude": 129.2068096823,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/74/3034074_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gyeongju Jungang Market (경주 중앙시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice two colors or display styles in the public aisles of Gyeongju Jungang Market (경주 중앙시장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public market detail without focusing on a single vendor.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one detail that makes this market feel connected to Gyeongbuk.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250521170420"
+    },
+    {
+      "questId": "kq-kto-3510943-market-local-food-hunt",
+      "sourceContentId": "3510943",
+      "title": "Explore the market area at Jinju Jungang Market (진주중앙시장)",
+      "description": "Explore Jinju Jungang Market (진주중앙시장) through a respectful, place-based mission.",
+      "region": "Gyeongnam",
+      "district": "Jinju-si",
+      "latitude": 35.1939620283,
+      "longitude": 128.084909201,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/19/3070019_image2_1.JPG",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jinju Jungang Market (진주중앙시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Jinju Jungang Market (진주중앙시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Jinju Jungang Market (진주중앙시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-1945427-market-local-food-hunt",
+      "sourceContentId": "1945427",
+      "title": "Explore the market area at Jeonju Nambu Traditional Market (전주 남부시장)",
+      "description": "Explore Jeonju Nambu Traditional Market (전주 남부시장) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Wansan-gu",
+      "latitude": 35.8128283393,
+      "longitude": 127.1475535303,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/35/3428535_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jeonju Nambu Traditional Market (전주 남부시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Jeonju Nambu Traditional Market (전주 남부시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Jeonju Nambu Traditional Market (전주 남부시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250722135017"
+    },
+    {
+      "questId": "kq-kto-3510674-market-local-food-hunt",
+      "sourceContentId": "3510674",
+      "title": "Explore the market area at Suncheon Utjang Market (순천 웃장)",
+      "description": "Explore Suncheon Utjang Market (순천 웃장) through a respectful, place-based mission.",
+      "region": "Jeonnam",
+      "district": "Suncheon-si",
+      "latitude": 34.9586141,
+      "longitude": 127.4849124008,
+      "image": null,
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Suncheon Utjang Market (순천 웃장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 60,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "questId": "kq-kto-3586235-market-local-food-hunt",
+      "sourceContentId": "3586235",
+      "title": "Explore the market area at Jungmun 5-day Market (중문향토오일시장)",
+      "description": "Explore Jungmun 5-day Market (중문향토오일시장) through a respectful, place-based mission.",
+      "region": "Jeju",
+      "district": "Seogwipo-si",
+      "latitude": 33.2508590671,
+      "longitude": 126.4241595951,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/50/3477250_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jungmun 5-day Market (중문향토오일시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251218151432"
+    },
+    {
+      "questId": "kq-kto-273741-market-local-food-hunt",
+      "sourceContentId": "273741",
+      "title": "Explore the market area at Sorae Fish Market (소래포구 종합어시장)",
+      "description": "Explore Sorae Fish Market (소래포구 종합어시장) through a respectful, place-based mission.",
+      "region": "Incheon",
+      "district": "Namdong-gu",
+      "latitude": 37.3987749898,
+      "longitude": 126.7372004899,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/12/3524212_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Sorae Fish Market (소래포구 종합어시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-1665598-market-local-food-hunt",
+      "sourceContentId": "1665598",
+      "title": "Explore the market area at Daejeon Jungang Market (대전 중앙시장)",
+      "description": "Explore Daejeon Jungang Market (대전 중앙시장) through a respectful, place-based mission.",
+      "region": "Daejeon",
+      "district": "Dong-gu",
+      "latitude": 36.3295438687,
+      "longitude": 127.4331753997,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/45/3526645_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Daejeon Jungang Market (대전 중앙시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice two colors or display styles in the public aisles of Daejeon Jungang Market (대전 중앙시장).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public market detail without focusing on a single vendor.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one detail that makes this market feel connected to Daejeon.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-2382544-market-local-food-hunt",
+      "sourceContentId": "2382544",
+      "title": "Explore the market area at Jagalchi Market (부산 자갈치시장)",
+      "description": "Explore Jagalchi Market (부산 자갈치시장) through a respectful, place-based mission.",
+      "region": "Busan",
+      "district": "Jung-gu",
+      "latitude": 35.0966511661,
+      "longitude": 129.0306042201,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/13/2941313_image2_1.bmp",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jagalchi Market (부산 자갈치시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250415164058"
+    },
+    {
+      "questId": "kq-kto-3097534-market-local-food-hunt",
+      "sourceContentId": "3097534",
+      "title": "Explore the market area at Yongmun Millennium Market (days ending in 5 and 10) (용문천년시장(5,10일))",
+      "description": "Explore Yongmun Millennium Market (days ending in 5 and 10) (용문천년시장(5,10일)) through a respectful, place-based mission.",
+      "region": "Gyeonggi",
+      "district": "Yangpyeong-gun",
+      "latitude": 37.4840166812,
+      "longitude": 127.5947757068,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/3077173_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-color",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Yongmun Millennium Market (days ending in 5 and 10) (용문천년시장(5,10일)) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Notice two colors or display styles in the public aisles of Yongmun Millennium Market (days ending in 5 and 10) (용문천년시장(5,10일)).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public market detail without focusing on a single vendor.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one detail that makes this market feel connected to Gyeonggi.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250630110632"
+    },
+    {
+      "questId": "kq-kto-1862991-market-local-food-hunt",
+      "sourceContentId": "1862991",
+      "title": "Explore the market area at Gyeongju Seongdong Market (경주 성동시장)",
+      "description": "Explore Gyeongju Seongdong Market (경주 성동시장) through a respectful, place-based mission.",
+      "region": "Gyeongbuk",
+      "district": "Gyeongju-si",
+      "latitude": 35.8454371276,
+      "longitude": 129.2163393625,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/46/1968746_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-wayfinding",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Gyeongju Seongdong Market (경주 성동시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Follow the public market route and find one directional or area sign.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph the market entrance or a public wayfinding sign.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how the market is organized in one sentence.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250325153245"
+    },
+    {
+      "questId": "kq-kto-3507459-market-local-food-hunt",
+      "sourceContentId": "3507459",
+      "title": "Explore the market area at Jeonju Seobu Market (전주 서부시장)",
+      "description": "Explore Jeonju Seobu Market (전주 서부시장) through a respectful, place-based mission.",
+      "region": "Jeonbuk",
+      "district": "Wansan-gu",
+      "latitude": 35.8049788697,
+      "longitude": 127.1266472622,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/1976671_image2_1.jpg",
+      "questType": "LOCAL_FOOD",
+      "secondaryTags": [
+        "LOCAL_MARKET"
+      ],
+      "templateId": "MARKET_LOCAL_FOOD_HUNT_V1",
+      "selectedVariantId": "MARKET_LOCAL_FOOD_HUNT_V1:market-food-sign",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Jeonju Seobu Market (전주 서부시장) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find a public sign that connects Jeonju Seobu Market (전주 서부시장) with a local food or ingredient.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a market sign or shared display at Jeonju Seobu Market (전주 서부시장) without including faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one food or ingredient you learned about without making a purchase.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 69,
+      "qualityScore": 75,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20250718090000"
+    }
+  ]
+}

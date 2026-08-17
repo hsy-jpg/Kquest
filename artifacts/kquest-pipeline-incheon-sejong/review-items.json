@@ -1,0 +1,1278 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T19:26:39.524Z",
+    "source": "KTO EngService2",
+    "sourceMode": "LIVE_API",
+    "collectionMode": "LIMITED",
+    "inputCount": 61,
+    "autoAcceptedCount": 27,
+    "reviewCount": 23,
+    "excludedCount": 11,
+    "apiKeyStored": false
+  },
+  "items": [
+    {
+      "sourceContentId": "3544743",
+      "title": "SEMIPUBLIC (세미퍼블릭)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.601468632,
+      "longitude": 127.2972079462,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3524306_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX02",
+          "EX020400"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "3-1 Jochiwon-ro, Jochiwon-eup, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "sourceContentId": "2948029",
+      "title": "Yeongjong Seaside Rail Bike (영종씨사이드 레일바이크)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4885061796,
+      "longitude": 126.5768542882,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/02/2609702_image2_1.JPG",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "75 Gueup-ro, Yeongjong-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3459140",
+      "title": "Sejong Cultrual Center of Korean Tradition (세종전통문화체험관)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.506918272,
+      "longitude": 127.2918748936,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/01/3337101_image2_1.png",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX01",
+          "EX010100"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030200"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "94 Morongji-ro, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520213011"
+    },
+    {
+      "sourceContentId": "3099842",
+      "title": "Gyeyangsan Mountain Trail (계양산둘레길)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Gyeyang-gu",
+      "latitude": 37.5543315789,
+      "longitude": 126.7182812107,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/58/3039058_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Danam-dong, Gyeyang-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240215164823"
+    },
+    {
+      "sourceContentId": "1938790",
+      "title": "[Ganghwa Nadeul-gil Course 7] Setting Sun Trail ([강화 나들길 제7코스] 낙조보러 가는 길)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/22/1895222_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 65,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20221229141359"
+    },
+    {
+      "sourceContentId": "1938779",
+      "title": "[Ganghwa Nadeul-gil Course 8] Bird Watching Trail ([강화 나들길 제8코스] 철새 보러 가는 길)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/32/1895232_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 65,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20221111174618"
+    },
+    {
+      "sourceContentId": "1938812",
+      "title": "[Ganghwa Nadeul-gil Course 1] Simdo History & Culture Trail ([강화 나들길 제1코스] 심도역사문화길)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.7458245442,
+      "longitude": 126.4822613345,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/97/1895197_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 65,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "24, Cheonghadong-gil, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20220927110708"
+    },
+    {
+      "sourceContentId": "1795079",
+      "title": "Wondumak (원두막)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6070975107,
+      "longitude": 127.2392268876,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/99/1886299_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "154, Ansan-gil, Yeonseo-myeon, , Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250818183956"
+    },
+    {
+      "sourceContentId": "1795141",
+      "title": "Sanjang Garden (산장가든)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6002959171,
+      "longitude": 127.261938922,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/1022627_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1131-7 Dosingobok-ro, Yeonseo-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203614"
+    },
+    {
+      "sourceContentId": "3103110",
+      "title": "Kong Daebak (콩대박)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4790473974,
+      "longitude": 127.3442570683,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/1999573_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "9 Daebak-gil, Geumnam-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203243"
+    },
+    {
+      "sourceContentId": "1351495",
+      "title": "Sudokwon Landfill Site Wildflower Complex Dream Park (수도권 매립지 야생화단지 드림파크)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Geomdan-gu",
+      "latitude": 37.5732892425,
+      "longitude": 126.6481593065,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/38/2676038_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX061000"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02040800"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "61 Geowol-ro, Geomdan-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3103106",
+      "title": "La Foresta (라포레스타)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.5953329487,
+      "longitude": 127.2816650645,
+      "image": null,
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD05",
+          "FD050100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020900"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 60,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "130 Daecheop-ro, Yeonseo-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203228"
+    },
+    {
+      "sourceContentId": "3422117",
+      "title": "Sinseung Banjeom (신승반점)",
+      "description": null,
+      "region": "Incheon",
+      "district": null,
+      "latitude": 37.4755556282,
+      "longitude": 126.6177620245,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/2845104_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD02",
+          "FD020100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020400"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "인천광역시 제물포구 차이나타운로44번길 31-3"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260701150640"
+    },
+    {
+      "sourceContentId": "274305",
+      "title": "Yejeon (예전)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4743942975,
+      "longitude": 126.5976416708,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/1924482_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD02",
+          "FD020300"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020200"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "43-2, Wolmimunhwa-ro, Jemulpo-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3105546",
+      "title": "Taehwawon (태화원)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4740752591,
+      "longitude": 126.6185731027,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/79/728579_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "10 Chinatown-ro 59beon-gil, Jemulpo-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3412965",
+      "title": "Cafe Rim (카페 림)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Yeongjong-gu",
+      "latitude": 37.4393229658,
+      "longitude": 126.4158814558,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/03/2875703_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD05",
+          "FD050100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020900"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "45-1 Masiran-ro 170beon-gil, Yeongjong-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3422060",
+      "title": "Samdae Incheon Gejang (삼대인천게장)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4742451482,
+      "longitude": 126.6449290266,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/65/2835465_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "22 Geumgok-ro 81beon-gil, Jemulpo-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3340204",
+      "title": "Mung Hit (멍때림)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.6071699975,
+      "longitude": 126.4101967937,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/60/2836860_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD05",
+          "FD050100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020900"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1970-34 Haeannam-ro, Hwado-myeon, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251029132612"
+    },
+    {
+      "sourceContentId": "3544866",
+      "title": "Maeheon 1935 (매헌1935)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.743980353,
+      "longitude": 126.4844417419,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/3524317_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "25 Sinmun-gil, Ganghwa-eup, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "sourceContentId": "3422116",
+      "title": "Dontarae Gejang Jeongsik (돈타래게장정식)",
+      "description": null,
+      "region": "Incheon",
+      "district": null,
+      "latitude": 37.4730406988,
+      "longitude": 126.6995962957,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/35/2790235_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "인천광역시 부평구 열우물로 59"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20241202094947"
+    },
+    {
+      "sourceContentId": "3507211",
+      "title": "Incheon Local Festa (Jemulpo Wave Market) (인천 로컬 페스타 (제물포 웨이브 마켓))",
+      "description": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4761360618,
+      "longitude": 126.6146650689,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/19/3547219_image2_1.jpg",
+      "contentTypeId": "85",
+      "taxonomy": {
+        "lcls": [
+          "EV",
+          "EV03",
+          "EV030400"
+        ],
+        "cat": [
+          "A02",
+          "A0208",
+          "A02081300"
+        ]
+      },
+      "proposedQuestType": "FESTIVAL",
+      "secondaryTags": [
+        "LOCAL_MARKET",
+        "LOCAL_FOOD"
+      ],
+      "proposedTemplateId": "FESTIVAL_SCENE_HUNT_V1",
+      "localScore": 71,
+      "qualityScore": 80,
+      "classificationConfidence": 0.85,
+      "scoreReasons": [
+        "REGIONAL_FESTIVAL_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE",
+        "EVENT_START_MISSING",
+        "EVENT_END_MISSING"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "33 Wolmi-ro, Jemulpo-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3536904",
+      "title": "Oh Slow Vintage Market (오슬로우 빈티지 마켓)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Jemulpo-gu",
+      "latitude": 37.4761360618,
+      "longitude": 126.6146650689,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/21/3522321_image2_1.jpg",
+      "contentTypeId": "85",
+      "taxonomy": {
+        "lcls": [
+          "EV",
+          "EV03",
+          "EV030400"
+        ],
+        "cat": [
+          "A02",
+          "A0208",
+          "A02081300"
+        ]
+      },
+      "proposedQuestType": "FESTIVAL",
+      "secondaryTags": [
+        "LOCAL_MARKET",
+        "LOCAL_FOOD"
+      ],
+      "proposedTemplateId": "FESTIVAL_SCENE_HUNT_V1",
+      "localScore": 71,
+      "qualityScore": 80,
+      "classificationConfidence": 0.85,
+      "scoreReasons": [
+        "REGIONAL_FESTIVAL_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE",
+        "EVENT_START_MISSING",
+        "EVENT_END_MISSING"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "33 Wolmi-ro, Jemulpo-gu, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3565917",
+      "title": "Ganghwa Yango Ice Fishing Festival (강화 양오 빙어축제)",
+      "description": null,
+      "region": "Incheon",
+      "district": "Ganghwa-gun",
+      "latitude": 37.8001203087,
+      "longitude": 126.4438911127,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/08/3051908_image2_1.jpg",
+      "contentTypeId": "85",
+      "taxonomy": {
+        "lcls": [
+          "EV",
+          "EV01",
+          "EV010600"
+        ],
+        "cat": [
+          "A02",
+          "A0207",
+          "A02070200"
+        ]
+      },
+      "proposedQuestType": "FESTIVAL",
+      "secondaryTags": [],
+      "proposedTemplateId": "FESTIVAL_SCENE_HUNT_V1",
+      "localScore": 53,
+      "qualityScore": 80,
+      "classificationConfidence": 0.85,
+      "scoreReasons": [
+        "LOCAL_EVENT_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE",
+        "EVENT_START_MISSING",
+        "EVENT_END_MISSING"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "161 Jeonmang-daero 423beon-gil, Songhae-myeon, Ganghwa-gun, Incheon"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251112171205"
+    }
+  ]
+}
