@@ -29,9 +29,8 @@ function loadGoogleMaps(apiKey: string): Promise<typeof google> {
     };
     (window as typeof window & Record<string, unknown>)[callbackName] = () => {
       cleanup();
-      window.google?.maps
-        ? resolve(window.google)
-        : reject(new Error("Google Maps was unavailable after loading."));
+      if (window.google?.maps) resolve(window.google);
+      else reject(new Error("Google Maps was unavailable after loading."));
     };
     script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}&v=weekly&loading=async&libraries=marker&callback=${callbackName}`;
     script.async = true;
