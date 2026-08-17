@@ -1,13 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import TigerAvatar from "@/components/TigerAvatar";
-import { WardrobeItem } from "@/data/items";
-import { getItemForQuest } from "@/data/items";
-import { unlockItem, equipItem } from "@/lib/wardrobe";
+import { ItemMatchQuest, WardrobeItem, getItemForQuest } from "@/data/items";
+import { useWardrobe } from "@/lib/wardrobe";
 
-// Backward-compat export so other callers keep working.
-export function pickItemForQuest(questId: number): WardrobeItem {
-  return getItemForQuest(questId);
+export function pickItemForQuest(quest: ItemMatchQuest): WardrobeItem {
+  return getItemForQuest(quest);
 }
 
 const CONFETTI_COLORS = [
@@ -24,11 +22,13 @@ interface Props {
 
 const ItemUnlock = ({ item, onDone }: Props) => {
   const [stage, setStage] = useState<"unlock" | "equipped">("unlock");
+  const { unlock, equip } = useWardrobe();
 
   // Save unlock + auto-equip on the tiger as soon as the screen opens.
   useEffect(() => {
-    unlockItem(item.id);
-    equipItem(item);
+    unlock(item.id);
+    equip(item);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [item]);
 
   useEffect(() => {

@@ -116,6 +116,7 @@ export type Database = {
           completed_at: string | null
           abandoned_at: string | null
           expires_at: string | null
+          xp_awarded: number
           created_at: string
           updated_at: string
         }
@@ -127,6 +128,240 @@ export type Database = {
             columns: ["quest_id"]
             isOneToOne: false
             referencedRelation: "quests"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          user_id: string
+          display_name: string
+          country_flag: string
+          equipped_items: Json
+          current_streak: number
+          last_active_date: string | null
+          created_at: string
+          updated_at: string
+        }
+        Insert: {
+          user_id: string
+          display_name?: string
+          country_flag?: string
+          equipped_items?: Json
+          current_streak?: number
+          last_active_date?: string | null
+        }
+        Update: {
+          display_name?: string
+          country_flag?: string
+          equipped_items?: Json
+          current_streak?: number
+          last_active_date?: string | null
+        }
+        Relationships: []
+      }
+      user_items: {
+        Row: {
+          user_id: string
+          item_id: string
+          unlocked_at: string
+        }
+        Insert: {
+          user_id: string
+          item_id: string
+        }
+        Update: never
+        Relationships: []
+      }
+      journal_entries: {
+        Row: {
+          id: string
+          user_id: string
+          quest_id: string | null
+          content: string
+          photo_path: string | null
+          created_at: string
+        }
+        Insert: {
+          user_id: string
+          quest_id?: string | null
+          content: string
+          photo_path?: string | null
+        }
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: "journal_entries_quest_id_fkey"
+            columns: ["quest_id"]
+            isOneToOne: false
+            referencedRelation: "quests"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      journal_likes: {
+        Row: {
+          entry_id: string
+          user_id: string
+          created_at: string
+        }
+        Insert: {
+          entry_id: string
+          user_id: string
+        }
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: "journal_likes_entry_id_fkey"
+            columns: ["entry_id"]
+            isOneToOne: false
+            referencedRelation: "journal_entries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      friendships: {
+        Row: {
+          user_id_a: string
+          user_id_b: string
+          created_at: string
+        }
+        Insert: never
+        Update: never
+        Relationships: []
+      }
+      mock_quest_catalog: {
+        Row: {
+          id: number
+          xp: number
+          category: string
+        }
+        Insert: never
+        Update: never
+        Relationships: []
+      }
+      mock_quest_completions: {
+        Row: {
+          user_id: string
+          mock_quest_id: number
+          xp_awarded: number
+          completed_at: string
+        }
+        Insert: never
+        Update: never
+        Relationships: []
+      }
+      mock_quest_proofs: {
+        Row: {
+          id: string
+          user_id: string
+          mock_quest_id: number
+          storage_path: string
+          mime_type: string
+          size_bytes: number
+          submitted_at: string
+        }
+        Insert: never
+        Update: never
+        Relationships: []
+      }
+      quest_reviews: {
+        Row: {
+          id: string
+          user_id: string
+          quest_id: string | null
+          mock_quest_id: number | null
+          rating: number
+          review_text: string
+          created_at: string
+        }
+        Insert: {
+          user_id: string
+          quest_id?: string | null
+          mock_quest_id?: number | null
+          rating: number
+          review_text: string
+        }
+        Update: never
+        Relationships: []
+      }
+      journal_comments: {
+        Row: {
+          id: string
+          entry_id: string
+          user_id: string
+          content: string
+          created_at: string
+        }
+        Insert: {
+          entry_id: string
+          user_id: string
+          content: string
+        }
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: "journal_comments_entry_id_fkey"
+            columns: ["entry_id"]
+            isOneToOne: false
+            referencedRelation: "journal_entries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      groups: {
+        Row: {
+          id: string
+          name: string
+          description: string
+          emoji: string
+          created_at: string
+        }
+        Insert: never
+        Update: never
+        Relationships: []
+      }
+      group_members: {
+        Row: {
+          group_id: string
+          user_id: string
+          joined_at: string
+        }
+        Insert: {
+          group_id: string
+          user_id: string
+        }
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: "group_members_group_id_fkey"
+            columns: ["group_id"]
+            isOneToOne: false
+            referencedRelation: "groups"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      group_messages: {
+        Row: {
+          id: string
+          group_id: string
+          user_id: string
+          content: string
+          created_at: string
+        }
+        Insert: {
+          group_id: string
+          user_id: string
+          content: string
+        }
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: "group_messages_group_id_fkey"
+            columns: ["group_id"]
+            isOneToOne: false
+            referencedRelation: "groups"
             referencedColumns: ["id"]
           },
         ]
@@ -192,12 +427,45 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      journal_entries_with_counts: {
+        Row: {
+          id: string
+          user_id: string
+          quest_id: string | null
+          content: string
+          photo_path: string | null
+          created_at: string
+          like_count: number
+          comment_count: number
+        }
+        Relationships: []
+      }
+      public_xp_totals: {
+        Row: {
+          user_id: string
+          total_xp: number
+          completed_quest_count: number
+        }
+        Relationships: []
+      }
     }
     Functions: {
       record_quest_view: {
         Args: { p_quest_id: string }
         Returns: { event_id: string; recorded: boolean }[]
+      }
+      toggle_friend: {
+        Args: { p_other_user_id: string }
+        Returns: { is_friend: boolean }[]
+      }
+      complete_mock_quest: {
+        Args: {
+          p_mock_quest_id: number
+          p_storage_path: string
+          p_mime_type: string
+          p_size_bytes: number
+        }
+        Returns: { mock_quest_id: number; xp_awarded: number }[]
       }
       start_quest: {
         Args: { p_quest_id: string }

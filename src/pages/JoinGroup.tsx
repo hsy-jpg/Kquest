@@ -1,57 +1,18 @@
 import { ArrowLeft, Users } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import userSarah from "@/assets/user-sarah.jpg";
-import userYuki from "@/assets/user-yuki.jpg";
-import userTom from "@/assets/user-tom.jpg";
-import userEmma from "@/assets/user-emma.jpg";
-import userCarlos from "@/assets/user-carlos.jpg";
-import questPojangmacha from "@/assets/quest-pojangmacha.jpg";
-import questRamen from "@/assets/quest-ramen.jpg";
-import questDongmyo from "@/assets/quest-dongmyo.jpg";
-import questNoraebang from "@/assets/quest-noraebang.jpg";
-import questInwangsan from "@/assets/quest-inwangsan.jpg";
-
-const groups = [
-  {
-    name: "Seoul Foodies",
-    image: questPojangmacha,
-    members: 48,
-    desc: "Share the best street food spots and hidden restaurants in Seoul",
-    avatars: [userSarah, userYuki, userEmma],
-  },
-  {
-    name: "K-Culture Crew",
-    image: questNoraebang,
-    members: 35,
-    desc: "Noraebang nights, K-drama locations, and pop-up events",
-    avatars: [userTom, userCarlos, userSarah],
-  },
-  {
-    name: "Budget Explorers",
-    image: questDongmyo,
-    members: 62,
-    desc: "Explore Seoul on a budget — thrift shops, free attractions, cheap eats",
-    avatars: [userEmma, userYuki, userTom],
-  },
-  {
-    name: "Night Owls Seoul",
-    image: questRamen,
-    members: 29,
-    desc: "Late-night ramen runs, convenience store hacks, and after-hours vibes",
-    avatars: [userCarlos, userSarah, userYuki],
-  },
-  {
-    name: "Hiking & Nature",
-    image: questInwangsan,
-    members: 41,
-    desc: "Mountain trails, hidden parks, and sunrise viewpoints around Seoul",
-    avatars: [userTom, userEmma, userCarlos],
-  },
-];
+import { useGroups, useJoinGroup } from "@/features/social/useGroups";
+import { GROUP_VISUALS } from "@/data/groupVisuals";
 
 const JoinGroup = () => {
   const navigate = useNavigate();
+  const { data: groups, isLoading } = useGroups();
+  const joinGroup = useJoinGroup();
+
+  const handleOpen = async (groupId: string, isMember: boolean) => {
+    if (!isMember) await joinGroup.mutateAsync(groupId);
+    navigate(`/community/chat/${groupId}`);
+  };
 
   return (
     <div className="flex flex-col h-full">
@@ -63,34 +24,51 @@ const JoinGroup = () => {
       </div>
 
       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
-        {groups.map((g) => (
-          <div key={g.name} className="rounded-2xl bg-card border border-border overflow-hidden shadow-sm">
-            <img src={g.image} alt={g.name} className="w-full h-28 object-cover" />
-            <div className="p-4">
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex-1">
-                  <h3 className="font-bold text-sm">{g.name}</h3>
-                  <p className="text-xs text-muted-foreground mt-0.5">{g.desc}</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-between mt-3">
-                <div className="flex items-center gap-2">
-                  <div className="flex -space-x-2">
-                    {g.avatars.map((a, i) => (
-                      <img key={i} src={a} alt="" className="w-6 h-6 rounded-full border-2 border-card object-cover" />
-                    ))}
+        {isLoading && <p className="text-center text-xs text-muted-foreground py-6">Loading groups...</p>}
+        {(groups ?? []).map((g) => {
+          const visuals = GROUP_VISUALS[g.name];
+          const displayMembers = (visuals?.baseMembers ?? 0) + g.memberCount;
+          return (
+            <div key={g.id} className="rounded-2xl bg-card border border-border overflow-hidden shadow-sm">
+              {visuals ? (
+                <img src={visuals.image} alt={g.name} className="w-full h-28 object-cover" />
+              ) : (
+                <div className="h-24 flex items-center justify-center text-5xl bg-primary/10">{g.emoji}</div>
+              )}
+              <div className="p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1">
+                    <h3 className="font-bold text-sm">{g.name}</h3>
+                    <p className="text-xs text-muted-foreground mt-0.5">{g.description}</p>
                   </div>
-                  <span className="text-xs text-muted-foreground flex items-center gap-1">
-                    <Users size={12} /> {g.members} members
-                  </span>
                 </div>
-                <Button size="sm" className="rounded-xl text-xs font-bold h-8 px-5">
-                  Join
-                </Button>
+                <div className="flex items-center justify-between mt-3">
+                  <div className="flex items-center gap-2">
+                    {visuals && (
+                      <div className="flex -space-x-2">
+                        {visuals.avatars.map((a, i) => (
+                          <img key={i} src={a} alt="" className="w-6 h-6 rounded-full border-2 border-card object-cover" />
+                        ))}
+                      </div>
+                    )}
+                    <span className="text-xs text-muted-foreground flex items-center gap-1">
+                      <Users size={12} /> {displayMembers} member{displayMembers === 1 ? "" : "s"}
+                    </span>
+                  </div>
+                  <Button
+                    size="sm"
+                    variant={g.isMember ? "secondary" : "default"}
+                    className="rounded-xl text-xs font-bold h-8 px-5"
+                    disabled={joinGroup.isPending}
+                    onClick={() => handleOpen(g.id, g.isMember)}
+                  >
+                    {g.isMember ? "Open" : "Join"}
+                  </Button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

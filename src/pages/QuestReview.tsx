@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, Star, Send } from "lucide-react";
+import { ArrowLeft, Star, Send, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { quests } from "@/data/quests";
-import ItemUnlock, { pickItemForQuest } from "@/components/ItemUnlock";
+import { usePublishedQuest } from "@/features/quests/usePublishedQuests";
+import { useQuestReviews, useSubmitQuestReview } from "@/features/quests/useQuestReviews";
 import userSarah from "@/assets/user-sarah.jpg";
 import userYuki from "@/assets/user-yuki.jpg";
 import userTom from "@/assets/user-tom.jpg";
@@ -52,10 +53,24 @@ const sampleReviews = [
 const QuestReview = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const quest = quests.find((q) => q.id === Number(id));
+  const mockQuest = quests.find((q) => q.id === Number(id));
+  const { data: publishedQuest, isLoading } = usePublishedQuest(id);
+  const quest = publishedQuest ?? mockQuest;
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [justSubmitted, setJustSubmitted] = useState(false);
+
+  const target = publishedQuest
+    ? { questId: publishedQuest.databaseId }
+    : mockQuest
+      ? { mockQuestId: mockQuest.id }
+      : {};
+  const { data: realReviews } = useQuestReviews(target);
+  const submitReview = useSubmitQuestReview(target);
+
+  if (isLoading && !mockQuest) {
+    return <div className="flex items-center justify-center h-full p-8 text-sm text-muted-foreground">Loading quest...</div>;
+  }
 
   if (!quest) {
     return (
@@ -67,10 +82,10 @@ const QuestReview = () => {
     );
   }
 
-  if (submitted) {
-    const item = pickItemForQuest(quest.id);
-    return <ItemUnlock item={item} onDone={() => navigate("/")} />;
-  }
+  const handleSubmit = async () => {
+    await submitReview.mutateAsync({ ...target, rating, reviewText: review });
+    setJustSubmitted(true);
+  };
 
   return (
     <div className="flex flex-col min-h-full">
@@ -80,7 +95,7 @@ const QuestReview = () => {
             onClick={() => navigate("/")}
             className="flex items-center gap-1 text-sm font-bold text-muted-foreground active:opacity-70"
           >
-            <ArrowLeft size={18} /> Skip
+            <ArrowLeft size={18} /> {justSubmitted ? "Home" : "Skip"}
           </button>
           <span className="font-bold text-sm">Write Review</span>
           <div className="w-14" />
@@ -104,41 +119,74 @@ const QuestReview = () => {
           </div>
         </div>
 
-        {/* Star rating */}
-        <div>
-          <p className="font-bold text-sm mb-3">How was this quest?</p>
-          <div className="flex items-center gap-2">
-            {[1, 2, 3, 4, 5].map((star) => (
-              <button
-                key={star}
-                onClick={() => setRating(star)}
-                className="transition-transform active:scale-90"
-              >
-                <Star
-                  size={40}
-                  className={star <= rating ? "text-[hsl(38_95%_55%)] fill-[hsl(38_95%_55%)] drop-shadow-sm" : "text-muted-foreground/40"}
-                  strokeWidth={2}
-                />
-              </button>
-            ))}
+        {justSubmitted ? (
+          <div className="rounded-xl bg-primary/10 border border-primary/30 p-4 flex items-center gap-3">
+            <Check size={20} className="text-primary shrink-0" />
+            <p className="text-sm font-semibold">Your review was saved! It's now listed below.</p>
           </div>
-        </div>
+        ) : (
+          <>
+            {/* Star rating */}
+            <div>
+              <p className="font-bold text-sm mb-3">How was this quest?</p>
+              <div className="flex items-center gap-2">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <button
+                    key={star}
+                    onClick={() => setRating(star)}
+                    className="transition-transform active:scale-90"
+                  >
+                    <Star
+                      size={40}
+                      className={star <= rating ? "text-[hsl(38_95%_55%)] fill-[hsl(38_95%_55%)] drop-shadow-sm" : "text-muted-foreground/40"}
+                      strokeWidth={2}
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
 
-        {/* Review text */}
-        <div>
-          <p className="font-bold text-sm mb-2">Share your experience</p>
-          <Textarea
-            placeholder="What did you enjoy? Any tips for others?"
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
-            className="rounded-xl min-h-[100px] resize-none"
-          />
-        </div>
+            {/* Review text */}
+            <div>
+              <p className="font-bold text-sm mb-2">Share your experience</p>
+              <Textarea
+                placeholder="What did you enjoy? Any tips for others?"
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
+                className="rounded-xl min-h-[100px] resize-none"
+              />
+              {submitReview.isError && (
+                <p role="alert" className="text-xs text-destructive mt-2">
+                  {submitReview.error instanceof Error ? submitReview.error.message : "Could not save review."}
+                </p>
+              )}
+            </div>
+          </>
+        )}
 
         {/* Other reviews */}
         <div>
           <p className="font-bold text-sm mb-3">What others are saying</p>
           <div className="space-y-3">
+            {(realReviews ?? []).map((r) => (
+              <div key={r.id} className="rounded-xl bg-card border border-border p-3.5 shadow-sm">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-sm">
+                    {r.author.countryFlag}
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-xs font-bold">{r.isMine ? "You" : r.author.displayName}</p>
+                    <p className="text-[10px] text-muted-foreground">{new Date(r.createdAt).toLocaleDateString()}</p>
+                  </div>
+                  <div className="flex items-center gap-0.5">
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <Star key={s} size={13} className={s <= r.rating ? "text-[hsl(38_95%_55%)] fill-[hsl(38_95%_55%)]" : "text-muted-foreground/30"} />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed">{r.reviewText}</p>
+              </div>
+            ))}
             {sampleReviews.map((r, i) => (
               <div key={i} className="rounded-xl bg-card border border-border p-3.5 shadow-sm">
                 <div className="flex items-center gap-2.5 mb-2">
@@ -162,14 +210,20 @@ const QuestReview = () => {
 
       {/* Submit */}
       <div className="sticky bottom-0 bg-background/90 backdrop-blur-md border-t border-border px-5 py-4">
-        <Button
-          className="w-full rounded-xl font-extrabold h-14 text-base shadow-lg gap-2"
-          disabled={rating === 0}
-          onClick={() => setSubmitted(true)}
-        >
-          <Send size={18} />
-          Submit Review
-        </Button>
+        {justSubmitted ? (
+          <Button className="w-full rounded-xl font-extrabold h-14 text-base shadow-lg" onClick={() => navigate("/")}>
+            Back to Home
+          </Button>
+        ) : (
+          <Button
+            className="w-full rounded-xl font-extrabold h-14 text-base shadow-lg gap-2"
+            disabled={rating === 0 || submitReview.isPending}
+            onClick={handleSubmit}
+          >
+            <Send size={18} />
+            {submitReview.isPending ? "Saving..." : "Submit Review"}
+          </Button>
+        )}
       </div>
     </div>
   );

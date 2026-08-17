@@ -227,13 +227,72 @@ export const questItems: Record<number, WardrobeItem> = {
   },
 };
 
+/**
+ * Extra items for real (Supabase-sourced) quests, which don't have a
+ * curated numeric id in `questItems`. Matched by keyword first, then
+ * category, so the reward still fits the quest's theme.
+ */
+export const hikingStick: WardrobeItem = {
+  id: "hiking-stick",
+  name: "Trekking Stick",
+  emoji: "🦯",
+  slot: "accessory",
+  style: { bottom: "10%", right: "2%", transform: "rotate(18deg)" },
+  sizeClass: "text-4xl",
+  description: "Earned on a mountain trail",
+};
 
+export const picnicSunglasses: WardrobeItem = {
+  id: "picnic-sunglasses",
+  name: "Picnic Sunglasses",
+  emoji: "😎",
+  slot: "glasses",
+  style: { top: "24%", left: "50%", transform: "translateX(-50%)" },
+  sizeClass: "text-3xl",
+  description: "Riverside picnic essential",
+};
 
-export function getItemForQuest(questId: number): WardrobeItem {
-  return questItems[questId] ?? questItems[0];
+const KEYWORD_ITEMS: { pattern: RegExp; item: WardrobeItem }[] = [
+  { pattern: /hik|trail|trek|mountain|summit/i, item: hikingStick },
+  { pattern: /picnic|riverside/i, item: picnicSunglasses },
+];
+
+const CATEGORY_ITEMS: Record<
+  "Food" | "Culture" | "Nature" | "Nightlife" | "Shopping" | "Festival",
+  WardrobeItem
+> = {
+  Food: questItems[1], // Ramyeon Bowl
+  Shopping: questItems[12], // Market Tote Bag
+  Nature: hikingStick,
+  Nightlife: questItems[11], // Hongdae Neon Shades
+  Festival: questItems[15], // Cheonggye Lantern
+  Culture: questItems[4], // Baduk Master Glasses
+};
+
+export interface ItemMatchQuest {
+  id: number;
+  title?: string;
+  category?: keyof typeof CATEGORY_ITEMS;
 }
 
-export const allItems: WardrobeItem[] = Object.values(questItems);
+export function getItemForQuest(quest: ItemMatchQuest): WardrobeItem {
+  const curated = questItems[quest.id];
+  if (curated) return curated;
+
+  const title = quest.title ?? "";
+  const byKeyword = KEYWORD_ITEMS.find(({ pattern }) => pattern.test(title));
+  if (byKeyword) return byKeyword.item;
+
+  if (quest.category && CATEGORY_ITEMS[quest.category]) return CATEGORY_ITEMS[quest.category];
+
+  return questItems[0];
+}
+
+export const allItems: WardrobeItem[] = [
+  ...Object.values(questItems),
+  hikingStick,
+  picnicSunglasses,
+];
 
 export const slotLabels: Record<ItemSlot, string> = {
   hat: "Hat",

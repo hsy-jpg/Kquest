@@ -117,7 +117,7 @@ export type ActionType =
   | "TASTE"
   | "TIME";
 
-const CATEGORY_BY_TYPE: Record<string, Quest["category"]> = {
+export const CATEGORY_BY_TYPE: Record<string, Quest["category"]> = {
   LOCAL_FOOD: "Food",
   MARKET: "Shopping",
   SHOPPING: "Shopping",

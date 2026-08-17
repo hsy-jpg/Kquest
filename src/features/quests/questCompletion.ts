@@ -84,3 +84,40 @@ export async function submitQuestPhoto(
     proofStatus: result.proof_status as "PASS",
   };
 }
+
+export interface MockQuestCompletionResult {
+  mockQuestId: number;
+  xpAwarded: number;
+}
+
+/**
+ * Demo quests (src/data/quests.ts) have no row in public.quests, so they
+ * can't go through submit_quest_photo. This records the same completion
+ * signal (XP, streak, proof) through a parallel table instead.
+ */
+export async function submitMockQuestPhoto(mockQuestId: number, file: File): Promise<MockQuestCompletionResult> {
+  validateProofPhoto(file);
+
+  const user = await ensureMvpUser();
+
+  const storagePath = `${user.id}/mock/${mockQuestId}/${crypto.randomUUID()}.${extensionFor(file)}`;
+  const { error: uploadError } = await supabase.storage
+    .from(PROOF_BUCKET)
+    .upload(storagePath, file, { contentType: file.type, upsert: false });
+
+  if (uploadError) throw new Error(`Photo upload failed: ${uploadError.message}`);
+
+  const { data, error } = await supabase.rpc("complete_mock_quest", {
+    p_mock_quest_id: mockQuestId,
+    p_storage_path: storagePath,
+    p_mime_type: file.type,
+    p_size_bytes: file.size,
+  });
+
+  if (error || !data?.[0]) {
+    await supabase.storage.from(PROOF_BUCKET).remove([storagePath]);
+    throw new Error(`Completion save failed: ${error?.message ?? "No result returned"}`);
+  }
+
+  return { mockQuestId: data[0].mock_quest_id, xpAwarded: data[0].xp_awarded };
+}

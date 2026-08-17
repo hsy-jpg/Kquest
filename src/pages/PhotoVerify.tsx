@@ -1,17 +1,21 @@
 import { useState, useRef, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, Camera, RotateCcw, Send, Zap, Share2, PenLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { quests, type Quest } from "@/data/quests";
 import tigerMascot from "@/assets/tiger-cheer.png";
 import { usePublishedQuest } from "@/features/quests/usePublishedQuests";
-import { markQuestInProgress, submitQuestPhoto } from "@/features/quests/questCompletion";
+import { markQuestInProgress, submitMockQuestPhoto, submitQuestPhoto } from "@/features/quests/questCompletion";
+import { getItemForQuest, type WardrobeItem } from "@/data/items";
+import ItemUnlock from "@/components/ItemUnlock";
 
-type Stage = "upload" | "preview" | "complete";
+type Stage = "upload" | "preview" | "item" | "complete";
 
 const PhotoVerify = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const mockQuest = quests.find((q) => q.id === Number(id));
   const { data: publishedQuest, isLoading } = usePublishedQuest(id);
   const quest = publishedQuest ?? mockQuest;
@@ -21,6 +25,7 @@ const PhotoVerify = () => {
   const [photoFile, setPhotoFile] = useState<File | null>(null);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [rewardItem, setRewardItem] = useState<WardrobeItem | null>(null);
 
   useEffect(() => {
     if (!publishedQuest) return;
@@ -66,14 +71,25 @@ const PhotoVerify = () => {
     setSubmitting(true);
     setSubmitError(null);
     try {
-      if (publishedQuest) await submitQuestPhoto(publishedQuest, photoFile);
-      setStage("complete");
+      if (publishedQuest) {
+        await submitQuestPhoto(publishedQuest, photoFile);
+      } else if (mockQuest) {
+        await submitMockQuestPhoto(mockQuest.id, photoFile);
+      }
+      queryClient.invalidateQueries({ queryKey: ["profile"] });
+      setRewardItem(getItemForQuest(quest));
+      setStage("item");
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : "Could not submit Quest proof.");
     } finally {
       setSubmitting(false);
     }
   };
+
+  // Reward item, granted immediately after mission completion.
+  if (stage === "item" && rewardItem) {
+    return <ItemUnlock item={rewardItem} onDone={() => setStage("complete")} />;
+  }
 
   // Mission Complete
   if (stage === "complete") {
