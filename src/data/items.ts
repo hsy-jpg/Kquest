@@ -1,3 +1,5 @@
+import type { Quest } from "@/data/quests";
+
 export type ItemSlot = "hat" | "glasses" | "accessory" | "backpack" | "outfit";
 
 export interface WardrobeItem {
@@ -252,27 +254,31 @@ export const picnicSunglasses: WardrobeItem = {
   description: "Riverside picnic essential",
 };
 
+/**
+ * Given out when no specific or keyword match applies. A category-wide
+ * guess (e.g. every "Culture" quest getting the same glasses) produced
+ * items that felt unrelated to the actual quest, so unmatched quests get
+ * this neutral memento instead of a wrong specific one.
+ */
+export const cameraCharm: WardrobeItem = {
+  id: "camera-charm",
+  name: "Trusty Camera",
+  emoji: "📷",
+  slot: "accessory",
+  style: { bottom: "20%", right: "6%", transform: "rotate(-8deg)" },
+  sizeClass: "text-3xl",
+  description: "For every memory worth capturing",
+};
+
 const KEYWORD_ITEMS: { pattern: RegExp; item: WardrobeItem }[] = [
   { pattern: /hik|trail|trek|mountain|summit/i, item: hikingStick },
   { pattern: /picnic|riverside/i, item: picnicSunglasses },
 ];
 
-const CATEGORY_ITEMS: Record<
-  "Food" | "Culture" | "Nature" | "Nightlife" | "Shopping" | "Festival",
-  WardrobeItem
-> = {
-  Food: questItems[1], // Ramyeon Bowl
-  Shopping: questItems[12], // Market Tote Bag
-  Nature: hikingStick,
-  Nightlife: questItems[11], // Hongdae Neon Shades
-  Festival: questItems[15], // Cheonggye Lantern
-  Culture: questItems[4], // Baduk Master Glasses
-};
-
 export interface ItemMatchQuest {
   id: number;
   title?: string;
-  category?: keyof typeof CATEGORY_ITEMS;
+  category?: Quest["category"];
 }
 
 export function getItemForQuest(quest: ItemMatchQuest): WardrobeItem {
@@ -283,15 +289,14 @@ export function getItemForQuest(quest: ItemMatchQuest): WardrobeItem {
   const byKeyword = KEYWORD_ITEMS.find(({ pattern }) => pattern.test(title));
   if (byKeyword) return byKeyword.item;
 
-  if (quest.category && CATEGORY_ITEMS[quest.category]) return CATEGORY_ITEMS[quest.category];
-
-  return questItems[0];
+  return cameraCharm;
 }
 
 export const allItems: WardrobeItem[] = [
   ...Object.values(questItems),
   hikingStick,
   picnicSunglasses,
+  cameraCharm,
 ];
 
 export const slotLabels: Record<ItemSlot, string> = {
