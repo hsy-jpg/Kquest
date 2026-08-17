@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { Search, Users, X, Plus, Minus, Locate, Layers } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -6,6 +6,17 @@ import { quests, type Quest } from "@/data/quests";
 import mapCity from "@/assets/map-seoul-city.jpg";
 import mapDistrict from "@/assets/map-seoul-district.jpg";
 import mapStreet from "@/assets/map-seoul-street.jpg";
+import GoogleQuestMap, { type GoogleQuestMapHandle } from "@/components/GoogleQuestMap";
+import { usePublishedQuests } from "@/features/quests/usePublishedQuests";
+import type { SupabaseQuestCard } from "@/features/quests/supabaseQuestAdapter";
+
+const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY ?? "";
+const configuredMapId = (import.meta.env.VITE_GOOGLE_MAPS_MAP_ID ?? "").trim();
+// Google Cloud JavaScript map IDs are 16-character hexadecimal identifiers.
+// Keep the map usable while a project map ID is being configured.
+const GOOGLE_MAPS_MAP_ID = configuredMapId === "DEMO_MAP_ID" || /^[a-f0-9]{16}$/i.test(configuredMapId)
+  ? configuredMapId
+  : "DEMO_MAP_ID";
 
 const peopleCounts = [12, 8, 5, 23, 3, 15, 9, 7, 18, 4, 11, 6, 14];
 
@@ -88,9 +99,15 @@ const Explore = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
   const [zoom, setZoom] = useState(0); // 0=city, 1=district, 2=street
+  const [googleMapFailed, setGoogleMapFailed] = useState(false);
+  const googleMapRef = useRef<GoogleQuestMapHandle>(null);
+  const { data: publishedQuests, isError: publishedQuestsError } = usePublishedQuests();
+  const liveMapQuests = (publishedQuests ?? []).filter((quest) => quest.latitude !== null && quest.longitude !== null);
+  const useGoogleMap = Boolean(GOOGLE_MAPS_API_KEY && !googleMapFailed && liveMapQuests.length);
+  const questSource: Quest[] = useGoogleMap && !publishedQuestsError ? liveMapQuests : quests;
 
   const filteredQuests =
-    activeCategory === "All" ? quests : quests.filter((q) => q.category === activeCategory);
+    activeCategory === "All" ? questSource : questSource.filter((q) => q.category === activeCategory);
 
   const visiblePins = filteredQuests
     .map((q) => ({ quest: q, pos: pinCoords[q.id]?.[zoom] }))
@@ -98,12 +115,15 @@ const Explore = () => {
 
   const zoomIn = () => {
     setSelectedQuest(null);
+    if (useGoogleMap) return googleMapRef.current?.zoomIn();
     setZoom((z) => Math.min(z + 1, zoomLevels.length - 1));
   };
   const zoomOut = () => {
     setSelectedQuest(null);
+    if (useGoogleMap) return googleMapRef.current?.zoomOut();
     setZoom((z) => Math.max(z - 1, 0));
   };
+  const handleGoogleMapError = useCallback(() => setGoogleMapFailed(true), []);
 
   const pinSize = zoom === 0 ? 32 : zoom === 1 ? 38 : 44;
 
@@ -138,6 +158,18 @@ const Explore = () => {
 
       {/* Interactive Map */}
       <div className="mt-5 relative rounded-3xl overflow-hidden border-2 border-primary/20 shadow-[var(--shadow-soft)] aspect-square bg-muted">
+        {useGoogleMap && (
+          <GoogleQuestMap
+            ref={googleMapRef}
+            apiKey={GOOGLE_MAPS_API_KEY}
+            mapId={GOOGLE_MAPS_MAP_ID}
+            quests={filteredQuests as SupabaseQuestCard[]}
+            selectedQuestId={selectedQuest?.id}
+            onSelect={setSelectedQuest}
+            onError={handleGoogleMapError}
+          />
+        )}
+        <div className={useGoogleMap ? "hidden" : "contents"}>
         {/* Crossfade map layers */}
         {zoomLevels.map((lvl, i) => (
           <img
@@ -200,12 +232,13 @@ const Explore = () => {
         <div className="absolute left-3 top-3 rounded-full bg-card/95 backdrop-blur border border-border px-3 py-1 text-[10px] font-bold shadow-md">
           {zoomLevels[zoom].label}
         </div>
+        </div>
 
         {/* Zoom controls */}
         <div className="absolute right-3 top-3 flex flex-col gap-0 rounded-xl bg-card/95 backdrop-blur border border-border shadow-md overflow-hidden">
           <button
             onClick={zoomIn}
-            disabled={zoom === zoomLevels.length - 1}
+            disabled={!useGoogleMap && zoom === zoomLevels.length - 1}
             className="p-2.5 hover:bg-muted disabled:opacity-30 transition-colors"
             aria-label="Zoom in"
           >
@@ -214,7 +247,7 @@ const Explore = () => {
           <div className="h-px bg-border" />
           <button
             onClick={zoomOut}
-            disabled={zoom === 0}
+            disabled={!useGoogleMap && zoom === 0}
             className="p-2.5 hover:bg-muted disabled:opacity-30 transition-colors"
             aria-label="Zoom out"
           >
@@ -224,7 +257,7 @@ const Explore = () => {
 
         {/* Side controls */}
         <div className="absolute right-3 top-28 flex flex-col gap-2">
-          <button className="p-2.5 rounded-xl bg-card/95 backdrop-blur border border-border shadow-md hover:bg-muted">
+          <button onClick={() => useGoogleMap ? googleMapRef.current?.locate() : undefined} className="p-2.5 rounded-xl bg-card/95 backdrop-blur border border-border shadow-md hover:bg-muted" aria-label="Show current location">
             <Locate size={16} />
           </button>
           <button className="p-2.5 rounded-xl bg-card/95 backdrop-blur border border-border shadow-md hover:bg-muted">
@@ -233,7 +266,7 @@ const Explore = () => {
         </div>
 
         {/* Zoom level dots */}
-        <div className="absolute left-3 bottom-3 flex gap-1.5 rounded-full bg-card/95 backdrop-blur border border-border px-2.5 py-1.5 shadow-md">
+        {!useGoogleMap && <div className="absolute left-3 bottom-3 flex gap-1.5 rounded-full bg-card/95 backdrop-blur border border-border px-2.5 py-1.5 shadow-md">
           {zoomLevels.map((_, i) => (
             <div
               key={i}
@@ -242,7 +275,7 @@ const Explore = () => {
               }`}
             />
           ))}
-        </div>
+        </div>}
 
         {/* Preview card overlay */}
         {selectedQuest && (

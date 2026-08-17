@@ -33,10 +33,10 @@ try {
     .from("quests")
     .select("id,quest_id,proof_type,proof_requirement,completion_rule")
     .eq("status", "PUBLISHED")
-    .eq("proof_type", "PHOTO")
+    .neq("proof_type", "PHOTO")
     .limit(1)
     .single();
-  if (questError || !quest) throw questError ?? new Error("No photo Quest is available.");
+  if (questError || !quest) throw questError ?? new Error("No non-photo metadata Quest is available for the compatibility test.");
 
   const { data: started, error: startError } = await userClient.rpc("start_quest", { p_quest_id: quest.id });
   if (startError || started?.[0]?.quest_status !== "STARTED") throw startError ?? new Error("STARTED was not stored.");

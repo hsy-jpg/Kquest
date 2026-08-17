@@ -1,0 +1,2354 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T19:47:00.555Z",
+    "source": "KTO EngService2",
+    "sourceMode": "LIVE_API",
+    "collectionMode": "LIMITED",
+    "inputCount": 123,
+    "autoAcceptedCount": 73,
+    "reviewCount": 42,
+    "excludedCount": 8,
+    "apiKeyStored": false
+  },
+  "items": [
+    {
+      "sourceContentId": "2944962",
+      "title": "The Taehwagang National Garden and Simni Bamboo Grove (Milky Way Trail) (태화강 국가정원 십리대숲 (은하수길))",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Jung-gu",
+      "latitude": 35.5487747405,
+      "longitude": 129.2911995498,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/2613688_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "5 Saetgangnam-gil, Jung-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250806165910"
+    },
+    {
+      "sourceContentId": "3544743",
+      "title": "SEMIPUBLIC (세미퍼블릭)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.601468632,
+      "longitude": 127.2972079462,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3524306_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX02",
+          "EX020400"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "3-1 Jochiwon-ro, Jochiwon-eup, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "sourceContentId": "1918564",
+      "title": "Okcheon Hyangsu Baengni (100-ri) Bike Road - Geumgang Course (옥천 향수 100리 자전거길 - 금강코스)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Okcheon-gun",
+      "latitude": 36.2977387481,
+      "longitude": 127.5653394601,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/80/877980_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS010200"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03020500"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Okcheon-eup, Okcheon-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250106150936"
+    },
+    {
+      "sourceContentId": "1835373",
+      "title": "Solmaru Trail (솔마루길)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5438399168,
+      "longitude": 129.3301379576,
+      "image": null,
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 60,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "233 Dotjil-ro, Nam-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20241016152308"
+    },
+    {
+      "sourceContentId": "266908",
+      "title": "Cheongpung Land (청풍랜드)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 37.0128207675,
+      "longitude": 128.1790672297,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/56/2366256_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011800"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022400"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "6, Cheongpungho-ro 50-gil, Jecheon-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240702163338"
+    },
+    {
+      "sourceContentId": "3459140",
+      "title": "Sejong Cultrual Center of Korean Tradition (세종전통문화체험관)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.506918272,
+      "longitude": 127.2918748936,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/01/3337101_image2_1.png",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX01",
+          "EX010100"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030200"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "94 Morongji-ro, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520213011"
+    },
+    {
+      "sourceContentId": "3105577",
+      "title": "Cheondong Tourist Area Water Park (천동관광지 물놀이장)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Danyang-gun",
+      "latitude": 36.9733936524,
+      "longitude": 128.4177803267,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/36/2022236_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS02",
+          "LS020700"
+        ],
+        "cat": [
+          "A03",
+          "A0303",
+          "A03030700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 75,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "534, Darian-ro, Danyang-eup, Danyang-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240226101958"
+    },
+    {
+      "sourceContentId": "3105662",
+      "title": "Wollyubong Trail (월류봉 둘레길)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Yeongdong-gun",
+      "latitude": 36.2343157417,
+      "longitude": 127.8917176682,
+      "image": null,
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 60,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Wonchon-ri, Hwanggan-myeon, Yeongdong-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240226121328"
+    },
+    {
+      "sourceContentId": "3105188",
+      "title": "Chopyeong Reservoir (초평저수지)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jincheon-gun",
+      "latitude": 36.8185226821,
+      "longitude": 127.5196875152,
+      "image": null,
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS02",
+          "LS020500"
+        ],
+        "cat": [
+          "A03",
+          "A0303",
+          "A03030500"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 60,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Chopyeong-ro, Chopyeong-myeon, Jincheon-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240223151045"
+    },
+    {
+      "sourceContentId": "2475961",
+      "title": "Sanmagi Old Trail (산막이옛길)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Goesan-gun",
+      "latitude": 36.7610684094,
+      "longitude": 127.8387771552,
+      "image": null,
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 60,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "88 Sanmagiyet-gil, Chilseong-myeon, Goesan-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240215165431"
+    },
+    {
+      "sourceContentId": "3406648",
+      "title": "Aquatic Botanical Garden (수생식물학습원)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Okcheon-gun",
+      "latitude": 36.3914722583,
+      "longitude": 127.5530713287,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/23/3096523_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "255 Bangoasil-gil, Gunbuk-myeon, Okcheon-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251027143825"
+    },
+    {
+      "sourceContentId": "3403951",
+      "title": "Goesan Natural Dream Park (자연드림파크(괴산))",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Goesan-gun",
+      "latitude": 36.7713704109,
+      "longitude": 127.8609970949,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/14/3096214_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX061000"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02040800"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "240 Jayeondream-gil, Chilseong-myeon, Goesan-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251024154555"
+    },
+    {
+      "sourceContentId": "706976",
+      "title": "The Oriental Medicine Resort: Chorakdang (한방테마파크 초락당)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.7099187672,
+      "longitude": 129.1996780011,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/44/662344_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX05",
+          "EX050300"
+        ],
+        "cat": [
+          "A02",
+          "A0202",
+          "A02020500"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "44-34, Gyemyeong-ro, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250107163033"
+    },
+    {
+      "sourceContentId": "3514539",
+      "title": "Jecheon Safety Experience Training Center (KOSHA) (제천 안전체험장(안전보건공단))",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 37.1439386855,
+      "longitude": 128.1614927766,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/3506006_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "143 Jecheonbuk-ro, Jecheon-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250730101159"
+    },
+    {
+      "sourceContentId": "1116196",
+      "title": "Deungeok Hot Springs (등억온천단지)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.5543366785,
+      "longitude": 129.0720851999,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/64/3084264_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX05",
+          "EX050100"
+        ],
+        "cat": [
+          "A02",
+          "A0202",
+          "A02020300"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "197, Alpeuseuoncheon-ro, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20241218141437"
+    },
+    {
+      "sourceContentId": "3504141",
+      "title": "Boeun White Dandelion Eco-Village (보은 하얀민들레한옥마을)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Boeun-gun",
+      "latitude": 36.4920562067,
+      "longitude": 127.6096662828,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/3033882_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX03",
+          "EX030100"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030100"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "111-2 Busu-gil, Hoein-myeon, Boeun-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250711094432"
+    },
+    {
+      "sourceContentId": "1795079",
+      "title": "Wondumak (원두막)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6070975107,
+      "longitude": 127.2392268876,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/99/1886299_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "154, Ansan-gil, Yeonseo-myeon, , Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250818183956"
+    },
+    {
+      "sourceContentId": "1795141",
+      "title": "Sanjang Garden (산장가든)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.6002959171,
+      "longitude": 127.261938922,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/27/1022627_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1131-7 Dosingobok-ro, Yeonseo-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203614"
+    },
+    {
+      "sourceContentId": "1835370",
+      "title": "Jangsaengpo Whale Watching Cruise (장생포 고래바다여행선)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5028149271,
+      "longitude": 129.3808541361,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/2020477_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070100"
+        ],
+        "cat": [
+          "A02",
+          "A0202",
+          "A02020800"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "244 Jangsaengpogorae-ro, Nam-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240306180545"
+    },
+    {
+      "sourceContentId": "3103110",
+      "title": "Kong Daebak (콩대박)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.4790473974,
+      "longitude": 127.3442570683,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/1999573_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "9 Daebak-gil, Geumnam-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203243"
+    },
+    {
+      "sourceContentId": "3105238",
+      "title": "Nangchugol Learning Park (낭추골 현장체험학습원)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Sangdang-gu",
+      "latitude": 36.597880342,
+      "longitude": 127.6179042856,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/90/3057090_image2_1.JPG",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1890 Danjae-ro, Nangseong-myeon, Sangdang-gu, Cheongju-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250117160648"
+    },
+    {
+      "sourceContentId": "3103106",
+      "title": "La Foresta (라포레스타)",
+      "description": null,
+      "region": "Sejong",
+      "district": "Sejong-si",
+      "latitude": 36.5953329487,
+      "longitude": 127.2816650645,
+      "image": null,
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD05",
+          "FD050100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020900"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 60,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "130 Daecheop-ro, Yeonseo-myeon, Sejong-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250520203228"
+    },
+    {
+      "sourceContentId": "3103115",
+      "title": "Gang-dong Sea Water Spa (강동해수온천)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Buk-gu",
+      "latitude": 35.6138565417,
+      "longitude": 129.4505699154,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/26/3077926_image2_1.bmp",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX05",
+          "EX050100"
+        ],
+        "cat": [
+          "A02",
+          "A0202",
+          "A02020300"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1418 Donghaean-ro, Buk-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240220164026"
+    },
+    {
+      "sourceContentId": "3080269",
+      "title": "Yeongnam Alps Complex Welcome Center (영남알프스 복합웰컴센터)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.556494693,
+      "longitude": 129.0680104958,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/36/2674936_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "103-8 Alpeuseuoncheon 5-gil, Sangbuk-myeon, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240110165124"
+    },
+    {
+      "sourceContentId": "2812925",
+      "title": "Cheongpung Cable Car (청풍호반케이블카)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 37.0013135287,
+      "longitude": 128.1668019964,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/56/2639056_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "166 Munhwajae-gil, Jecheon-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240731142118"
+    },
+    {
+      "sourceContentId": "3333684",
+      "title": "Boksoondoga (복순도가)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.585822488,
+      "longitude": 129.0969765879,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX060800"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02040600"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 60,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "48 Hyangsandong-gil, Sangbuk-myeon, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251029140537"
+    },
+    {
+      "sourceContentId": "1342249",
+      "title": "Hyundai Motors Ulsan Plant (현대자동차 울산공장)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Buk-gu",
+      "latitude": 35.5329867208,
+      "longitude": 129.3905774379,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX060600"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02041000"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 60,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "700, Yangjeong-dong, Buk-gu, Ulsan-si"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250717180048"
+    },
+    {
+      "sourceContentId": "264557",
+      "title": "Hyundai Heavy Industries Ulsan Factory (현대중공업 울산공장)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Dong-gu",
+      "latitude": 35.5113175055,
+      "longitude": 129.4209087391,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX060600"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02041000"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 60,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "1000, Bangeojinsunhwan-doro, Dong-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250315120129"
+    },
+    {
+      "sourceContentId": "3103112",
+      "title": "Taehwagang Donggulpia (태화강동굴피아)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5452836784,
+      "longitude": 129.3024681091,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 60,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "306 Namsan-ro, Nam-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240220163758"
+    },
+    {
+      "sourceContentId": "2993808",
+      "title": "Yeongnam Alps (영남 알프스)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.5563585902,
+      "longitude": 129.0676299774,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "NA",
+          "NA01",
+          "NA010100"
+        ],
+        "cat": [
+          "A01",
+          "A0101",
+          "A01010400"
+        ]
+      },
+      "proposedQuestType": "NATURE",
+      "secondaryTags": [],
+      "proposedTemplateId": "NATURE_DETAIL_HUNT_V1",
+      "localScore": 72,
+      "qualityScore": 50,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "LOCAL_NATURE_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "103-8 Alpeuseuoncheon 5-gil, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20230717092937"
+    },
+    {
+      "sourceContentId": "2990054",
+      "title": "Daewangam Park Suspension Bridge (대왕암공원 출렁다리)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Dong-gu",
+      "latitude": 35.4904590082,
+      "longitude": 129.4352747432,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "VE",
+          "VE01",
+          "VE010300"
+        ],
+        "cat": [
+          "A02",
+          "A0205",
+          "A02050100"
+        ]
+      },
+      "proposedQuestType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "proposedTemplateId": "CULTURE_ONE_OBJECT_V1",
+      "localScore": 65,
+      "qualityScore": 50,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "CULTURE_CATEGORY_WITH_REGION"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "95 , Deungdae-ro, Dong-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20230610163247"
+    },
+    {
+      "sourceContentId": "1751545",
+      "title": "Jujeon Mongdol Beach (주전몽돌해변)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Dong-gu",
+      "latitude": 35.565609276,
+      "longitude": 129.4552486547,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "NA",
+          "NA02",
+          "NA020900"
+        ],
+        "cat": [
+          "A01",
+          "A0101",
+          "A01011200"
+        ]
+      },
+      "proposedQuestType": "NATURE",
+      "secondaryTags": [],
+      "proposedTemplateId": "NATURE_DETAIL_HUNT_V1",
+      "localScore": 72,
+      "qualityScore": 50,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "LOCAL_NATURE_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Jujeon-dong, Dong-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20230103160118"
+    },
+    {
+      "sourceContentId": "1751652",
+      "title": "Seuldo Island (슬도)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Dong-gu",
+      "latitude": 35.4782269725,
+      "longitude": 129.4312671042,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "NA",
+          "NA02",
+          "NA020500"
+        ],
+        "cat": [
+          "A01",
+          "A0101",
+          "A01011300"
+        ]
+      },
+      "proposedQuestType": "NATURE",
+      "secondaryTags": [],
+      "proposedTemplateId": "NATURE_DETAIL_HUNT_V1",
+      "localScore": 72,
+      "qualityScore": 50,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "LOCAL_NATURE_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Bangeo-dong, Dong-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20230103111659"
+    },
+    {
+      "sourceContentId": "1751675",
+      "title": "Sunmot Ecological Park (숯못 생태공원)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Jung-gu",
+      "latitude": 35.5791134163,
+      "longitude": 129.31357452,
+      "image": null,
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "NA",
+          "NA02",
+          "NA020400"
+        ],
+        "cat": [
+          "A01",
+          "A0101",
+          "A01010500"
+        ]
+      },
+      "proposedQuestType": "NATURE",
+      "secondaryTags": [],
+      "proposedTemplateId": "NATURE_DETAIL_HUNT_V1",
+      "localScore": 72,
+      "qualityScore": 50,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "LOCAL_NATURE_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "90 , Hamwol-ro, Jung-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20220818153133"
+    },
+    {
+      "sourceContentId": "3106123",
+      "title": "Jecheon Wild Herb Village (제천 산야초마을)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 36.9702487691,
+      "longitude": 128.2266530859,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/40/2026140_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX03",
+          "EX030100"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030100"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "3 Oksunbong-ro 6-gil, Susan-myeon, Jecheon-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240226181349"
+    },
+    {
+      "sourceContentId": "3333703",
+      "title": "Greetvi Coffee (카페그릿비)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Ulju-gun",
+      "latitude": 35.3453231565,
+      "longitude": 129.321558162,
+      "image": null,
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD05",
+          "FD050100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020900"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 60,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "4 Sinamhaean 1-gil, Seosaeng-myeon, Ulju-gun, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251029092619"
+    },
+    {
+      "sourceContentId": "3105765",
+      "title": "Yeongdong Wine Tunnel (영동 와인터널)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Yeongdong-gun",
+      "latitude": 36.1613110165,
+      "longitude": 127.7842958945,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/84/2615684_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX06",
+          "EX060800"
+        ],
+        "cat": [
+          "A02",
+          "A0204",
+          "A02040600"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 62,
+      "qualityScore": 75,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "30, Yeongdong healing-ro, Yeongdong-eup, Yeongdong-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20240226145317"
+    },
+    {
+      "sourceContentId": "3583850",
+      "title": "Ulsan Night, Christmas Market (울산의 밤, 크리스마스 마켓)",
+      "description": null,
+      "region": "Ulsan",
+      "district": "Nam-gu",
+      "latitude": 35.5316989268,
+      "longitude": 129.2935470479,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/65/3578165_image2_1.jpg",
+      "contentTypeId": "85",
+      "taxonomy": {
+        "lcls": [
+          "EV",
+          "EV03",
+          "EV030400"
+        ],
+        "cat": [
+          "A02",
+          "A0208",
+          "A02081300"
+        ]
+      },
+      "proposedQuestType": "FESTIVAL",
+      "secondaryTags": [
+        "LOCAL_MARKET",
+        "LOCAL_FOOD"
+      ],
+      "proposedTemplateId": "FESTIVAL_SCENE_HUNT_V1",
+      "localScore": 71,
+      "qualityScore": 80,
+      "classificationConfidence": 0.85,
+      "scoreReasons": [
+        "REGIONAL_FESTIVAL_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE",
+        "EVENT_START_MISSING",
+        "EVENT_END_MISSING"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "94 Daegongwon-ro, Nam-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251215134248"
+    },
+    {
+      "sourceContentId": "3025406",
+      "title": "Cheongju Early Printing Museum(청주고인쇄박물관)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Heungdeok-gu",
+      "latitude": 36.6441001847,
+      "longitude": 127.4714689112,
+      "image": null,
+      "contentTypeId": "78",
+      "taxonomy": {
+        "lcls": [
+          "VE",
+          "VE07",
+          "VE070100"
+        ],
+        "cat": [
+          "A02",
+          "A0206",
+          "A02060100"
+        ]
+      },
+      "proposedQuestType": "CULTURE",
+      "secondaryTags": [
+        "CULTURE_FACILITY"
+      ],
+      "proposedTemplateId": "CULTURE_ONE_OBJECT_V1",
+      "localScore": 65,
+      "qualityScore": 50,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "CULTURE_CATEGORY_WITH_REGION"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "713, Jikji-daero, Heungdeok-gu, Cheongju-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20231026211521"
+    },
+    {
+      "sourceContentId": "3397459",
+      "title": "Petit Chandelier(쁘띠샹들리에)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Jecheon-si",
+      "latitude": 37.1505773409,
+      "longitude": 128.1898900317,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/18/2947618_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD02",
+          "FD020300"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020200"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "273 Yongdu-daero, Jecheon-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251105151233"
+    },
+    {
+      "sourceContentId": "3074114",
+      "title": "Cheongpungjip (청풍집)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Chungju-si",
+      "latitude": 36.9742705571,
+      "longitude": 127.9284158334,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/28/3062728_image2_1.jpg",
+      "contentTypeId": "82",
+      "taxonomy": {
+        "lcls": [
+          "FD",
+          "FD01",
+          "FD010100"
+        ],
+        "cat": [
+          "A05",
+          "A0502",
+          "A05020100"
+        ]
+      },
+      "proposedQuestType": "LOCAL_FOOD",
+      "secondaryTags": [],
+      "proposedTemplateId": "LOCAL_DISH_OBSERVER_V1",
+      "localScore": 24,
+      "qualityScore": 75,
+      "classificationConfidence": 0.7,
+      "scoreReasons": [
+        "LOCAL_FOOD_EVIDENCE_MISSING"
+      ],
+      "reviewFlags": [
+        "LOCALITY_NOT_PROVEN",
+        "DETAIL_ENRICHMENT_INCOMPLETE"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "90, Muhakcheonbyeon-gil, Chungju-si, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20241015131324"
+    },
+    {
+      "sourceContentId": "3469629",
+      "title": "2025 Yeongdong World Traditional Music & Arts Expo (2025 영동세계국악엑스포)",
+      "description": null,
+      "region": "Chungbuk",
+      "district": "Yeongdong-gun",
+      "latitude": 36.1563977278,
+      "longitude": 127.786531941,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/37/3486037_image2_1.jpg",
+      "contentTypeId": "85",
+      "taxonomy": {
+        "lcls": [
+          "EV",
+          "EV03",
+          "EV030400"
+        ],
+        "cat": [
+          "A02",
+          "A0208",
+          "A02081300"
+        ]
+      },
+      "proposedQuestType": "FESTIVAL",
+      "secondaryTags": [
+        "TRADITION",
+        "PERFORMANCE",
+        "MUSIC",
+        "PERFORMANCE"
+      ],
+      "proposedTemplateId": "FESTIVAL_TRADITION_TRACE_V1",
+      "localScore": 71,
+      "qualityScore": 80,
+      "classificationConfidence": 0.85,
+      "scoreReasons": [
+        "REGIONAL_FESTIVAL_ARCHETYPE",
+        "FIELD_BASED_ACTIVITY"
+      ],
+      "reviewFlags": [
+        "DETAIL_ENRICHMENT_INCOMPLETE",
+        "EVENT_START_MISSING",
+        "EVENT_END_MISSING"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "117 Yeongdong healing-ro, Yeongdong-eup, Yeongdong-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250919162938"
+    }
+  ]
+}

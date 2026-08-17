@@ -53,7 +53,6 @@ export async function submitQuestPhoto(
   file: File,
 ): Promise<QuestCompletionResult> {
   validateProofPhoto(file);
-  if (quest.proofType !== "PHOTO") throw new Error("This Quest does not accept photo proof.");
 
   const user = await ensureMvpUser();
 

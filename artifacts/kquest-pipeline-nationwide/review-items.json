@@ -1,0 +1,728 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-16T17:57:07.614Z",
+    "source": "KTO EngService2",
+    "sourceMode": "LIVE_API",
+    "inputCount": 34,
+    "autoAcceptedCount": 19,
+    "reviewCount": 12,
+    "excludedCount": 3,
+    "apiKeyStored": false
+  },
+  "items": [
+    {
+      "sourceContentId": "3099308",
+      "title": "Citizen's Forest Campground (시민의 숲 야영장)",
+      "description": "Citizen's Forest Campground, situated alongside the Yeongsangang River in Gwangju, offers a nature-friendly escape in the heart of the city. The campground provides options for both auto-camping and traditional camping. It features walking trails and is conveniently located near a waterside park, making it ideal for strolls. Additionally, a swimming pool is available for visitors every summer.",
+      "region": "Gwangju",
+      "district": "Buk-gu",
+      "latitude": 35.233058715,
+      "longitude": 126.866351676,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/29/2661529_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "AC",
+          "AC05",
+          "AC050100"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03021700"
+        ]
+      },
+      "proposedQuestType": "STAY",
+      "secondaryTags": [
+        "STAY_CULTURE"
+      ],
+      "proposedTemplateId": null,
+      "localScore": 16,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "scoreReasons": [
+        "GENERAL_LODGING_PENALTY"
+      ],
+      "reviewFlags": [],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "190 Chuam-ro, Buk-gu, Jeonnam-Gwangju Special Metropolitan City"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Main Facilities",
+          "text": "Campground, guest service office, communal kitchen, showers, restrooms"
+        }
+      ],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "2944962",
+      "title": "The Taehwagang National Garden and Simni Bamboo Grove (Milky Way Trail) (태화강 국가정원 십리대숲 (은하수길))",
+      "description": "Simni Bamboo Grove is a bamboo forest that stretches over about 4 kilometers along the Taehwagang River and is a natural garden using bamboo that has grown naturally for a long time. It is a healing space in the city where the river wind blowing through the bamboo and the whisper of bamboo leaves tickle one's ears. It's also a unique night garden where the Milky Way descends in the dark, hence its name \"Milky Way Trail.\" It is a must-see course where you can feel as if you are walking along the Milky Way in the night sky as colorful lights meet bamboo.",
+      "region": "Ulsan",
+      "district": "Jung-gu",
+      "latitude": 35.5487747405,
+      "longitude": 129.2911995498,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/88/2613688_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "5 Saetgangnam-gil, Jung-gu, Ulsan"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20250806165910"
+    },
+    {
+      "sourceContentId": "3404281",
+      "title": "Surfing Zone (서핑존)",
+      "description": "It is a facility where you can enjoy surfing on a board on artificially created waves with a depth of about 10 cm. In 'I Live Alone', actor Sunghoon challenged surfing here. Indoor surfing is a sport that has recently become popular around the world regardless of weather, waves, or equipment. They rent surfboards and surf clothes for free, and teach beginners how to get on the board, how to center and adjust, so don't be afraid to give it a try. If you struggle to keep your balance while cutting through the current, you will feel the coolness of the accumulated stress being washed away.\n◎ Travel Information to Discover Hallyu&rsquo;s Charm - Variety Show \"The Return of Superman\"\nIn Episode 364 of \"The Return of Superman,\" William and Bentley visit Surfing Zone to learn how to surf. As an indoor surfing facility, Surfing Zone offers a safe environment for children to learn surfing. Since the broadcast, it has become even more popular with family travelers.",
+      "region": "Gyeonggi",
+      "district": "Osan-si",
+      "latitude": 37.1847635618,
+      "longitude": 127.0433147428,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/03/2761603_image2_1.jpeg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS02",
+          "LS020100"
+        ],
+        "cat": [
+          "A03",
+          "A0303",
+          "A03030100"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "19 Semayeok-ro 41beon-gil, Osan-si, Gyeonggi-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20251216164334"
+    },
+    {
+      "sourceContentId": "3333062",
+      "title": "REVERTY (리버티)",
+      "description": "This is the skateboard park where singer Lee Hyori showed off her presence in the music video of the project group SSAK3, which was formed on the entertainment program \"Hang Out With Yoo\" with Rain and Yoo Jaesuk. The sensuous graffiti on the exterior walls catches the eye. A cool park for boarders and an interior full of casual board products exudes a unique free-spirited atmosphere. Even visitors who don't board can enjoy a drink and the skater vibe.",
+      "region": "Gangwon",
+      "district": "Yangyang-gun",
+      "latitude": 38.0240142717,
+      "longitude": 128.721729634,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/70/2947170_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS04",
+          "LS040100"
+        ],
+        "cat": [
+          "A03",
+          "A0305",
+          "A03050100"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "48-54 Hajodae 2-gil, Hyeonbuk-myeon, Yangyang-gun, Gangwon-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Program Activities",
+          "text": "Skateboarding"
+        }
+      ],
+      "sourceModifiedTime": "20251105164804"
+    },
+    {
+      "sourceContentId": "1918564",
+      "title": "Okcheon Hyangsu Baengni (100-ri) Bike Road - Geumgang Course (옥천 향수 100리 자전거길 - 금강코스)",
+      "description": "Okcheon Hyangsu Baengni (100-ri) Bike Road is a bicycle path located along the riverside of Geumgang River, where one can enjoy the beauty of Daecheongho Lake and the spirit of poetry in the hometown of Jeong Jiyong, one of Korea's modern poets. Visitors can also stop at Jeong Jiyong Birth House & Literature Library and Janggye Tourist Park by biking along National Highway Route 37, which is famous for cherry blossoms. This bicycle path is relatively easy to travel on and is suitable for beginners. It became even more popular after being featured on the TV show \"1 Night 2 Days.\"",
+      "region": "Chungbuk",
+      "district": "Okcheon-gun",
+      "latitude": 36.2977387481,
+      "longitude": 127.5653394601,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/80/877980_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS010200"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03020500"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Okcheon-eup, Okcheon-gun, Chungcheongbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Tourism Course",
+          "text": "[Hyangsu Baengni (100-ri) Bike Course (Geumgang Course)]\nDistance: 50.6 km\nDuration: Approx. 3 hr 30 min\nRoute: Jeong Jiyong Birth House - Janggye Tourist Park - Gyeongyuldang Hall - Hapgeum-ro 2-gil Paved Road End - Geumgang Resort - Anteoseosa Park - Jeong Jiyong Birth House"
+        },
+        {
+          "name": "Reference Notes",
+          "text": "* Notice\n- Mountain bike is required for this course (general bikes prohibited)\n- No bike rental stations are available in Okcheon-gun. Please have a bike ready in advance.\n- Course follows a famous driving course; use caution to avoid accidents.\n- Inquiries: +82-43-730-3413"
+        }
+      ],
+      "sourceModifiedTime": "20250106150936"
+    },
+    {
+      "sourceContentId": "2812434",
+      "title": "Buyeo Sky Banner (부여하늘날기)",
+      "description": "Buyeo Sky Banner is the only place that offers free-flying hot air balloon ride in Korea and was designated as one of the top ten themed travels by Korea Tourism Organization. Buyeo is a rural region considered ideal for flying hot air balloons due to its relatively low mountain terrains. The balloons fly a distance of seven to eight kilometers over the Baengmangang River, offering a bird's-eye-view of Buyeo and the Geumgang River as well as the many historical heritages from the Baekje period.",
+      "region": "Chungnam",
+      "district": "Buyeo-gun",
+      "latitude": 36.2815401261,
+      "longitude": 126.907570963,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/79/2794079_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS03",
+          "LS030400"
+        ],
+        "cat": [
+          "A03",
+          "A0304",
+          "A03040400"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "12 Seongwang-ro 173beon-gil, Buyeo-gun, Chuncheongnam-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Program Activities",
+          "text": "Free-flight hot air balloon"
+        },
+        {
+          "name": "Rental Fees",
+          "text": "Adult 180,000 won (Monday-Friday)/210,000 won (Saturday-Sunday)"
+        },
+        {
+          "name": "Main Facilities",
+          "text": "Safety guard available"
+        }
+      ],
+      "sourceModifiedTime": "20251028151002"
+    },
+    {
+      "sourceContentId": "3403942",
+      "title": "Hadong Korea Zip-wire (하동 코리아 짚와이어)",
+      "description": "It is a zip line that starts at the top of Geumosan Mountain at an altitude of 849 m, boasting the longest length in Asia. The cast from &ldquo;House on Wheels&rdquo; and &ldquo;I Live Alone&rdquo; were in awe of the scenery of the tea fields with the Korean archipelago in the background, drawing attention from viewers. When seen in person, the view is much more beautiful than anything the screen could display, not to mention the fast speed of the zip-wire is way more thrilling than what you could imagine; flying towards the blue southern sea at a speed of up to 120 km per hour, you&rsquo;ll feel as if you left your heart behind you on the platform.",
+      "region": "Gyeongnam",
+      "district": "Hadong-gun",
+      "latitude": 34.9834489682,
+      "longitude": 127.8934009321,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/44/2947544_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "493-37 Gyeongchung-ro, Hadong-gun, Gyeongsangnam-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Program Activities",
+          "text": "Zip-wire, VR etc."
+        }
+      ],
+      "sourceModifiedTime": "20251027134234"
+    },
+    {
+      "sourceContentId": "3383976",
+      "title": "Yonggwonsan Sky Walk (용궐산하늘길)",
+      "description": "Yonggwolsan Sky Walk is a wooden trail built high up on the mountainside. Opened in 2023, the 1,096-meter-long trekking course offers thrilling views of the mountain's unique rock formations and an unobstructed view of the sky that is not for the faint of heart. It takes roughly 30 minutes to walk from the start of the trail to Biryongjeong Pavilion at the summit.",
+      "region": "Jeonbuk",
+      "district": "Sunchang-gun",
+      "latitude": 35.4627967754,
+      "longitude": 127.2014217216,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/78/2795378_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS01",
+          "LS011900"
+        ],
+        "cat": [
+          "A03",
+          "A0302",
+          "A03022700"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "562 Janggunmok-gil, Donggye-myeon, Sunchang-gun, Jeonbuk-do"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [],
+      "sourceModifiedTime": "20241010152750"
+    },
+    {
+      "sourceContentId": "3032043",
+      "title": "Ramada Zip Trek (라마다 짚트랙)",
+      "description": "Another way to enjoy the seas of Yeosu is to do some activities, and what better option than to cross the clear seas and skies of Yeosu on a zipline? Ramada Zip Trek, the first of its kind to be offered above a five-star hotel in Asia, begins 130-meter above sea level and takes you along the line at an exhilarating maximum speed of 80 km/h. Let yourself be taken along a rollercoaster ride through the sea breeze. Because the ride is offered outdoors, operations may be suspended in the case of inclement weather or maintenance, so visitors are advised to check ahead.",
+      "region": "Jeonnam",
+      "district": "Yeosu-si",
+      "latitude": 34.7170457484,
+      "longitude": 127.74829824,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/43/2994543_image2_1.jpg",
+      "contentTypeId": "75",
+      "taxonomy": {
+        "lcls": [
+          "LS",
+          "LS04",
+          "LS040100"
+        ],
+        "cat": [
+          "A03",
+          "A0305",
+          "A03050100"
+        ]
+      },
+      "proposedQuestType": "ACTIVE",
+      "secondaryTags": [],
+      "proposedTemplateId": null,
+      "localScore": 52,
+      "qualityScore": 100,
+      "classificationConfidence": 0.65,
+      "scoreReasons": [
+        "ACTIVE_CONTENT"
+      ],
+      "reviewFlags": [
+        "ACTIVE_TEMPLATE_SAFETY_REVIEW"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "11 Gangnam-ro, Dolsan-eup, Yeosu-si, Jeonnam-Gwangju Special Metropolitan City"
+      },
+      "operating": {
+        "useTime": null,
+        "restDate": null,
+        "parking": null,
+        "informationCenter": null
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Rental Fees",
+          "text": "[One round] Adults 35,000 won / Teenagers & Children 25,000 won\n* Refer to the website for details as rates are subject to change"
+        },
+        {
+          "name": "Program Activities",
+          "text": "Ramada Zip Trek"
+        }
+      ],
+      "sourceModifiedTime": "20260630184411"
+    },
+    {
+      "sourceContentId": "3566510",
+      "title": "Seoul Cruise (서울크루즈)",
+      "description": "Hyundai Cruise Line, Korea's first marine tourism cruise operator, was founded in 1983 and renamed Seoul Cruise after building a new terminal in Yeouido. With Yeouido Ferry Terminal as its base, Seoul Cruise is the only passenger cruise operator that can travel from the Hangang River to the West Sea, passing through the Ara West Sea Lock. The company currently operates from two terminals: Yeouido Ferry Terminal and Ara Gimpo Terminal. In addition to offering tours that showcase the scenic beauty of the Hangang River, Seoul Cruise also provides other options, such as the Dinner Fireworks Cruise, which lets passengers enjoy a fireworks show along the Ara Waterway in Gimpo.",
+      "region": "Seoul",
+      "district": "Yeongdeungpo-gu",
+      "latitude": 37.5296327325,
+      "longitude": 126.933709479,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/86/3564086_image2_1.JPG",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070100"
+        ],
+        "cat": [
+          "A02",
+          "A0202",
+          "A02020800"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 70,
+      "qualityScore": 100,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "231 Yeouidohanganggongwon-gil, Yeongdeungpo-gu, Seoul"
+      },
+      "operating": {
+        "useTime": "14:00-19:30 / Wednesdays 09:30-19:30 / Weekends 11:00-20:30\n* Varies by cruise type; check the website or call for more information",
+        "restDate": "N/A (Open all year round)",
+        "parking": "Available",
+        "informationCenter": "+82-1551-1132"
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": "Open to visitors of all ages"
+      },
+      "detailInfo": [
+        {
+          "name": "Admission Fees",
+          "text": "[West Sea Route Cruise] Adults 48,000 won / Children 38,000 won\n[Hi! Seoul Cruise] Adults 25,000 won / Children 17,000 won\n[Starlight Aurora Cruise] Adults 25,000 won / Children 17,000 won\n[Dinner Fireworks Cruise] Adults 119,000 won / Children 90,000 won\n* Schedule and rates may change; refer to the official website"
+        },
+        {
+          "name": "Restrooms",
+          "text": "Available"
+        }
+      ],
+      "sourceModifiedTime": "20251204141717"
+    },
+    {
+      "sourceContentId": "3517139",
+      "title": "Mangmidangil Street (망미단길)",
+      "description": "Mangmidangil Street referst to the main street that connects the cultural alleys in Suyeong-gu, Busan. The area is home to a variety of cozy cafes, photo studios, book stores, indie stores, workshop spaces, and clothing stores, attracting many visitors. Nearby attractions include B-Con Ground, a cultural complex featuring various facilities, and Suyeong Sajeok Park, an ideal spot to unwind and explore local history.",
+      "region": "Busan",
+      "district": "Suyeong-gu",
+      "latitude": 35.1721721081,
+      "longitude": 129.1182806404,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/49/3033449_image2_1.JPG",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "VE",
+          "VE04",
+          "VE040100"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030600"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 70,
+      "qualityScore": 95,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "Suyeong-dong, Suyeong-gu, Busan"
+      },
+      "operating": {
+        "useTime": "Open 24 hr",
+        "restDate": "N/A (Open all year round)",
+        "parking": "Available",
+        "informationCenter": "+82-51-610-4372"
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Restrooms",
+          "text": "Available"
+        },
+        {
+          "name": "Admission Fees",
+          "text": "Free"
+        }
+      ],
+      "sourceModifiedTime": "20251117112447"
+    },
+    {
+      "sourceContentId": "3405284",
+      "title": "Sunshine Studio (논산 선샤인스튜디오)",
+      "description": "Originally established as the set for the drama \"Mr. Sunshine\", it has since garnered interest as a filming location for historical dramas such as \"Pachinko\" and \"Tale of the Nine Tailed 1938\". It is currently open to the public as a tourist attraction. Strolling through Sunshine Studio in costumes of the era, one feels as if they've stepped into the bustling Hanseong of the 1900s.",
+      "region": "Chungnam",
+      "district": "Nonsan-si",
+      "latitude": 36.1025445703,
+      "longitude": 127.1042997632,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/3096204_image2_1.jpg",
+      "contentTypeId": "76",
+      "taxonomy": {
+        "lcls": [
+          "EX",
+          "EX07",
+          "EX070200"
+        ],
+        "cat": [
+          "A02",
+          "A0203",
+          "A02030400"
+        ]
+      },
+      "proposedQuestType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "proposedTemplateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "localScore": 70,
+      "qualityScore": 100,
+      "classificationConfidence": 0.75,
+      "scoreReasons": [
+        "LOCAL_CULTURE_ARCHETYPE",
+        "EXPERIENCE_CATEGORY"
+      ],
+      "reviewFlags": [
+        "PROGRAM_AVAILABILITY_UNKNOWN"
+      ],
+      "event": {
+        "startDate": null,
+        "endDate": null,
+        "venue": "90 Bonghwang-ro, Yeonmu-eup, Nonsan-si, Chungcheongnam-do"
+      },
+      "operating": {
+        "useTime": "10:00-18:00(Last entry 17:30)",
+        "restDate": "Thursday",
+        "parking": "Available",
+        "informationCenter": "+82-1811-7057"
+      },
+      "experience": {
+        "guide": null,
+        "program": null,
+        "ageRange": null
+      },
+      "detailInfo": [
+        {
+          "name": "Admission Fees",
+          "text": "-Adult 10,000 won\n-Teenagers 8,000 won\n-Children 6,000 won"
+        }
+      ],
+      "sourceModifiedTime": "20251024153608"
+    }
+  ]
+}
