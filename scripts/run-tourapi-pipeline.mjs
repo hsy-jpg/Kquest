@@ -2,7 +2,7 @@
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
-import { fill, selectVariant } from "./test-tour-quest-generation.mjs";
+import { fill, selectVariant, buildDescription } from "./test-tour-quest-generation.mjs";
 
 const API_BASE = "https://apis.data.go.kr/B551011/EngService2";
 const DEFAULT_REGIONS = ["1", "2", "3", "4", "5", "6", "7", "8", "31", "32", "33", "34", "35", "36", "37", "38", "39"];
@@ -51,15 +51,27 @@ const present = value => value !== undefined && value !== null && String(value).
 const arrayify = value => !value ? [] : Array.isArray(value) ? value : [value];
 const clamp = value => Math.max(0, Math.min(100, Math.round(value)));
 
+const NAMED_ENTITIES = {
+  nbsp: " ", rsquo: "’", lsquo: "‘", ldquo: "“", rdquo: "”",
+  ndash: "–", mdash: "—", hellip: "…", deg: "°", middot: "·",
+  eacute: "é", egrave: "è", ecirc: "ê", euml: "ë",
+  agrave: "à", acirc: "â", auml: "ä", aacute: "á",
+  ccedil: "ç", ouml: "ö", oacute: "ó", uuml: "ü", uacute: "ú",
+  ntilde: "ñ", iacute: "í", copy: "©", reg: "®", trade: "™",
+};
+
 function cleanText(value) {
   if (!present(value)) return null;
   return String(value)
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;|&#160;/gi, " ")
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(Number(dec)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&([a-z]+);/gi, (match, name) => NAMED_ENTITIES[name.toLowerCase()] ?? match)
     .replace(/&amp;/gi, "&")
     .replace(/&quot;/gi, '"')
     .replace(/&#39;|&apos;/gi, "'")
+    .replace(/ /g, " ")
     .replace(/[ \t]+/g, " ")
     .replace(/\n\s*\n+/g, "\n")
     .trim();
@@ -413,8 +425,8 @@ function makeQuest(item, recentVariantIds) {
   recentVariantIds.unshift(selectedVariantId);
   if (recentVariantIds.length > 20) recentVariantIds.pop();
   const slots = selected.g.slots;
-  const questTitle = slots.feature === item.title ? `Discover ${item.title}` : `Explore ${slots.feature} at ${item.title}`;
-  const description = item.overview ?? `Explore ${item.title} through a respectful, place-based mission.`;
+  const questTitle = fill(selected.v.title, slots);
+  const description = buildDescription(item.overview, selected.v.explore, slots);
   return {
     questId: `kq-kto-${item.sourceContentId}-${item.templateId.toLowerCase().replace(/_v\d+$/, "").replaceAll("_", "-")}`,
     sourceContentId: item.sourceContentId,

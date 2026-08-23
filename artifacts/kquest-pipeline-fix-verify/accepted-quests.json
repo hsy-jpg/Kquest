@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-23T13:18:13.747Z",
+    "source": "KTO EngService2",
+    "sourceMode": "DETAILS_FILE",
+    "collectionMode": "LIMITED",
+    "inputCount": 10,
+    "autoAcceptedCount": 8,
+    "reviewCount": 1,
+    "excludedCount": 1,
+    "apiKeyStored": false
+  },
+  "quests": [
+    {
+      "questId": "kq-kto-3544517-craft-process-spotter",
+      "sourceContentId": "3544517",
+      "title": "Compare the Patterns at ARTEASPOON (아티스푼)",
+      "description": "ARTEASPOON operates cultural arts programs centered on paintings, music, and books. Compare two visible patterns, shapes, or finishes at ARTEASPOON (아티스푼).",
+      "region": "Seoul",
+      "district": "Yongsan-gu",
+      "latitude": 37.546467755,
+      "longitude": 126.9821240366,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/3523282_image2_1.jpg",
+      "questType": "CRAFT_EXPERIENCE",
+      "secondaryTags": [
+        "LOCAL_EXPERIENCE"
+      ],
+      "templateId": "CRAFT_PROCESS_SPOTTER_V1",
+      "selectedVariantId": "CRAFT_PROCESS_SPOTTER_V1:craft-pattern",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit ARTEASPOON (아티스푼) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Compare two visible patterns, shapes, or finishes at ARTEASPOON (아티스푼).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph one permitted design detail without including staff or customers.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose the detail that feels most distinctive and explain why.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 70,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20251023143000"
+    },
+    {
+      "questId": "kq-kto-3516784-street-detail-hunt",
+      "sourceContentId": "3516784",
+      "title": "Discover What B-Con Ground (비콘그라운드) Used to Be",
+      "description": "B-Con Ground is a cultural complex in Busan, built by utilizing the empty space under an overpass. Find one reused structure, public design, or gathering space at B-Con Ground (비콘그라운드).",
+      "region": "Busan",
+      "district": "Suyeong-gu",
+      "latitude": 35.1719386413,
+      "longitude": 129.1096508423,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/70/3498770_image2_1.jpg",
+      "questType": "NEIGHBORHOOD",
+      "secondaryTags": [
+        "LOCAL_STREET"
+      ],
+      "templateId": "STREET_DETAIL_HUNT_V1",
+      "selectedVariantId": "STREET_DETAIL_HUNT_V1:street-reuse",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit B-Con Ground (비콘그라운드) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one reused structure, public design, or gathering space at B-Con Ground (비콘그라운드).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a public design feature while respecting nearby businesses and residents.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how the space differs from an ordinary commercial complex.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 74,
+      "qualityScore": 100,
+      "classificationConfidence": 0.9,
+      "sourceModifiedTime": "20251117112216"
+    },
+    {
+      "questId": "kq-kto-697123-festival-tradition-trace",
+      "sourceContentId": "697123",
+      "title": "Trace a Mask's Story at Andong Maskdance Festival (안동국제탈춤페스티벌)",
+      "description": "The Andong Maskdance Festival is a global celebration where the memories carried by masks come to life through dance. Find one mask, dance pose, costume, or official symbol at Andong Maskdance Festival (안동국제탈춤페스티벌).",
+      "region": "Gyeongsangbuk-do",
+      "district": "Andong-si",
+      "latitude": 36.5597879985,
+      "longitude": 128.7307724581,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/4025906_image2_1.JPG",
+      "questType": "FESTIVAL",
+      "secondaryTags": [
+        "TRADITION",
+        "PERFORMANCE"
+      ],
+      "templateId": "FESTIVAL_TRADITION_TRACE_V1",
+      "selectedVariantId": "FESTIVAL_TRADITION_TRACE_V1:tradition-mask",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Andong Maskdance Festival (안동국제탈춤페스티벌) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one mask, dance pose, costume, or official symbol at Andong Maskdance Festival (안동국제탈춤페스티벌).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an official symbol or stage exterior without capturing performers faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record how one visual detail communicates the tradition.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 71,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260629132955"
+    },
+    {
+      "questId": "kq-kto-697439-festival-tradition-trace",
+      "sourceContentId": "697439",
+      "title": "Follow the Performers' Trail at Anseong Namsadang Baudeogi Festival (안성맞춤 남사당 바우덕이축제)",
+      "description": "The Namsadang Noripae, which was at the heart of popular culture during the Joseon dynasty, can be likened to today’s touring musical theater companies. Find one public clue about the performers role, costume, or movement.",
+      "region": "Gyeonggi-do",
+      "district": "Anseong-si",
+      "latitude": 37.0318262363,
+      "longitude": 127.3101599625,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/3377804_image2_1.jpg",
+      "questType": "FESTIVAL",
+      "secondaryTags": [
+        "TRADITION",
+        "PERFORMANCE",
+        "MUSIC",
+        "PERFORMANCE"
+      ],
+      "templateId": "FESTIVAL_TRADITION_TRACE_V1",
+      "selectedVariantId": "FESTIVAL_TRADITION_TRACE_V1:tradition-performance",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Anseong Namsadang Baudeogi Festival (안성맞춤 남사당 바우덕이축제) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one public clue about the performers role, costume, or movement.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an official festival marker without interrupting the performance.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Choose one performance detail and explain why it stood out.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 71,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260625105435"
+    },
+    {
+      "questId": "kq-kto-293144-festival-scene-hunt",
+      "sourceContentId": "293144",
+      "title": "Spot a Character's Story at Bucheon International Comics Festival (부천국제만화축제)",
+      "description": "As Korea’s leading comic-focused festival, the Bucheon International Comics Festival features a wide range of events, including the special exhibition of Bucheon Comic Awards wi... Find an official character, artwork, panel, or emblem in the public event area.",
+      "region": "Gyeonggi-do",
+      "district": "Bucheon-si",
+      "latitude": 37.508197014,
+      "longitude": 126.7421906073,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/75/3557475_image2_1.JPG",
+      "questType": "FESTIVAL",
+      "secondaryTags": [
+        "COMICS",
+        "CULTURE"
+      ],
+      "templateId": "FESTIVAL_SCENE_HUNT_V1",
+      "selectedVariantId": "FESTIVAL_SCENE_HUNT_V1:festival-visual-story",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Bucheon International Comics Festival (부천국제만화축제) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find an official character, artwork, panel, or emblem in the public event area.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph official event art without capturing recognizable faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe one visual storytelling detail that caught your attention.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 53,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260731111109"
+    },
+    {
+      "questId": "kq-kto-1273884-festival-tradition-trace",
+      "sourceContentId": "1273884",
+      "title": "Catch the Rhythm of Bupyeong Pungmul Festival (부평풍물대축제)",
+      "description": "Celebrating its 30th edition, the Bupyeong Pungmul Festival brings rhythm, excitement, and community spirit to the heart of the city. Look for one traditional instrument, rhythm symbol, or costume detail.",
+      "region": "Incheon",
+      "district": "Bupyeong-gu",
+      "latitude": 37.4944181127,
+      "longitude": 126.7229954336,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/4067377_image2_1.jpg",
+      "questType": "FESTIVAL",
+      "secondaryTags": [
+        "TRADITION",
+        "PERFORMANCE"
+      ],
+      "templateId": "FESTIVAL_TRADITION_TRACE_V1",
+      "selectedVariantId": "FESTIVAL_TRADITION_TRACE_V1:tradition-instrument",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Bupyeong Pungmul Festival (부평풍물대축제) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Look for one traditional instrument, rhythm symbol, or costume detail.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an official decoration or instrument display where permitted.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Describe how sound or movement represents the local tradition.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 71,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260625111055"
+    },
+    {
+      "questId": "kq-kto-293091-festival-scene-hunt",
+      "sourceContentId": "293091",
+      "title": "Find the Stage Story at Busan International Rock Festival (부산국제록페스티벌)",
+      "description": "First held in 2000, the Busan International Rock Festival is Korea’s first and longest-running international rock festival. Find an official stage sign, emblem, or music-themed decoration at Busan International Rock Festival (부산국제록페스티벌).",
+      "region": "Busan",
+      "district": "Sasang-gu",
+      "latitude": 35.1728573,
+      "longitude": 128.9681914,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/4040606_image2_1.jpg",
+      "questType": "FESTIVAL",
+      "secondaryTags": [
+        "LOCAL_MARKET",
+        "LOCAL_FOOD",
+        "MUSIC",
+        "PERFORMANCE"
+      ],
+      "templateId": "FESTIVAL_SCENE_HUNT_V1",
+      "selectedVariantId": "FESTIVAL_SCENE_HUNT_V1:festival-music",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Busan International Rock Festival (부산국제록페스티벌) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find an official stage sign, emblem, or music-themed decoration at Busan International Rock Festival (부산국제록페스티벌).",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph a stage exterior or official emblem without capturing the audience.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record one visual detail that connects the festival to Busan.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 71,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260618141525"
+    },
+    {
+      "questId": "kq-kto-4020637-festival-scene-hunt",
+      "sourceContentId": "4020637",
+      "title": "Find the Theme Behind Cheonan K-Culture Expo (천안 K-컬처박람회)",
+      "description": "The Cheonan K-Culture Expo is a K-culture–driven cultural industry fair held primarily at the Independence Hall of Korea, a landmark symbolizing Korea’s spirit of independence a... Find one official exhibit sign, emblem, or public decoration representing the event theme.",
+      "region": "Chungcheongnam-do",
+      "district": "Dongnam-gu",
+      "latitude": 36.7773487289308,
+      "longitude": 127.2325927550662,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/13/4020713_image2_1.jpg",
+      "questType": "FESTIVAL",
+      "secondaryTags": [],
+      "templateId": "FESTIVAL_SCENE_HUNT_V1",
+      "selectedVariantId": "FESTIVAL_SCENE_HUNT_V1:festival-theme",
+      "steps": [
+        {
+          "order": 1,
+          "kind": "VISIT",
+          "prompt": "Visit Cheonan K-Culture Expo (천안 K-컬처박람회) and check in at the public entrance or mapped point.",
+          "verification": "GEOFENCE"
+        },
+        {
+          "order": 2,
+          "kind": "EXPLORE",
+          "prompt": "Find one official exhibit sign, emblem, or public decoration representing the event theme.",
+          "verification": "SELF_CONFIRM"
+        },
+        {
+          "order": 3,
+          "kind": "PHOTO",
+          "prompt": "Photograph an official sign or public decoration without capturing faces.",
+          "verification": "USER_PHOTO"
+        },
+        {
+          "order": 4,
+          "kind": "ACTION",
+          "prompt": "Record which event theme you would explore further.",
+          "verification": "TEXT_OR_CHOICE"
+        }
+      ],
+      "localScore": 71,
+      "qualityScore": 100,
+      "classificationConfidence": 0.95,
+      "sourceModifiedTime": "20260507163155"
+    }
+  ]
+}
