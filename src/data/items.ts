@@ -15,6 +15,28 @@ export interface WardrobeItem {
   description: string;
 }
 
+/** Kept so users who earned the previous jjimjilbang reward do not lose it. */
+const legacyTowelHat: WardrobeItem = {
+  id: "towel-hat",
+  name: "Bathhouse Towel Hat",
+  emoji: "🧖",
+  slot: "hat",
+  style: { top: "-2%", left: "50%", transform: "translateX(-50%)" },
+  sizeClass: "text-5xl",
+  description: "Classic jjimjilbang sheep towel",
+};
+
+/** Kept so users who earned the previous Inwangsan reward do not lose it. */
+const legacyHikingCap: WardrobeItem = {
+  id: "hiking-cap",
+  name: "Inwangsan Hiking Cap",
+  emoji: "🧢",
+  slot: "hat",
+  style: { top: "-2%", left: "50%", transform: "translateX(-50%)" },
+  sizeClass: "text-5xl",
+  description: "Summit + makgeolli reward",
+};
+
 /**
  * Every quest awards ONE specific item — never random.
  * Keyed by quest id from `src/data/quests.ts`.
@@ -22,12 +44,12 @@ export interface WardrobeItem {
 export const questItems: Record<number, WardrobeItem> = {
   0: {
     id: "soju-bottle",
-    name: "Soju Bottle Charm",
+    name: "Pojangmacha Soju Glass",
     emoji: "🍶",
     slot: "accessory",
     style: { bottom: "22%", right: "8%", transform: "rotate(12deg)" },
     sizeClass: "text-3xl",
-    description: "Earned at Euljiro pojangmacha",
+    description: "A local-night keepsake from an Euljiro pojangmacha",
   },
   1: {
     id: "ramyeon-bowl",
@@ -66,13 +88,13 @@ export const questItems: Record<number, WardrobeItem> = {
     description: "Earned at Tapgol Park",
   },
   5: {
-    id: "towel-hat",
-    name: "Bathhouse Towel Hat",
-    emoji: "🧖",
-    slot: "hat",
-    style: { top: "-2%", left: "50%", transform: "translateX(-50%)" },
-    sizeClass: "text-5xl",
-    description: "Classic jjimjilbang sheep towel",
+    id: "banana-milk",
+    name: "Jjimjilbang Banana Milk",
+    emoji: "🥛",
+    slot: "accessory",
+    style: { bottom: "18%", right: "3%", transform: "rotate(8deg)" },
+    sizeClass: "text-4xl",
+    description: "The classic drink after a Korean sauna",
   },
   6: {
     id: "coffee-cup",
@@ -183,13 +205,13 @@ export const questItems: Record<number, WardrobeItem> = {
     description: "Neighborhood salon makeover",
   },
   18: {
-    id: "hiking-cap",
-    name: "Inwangsan Hiking Cap",
-    emoji: "🧢",
-    slot: "hat",
-    style: { top: "-2%", left: "50%", transform: "translateX(-50%)" },
-    sizeClass: "text-5xl",
-    description: "Summit + makgeolli reward",
+    id: "hiking-stick",
+    name: "Trekking Stick",
+    emoji: "🦯",
+    slot: "accessory",
+    style: { bottom: "10%", right: "2%", transform: "rotate(18deg)" },
+    sizeClass: "text-4xl",
+    description: "Earned on a mountain trail",
   },
   19: {
     id: "indie-book",
@@ -254,6 +276,16 @@ export const picnicSunglasses: WardrobeItem = {
   description: "Riverside picnic essential",
 };
 
+export const traditionalFan: WardrobeItem = {
+  id: "traditional-fan",
+  name: "Korean Heritage Fan",
+  emoji: "🪭",
+  slot: "accessory",
+  style: { bottom: "18%", right: "2%", transform: "rotate(-8deg)" },
+  sizeClass: "text-4xl",
+  description: "Earned while exploring Korean traditional culture",
+};
+
 /**
  * Given out when no specific or keyword match applies. A category-wide
  * guess (e.g. every "Culture" quest getting the same glasses) produced
@@ -271,8 +303,21 @@ export const cameraCharm: WardrobeItem = {
 };
 
 const KEYWORD_ITEMS: { pattern: RegExp; item: WardrobeItem }[] = [
-  { pattern: /hik|trail|trek|mountain|summit/i, item: hikingStick },
-  { pattern: /picnic|riverside/i, item: picnicSunglasses },
+  { pattern: /tteokbokki|bunsik(?:jip)?|spicy rice cake/i, item: questItems[22] },
+  { pattern: /pojangmacha|soju|somaek|tent bar/i, item: questItems[0] },
+  { pattern: /noraebang|karaoke/i, item: questItems[3] },
+  { pattern: /apartment (?:park|complex).*walk|neighbou?rhood night walk/i, item: questItems[7] },
+  {
+    pattern: /bobaljae|hanok|palace|heritage|traditional (?:culture|craft|art|performance)|folk(?:lore| village)|temple|confucian|fortress|royal/i,
+    item: traditionalFan,
+  },
+  { pattern: /jjimjilbang|sauna|bathhouse/i, item: questItems[5] },
+  { pattern: /(?:han river|hangang).*(?:picnic)|(?:picnic).*(?:han river|hangang)/i, item: questItems[8] },
+  {
+    pattern: /hik|trail|trek|mountain|summit|forest|woodland|arboretum|recreational forest|natural recreation forest|grove/i,
+    item: hikingStick,
+  },
+  { pattern: /baduk|beach|coast|seaside|ocean|marine|shore|\bsea\b/i, item: picnicSunglasses },
 ];
 
 export interface ItemMatchQuest {
@@ -294,8 +339,10 @@ export function getItemForQuest(quest: ItemMatchQuest): WardrobeItem {
 
 export const allItems: WardrobeItem[] = [
   ...Object.values(questItems),
-  hikingStick,
+  legacyTowelHat,
+  legacyHikingCap,
   picnicSunglasses,
+  traditionalFan,
   cameraCharm,
 ];
 

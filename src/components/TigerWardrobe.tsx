@@ -34,7 +34,7 @@ const TigerWardrobe = () => {
             className="relative w-72 h-72 rounded-3xl flex items-center justify-center overflow-hidden"
             style={{ background: "var(--gradient-blossom)" }}
           >
-            <TigerAvatar items={equippedItems} size={288} animated />
+            <TigerAvatar items={equippedItems} size={288} pose="wardrobe" animated />
           </div>
           <p className="mt-3 text-sm font-extrabold">K-Explorer Tiger</p>
           <p className="text-[11px] text-muted-foreground">

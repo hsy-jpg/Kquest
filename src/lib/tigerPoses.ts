@@ -1,10 +1,10 @@
-import tigerWave from "@/assets/tiger-mascot.png"; // full-body waving
-import tigerCamera from "@/assets/tiger-camera.png";
-import tigerMap from "@/assets/tiger-map.png";
-import tigerBackpack from "@/assets/tiger-backpack.png";
-import tigerCup from "@/assets/tiger-cup.png";
-import tigerCheer from "@/assets/tiger-cheer.png";
-import tigerFace from "@/assets/tiger-face.png";
+import tigerWave from "@/assets/tiger-poses-clean/tiger-mascot-clean.png";
+import tigerCamera from "@/assets/tiger-poses-clean/tiger-camera-clean.png";
+import tigerMap from "@/assets/tiger-poses-clean/tiger-map-clean.png";
+import tigerCup from "@/assets/tiger-poses-clean/tiger-cup-clean.png";
+import tigerCheer from "@/assets/tiger-poses-clean/tiger-cheer-clean.png";
+import tigerFace from "@/assets/tiger-poses-clean/tiger-face-wardrobe.png";
+import tigerWardrobe from "@/assets/tiger-wardrobe.png";
 
 export type TigerPose =
   | "wave"
@@ -13,16 +13,18 @@ export type TigerPose =
   | "backpack"
   | "cup"
   | "cheer"
-  | "face";
+  | "face"
+  | "wardrobe";
 
 export const tigerPoseSrc: Record<TigerPose, string> = {
   wave: tigerWave,
   camera: tigerCamera,
   map: tigerMap,
-  backpack: tigerBackpack,
+  backpack: tigerWardrobe,
   cup: tigerCup,
   cheer: tigerCheer,
   face: tigerFace,
+  wardrobe: tigerWardrobe,
 };
 
 export interface FaceAnchor {
@@ -47,18 +49,33 @@ export const FACE_ANCHORS: Record<TigerPose, FaceAnchor> = {
   backpack: { top: 14, left: 48, width: 38 },
   cup: { top: 23, left: 50, width: 44 },
   cheer: { top: 20, left: 50, width: 40 },
-  face: { top: 62, left: 50, width: 65 },
+  face: { top: 50, left: 50, width: 78 },
+  wardrobe: { top: 30, left: 50, width: 49 },
 };
 
 export interface BodyAnchor {
   /** Torso center, as a percentage of the image's height/width — used to place outfit/backpack items. */
   top: number;
   left: number;
+  width: number;
 }
 
 /** Only defined for poses that actually render body-slot items (outfit/backpack) today. */
 export const BODY_ANCHORS: Partial<Record<TigerPose, BodyAnchor>> = {
-  wave: { top: 58, left: 62 },
+  wave: { top: 58, left: 62, width: 42 },
+  wardrobe: { top: 60, left: 50, width: 42 },
+};
+
+export interface HandAnchor {
+  top: number;
+  left: number;
+  width: number;
+}
+
+/** Grip point for pose-aware handheld PNG placement. */
+export const HAND_ANCHORS: Partial<Record<TigerPose, HandAnchor>> = {
+  wave: { top: 58, left: 80, width: 42 },
+  wardrobe: { top: 54, left: 39, width: 42 },
 };
 
 /**

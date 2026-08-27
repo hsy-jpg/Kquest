@@ -92,7 +92,7 @@ const ItemUnlock = ({ item, onDone }: Props) => {
             </div>
           </>
         ) : (
-          <TigerAvatar size={260} pose="wave" items={[item]} animated />
+          <TigerAvatar size={260} pose="wardrobe" items={[item]} animated equipEffect />
         )}
 
       </div>

@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -73,12 +73,75 @@
   }
 }
 
+@layer components {
+  .tiger-equip-sparkle {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    background: hsl(var(--xp));
+    box-shadow: 0 0 10px hsl(var(--xp) / 0.75);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    animation: tiger-equip-sparkle 0.55s ease-out both;
+  }
+
+  .tiger-equip-sparkle-2 { animation-delay: 60ms; }
+  .tiger-equip-sparkle-3 { animation-delay: 110ms; }
+  .tiger-equip-sparkle-4 { animation-delay: 150ms; }
+}
+
+@keyframes tiger-equip-sparkle {
+  0% { opacity: 0; transform: translate(-50%, -50%) rotate(45deg) scale(0); }
+  45% { opacity: 1; transform: translate(-50%, -50%) rotate(45deg) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) rotate(95deg) scale(0.25); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-equip-face,
+  .animate-equip-head,
+  .animate-equip-hand,
+  .animate-equip-back,
+  .animate-equip-body,
+  .animate-tiger-equip-react,
+  .tiger-equip-sparkle {
+    animation: none !important;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    min-width: 320px;
+    min-height: 100%;
+    background: hsl(var(--korean-cloud));
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
-    @apply bg-background text-foreground font-nunito;
+    @apply m-0 min-h-[100dvh] w-full overflow-x-hidden bg-background text-foreground font-nunito antialiased;
+    padding-top: env(safe-area-inset-top);
+    overscroll-behavior-y: none;
+  }
+
+  #root {
+    min-height: 100dvh;
+    width: 100%;
+  }
+
+  img,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation;
   }
 }
