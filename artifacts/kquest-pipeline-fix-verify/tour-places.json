@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "createdAt": "2026-08-23T13:18:13.747Z",
+    "source": "KTO EngService2",
+    "sourceMode": "DETAILS_FILE",
+    "collectionMode": "LIMITED",
+    "inputCount": 10,
+    "autoAcceptedCount": 8,
+    "reviewCount": 1,
+    "excludedCount": 1,
+    "apiKeyStored": false
+  },
+  "places": [
+    {
+      "sourceContentId": "3544280",
+      "title": "100 Years Market 100 Years Night (백년시장 백년나이트)",
+      "description": "100 Year Market, a traditional market with a long history, transforms into a vibrant night market as evening falls. With a mini mirror ball, neon signs, and a mini DJ booth alongside new dining options each month, this retro-themed market is perfect for visitors of all ages.",
+      "overview": "100 Year Market, a traditional market with a long history, transforms into a vibrant night market as evening falls. With a mini mirror ball, neon signs, and a mini DJ booth alongside new dining options each month, this retro-themed market is perfect for visitors of all ages.",
+      "region": "Seoul",
+      "district": "Gangbuk-gu",
+      "latitude": 37.6417657974,
+      "longitude": 127.0259451148,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/53/3537253_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "A02",
+      "cat2": "A0207",
+      "cat3": "A02070200",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010600",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "EXCLUDED",
+      "detailData": {
+        "address": "16 Hancheon-ro 144-gil, Gangbuk-gu, Seoul",
+        "tel": "+82-2-903-9110",
+        "homepage": "100ymtf.wixsite.com/100night",
+        "operating": {
+          "useTime": "17:00-22:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20250926",
+          "endDate": "20250927",
+          "venue": "Gangbuk-gu 100 Years Market"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": [
+          {
+            "name": "Introduction",
+            "text": "100 Year Market, a traditional market with a long history, transforms into a vibrant night market as evening falls. With a mini mirror ball, neon signs, and a mini DJ booth alongside new dining options each month, this retro-themed market is perfect for visitors of all ages."
+          },
+          {
+            "name": "Programs",
+            "text": "Retro-themed DJ performance, dance and busing performance, photo zones, events, etc."
+          }
+        ]
+      }
+    },
+    {
+      "sourceContentId": "3544517",
+      "title": "ARTEASPOON (아티스푼)",
+      "description": "ARTEASPOON operates cultural arts programs centered on paintings, music, and books. It also has a program related to exploring one's feelings and mind, and offers a special program for foreigners for learning Korean culture and art. Located in Huam-dong at the foothills of Namsan Mountain, it's an ideal place to immerse in art and inspirations.",
+      "overview": "ARTEASPOON operates cultural arts programs centered on paintings, music, and books. It also has a program related to exploring one's feelings and mind, and offers a special program for foreigners for learning Korean culture and art. Located in Huam-dong at the foothills of Namsan Mountain, it's an ideal place to immerse in art and inspirations.",
+      "region": "Seoul",
+      "district": "Yongsan-gu",
+      "latitude": 37.546467755,
+      "longitude": 126.9821240366,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/3523282_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030400",
+      "lclsSystm1": "EX",
+      "lclsSystm2": "EX02",
+      "lclsSystm3": "EX020400",
+      "sourceModifiedTime": "20251023143000",
+      "localScore": 70,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "7 Sinheung-ro 36-gil, Yongsan-gu, Seoul",
+        "tel": null,
+        "homepage": "instagram.com/arteaspoon",
+        "operating": {
+          "useTime": "12:00~20:00\n※ 요일별 시간 상이",
+          "restDate": "Mondays",
+          "parking": null,
+          "informationCenter": "+82-507-1486-2420"
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "7 Sinheung-ro 36-gil, Yongsan-gu, Seoul"
+        },
+        "experience": {
+          "guide": "Art class activities, etc.",
+          "program": "Art class activities, etc.",
+          "ageRange": "Must be age 6 or older"
+        },
+        "detailInfo": [
+          {
+            "name": "Restrooms",
+            "text": "Available"
+          }
+        ]
+      }
+    },
+    {
+      "sourceContentId": "3516784",
+      "title": "B-Con Ground (비콘그라운드)",
+      "description": "B-Con Ground is a cultural complex in Busan, built by utilizing the empty space under an overpass. The complex is a cultural hub offering various exhibitions, cultural events, activities, and creative spaces for visitors. From playground and shopping ground to cafes, restaurants, art galleries, and a family deck, it truly offers all under one roof. Moreover, it provides a space for exhibition for disabled artists, as well as a venue for social entrepreneurs to hold exhibitions, cultural events, and sell artwork.",
+      "overview": "B-Con Ground is a cultural complex in Busan, built by utilizing the empty space under an overpass. The complex is a cultural hub offering various exhibitions, cultural events, activities, and creative spaces for visitors. From playground and shopping ground to cafes, restaurants, art galleries, and a family deck, it truly offers all under one roof. Moreover, it provides a space for exhibition for disabled artists, as well as a venue for social entrepreneurs to hold exhibitions, cultural events, and sell artwork.",
+      "region": "Busan",
+      "district": "Suyeong-gu",
+      "latitude": 35.1719386413,
+      "longitude": 129.1096508423,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/70/3498770_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A02",
+      "cat2": "A0203",
+      "cat3": "A02030400",
+      "lclsSystm1": "VE",
+      "lclsSystm2": "VE12",
+      "lclsSystm3": "VE120300",
+      "sourceModifiedTime": "20251117112216",
+      "localScore": 74,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "49-1 Mangmibeonyeong-ro, Suyeong-gu, Busan",
+        "tel": null,
+        "homepage": "b-con.bisco.or.kr",
+        "operating": {
+          "useTime": "09:00-21:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": "+82-51-519-0200"
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "49-1 Mangmibeonyeong-ro, Suyeong-gu, Busan"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "264591",
+      "title": "Baengnokdam Lake (한라산 백록담)",
+      "description": "Baengnokdam is a crater lake that sits on top of Hallasan Mountain at the center of Jeju Island. It spans 3 kilometers in circumference and 500 meters in diameter, and is surrounded by approximately 360 parasitic cones. At the peak, visitors can feel like floating on clouds.",
+      "overview": "Baengnokdam is a crater lake that sits on top of Hallasan Mountain at the center of Jeju Island. It spans 3 kilometers in circumference and 500 meters in diameter, and is surrounded by approximately 360 parasitic cones. At the peak, visitors can feel like floating on clouds.",
+      "region": "Jeju",
+      "district": "Seogwipo-si",
+      "latitude": 33.3444755049,
+      "longitude": 126.5364394223,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/95/3035595_image2_1.jpg",
+      "contentTypeId": "76",
+      "cat1": "A01",
+      "cat2": "A0101",
+      "cat3": "A01010500",
+      "lclsSystm1": "NA",
+      "lclsSystm2": "NA03",
+      "lclsSystm3": "NA030500",
+      "sourceModifiedTime": "20251031142954",
+      "localScore": 72,
+      "qualityScore": 100,
+      "selectionStatus": "REVIEW",
+      "detailData": {
+        "address": "Topyeong-dong, Seogwipo-si, Jejudo",
+        "tel": null,
+        "homepage": "www.jeju.go.kr/hallasan",
+        "operating": {
+          "useTime": "Refer to the official website",
+          "restDate": "N/A (Open all year round)",
+          "parking": "Available",
+          "informationCenter": "Hallsan National Park (Eorimok Trail) +82-64-713-9950"
+        },
+        "event": {
+          "startDate": null,
+          "endDate": null,
+          "venue": "Topyeong-dong, Seogwipo-si, Jejudo"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": [
+          {
+            "name": "Mountain Not Access Period",
+            "text": "[Seongpanak Trail] \n May-August: Seongpanak Trail Entrance & Azalea Shelter restricted from 13:00\n November-February: Trail entrance starting from 06:00, Seonpanak Trail & Azalea Shelter restricted from 12:00, Baengnokdam restricted from 13:30\n [Gwaneumsa Temple Trail] \n May-August: Gwaneumsa Temple Trail Entrance & Samgakbong Shelter restricted from 13:00\n November-February: Trail entrance starting from 06:00, Gwaneumsa Temple Trail & Samgakbong Shelter restricted from 12:00, Baengnokdam restricted from 13:30"
+          },
+          {
+            "name": "Hiking Course",
+            "text": "[Seongpanak Trail]\n Seongpanak Visitors Center→Sokbat Shelter→Saraakoreum Entrance→Azalea Field Shelter→Dongneung Peak \n [Gwaneumsa Temple Trail]\n Gwaneumsa→Tamnagyegok Valley→Gaemimok→Samgakbong Shelter→Dongneung Peak"
+          },
+          {
+            "name": "Admission Fees",
+            "text": "Free"
+          },
+          {
+            "name": "Parking Fees",
+            "text": "- Two-wheel vehicles: 500 won\n- Small vehicles (displacement less than 1,000 cc): 1,000 won\n- Cars (loading capacity less than 4 tons): 1,800 won \n- Small bus (11-15 passengers): 3,000 won\n- Mid/Large bus (more than 16 passengers): 3,700 won"
+          },
+          {
+            "name": "Restrooms",
+            "text": "Available"
+          }
+        ]
+      }
+    },
+    {
+      "sourceContentId": "697123",
+      "title": "Andong Maskdance Festival (안동국제탈춤페스티벌)",
+      "description": "The Andong Maskdance Festival is a global celebration where the memories carried by masks come to life through dance. Visitors can experience Korea’s mask dance traditions, inscribed on UNESCO’s Intangible Cultural Heritage of Humanity list, alongside mask dances from around the world. A wide range of performances, parades, the Tallori Daedongnanjang community celebrations, and the World Maskplay Competition create opportunities for people to come together and share in the festival experience. The 2026 Andong Maskdance Festival seeks to connect the stories preserved in masks with contemporary life. As children and seniors, local residents and international visitors gather in the same place to laugh, applaud, and share the rhythm of the festival, the memories carried by masks become a living culture. Shaped by the participation of all who take part, the festival becomes a true “dance for everyone,” celebrating the power of community and the joy of coming together.",
+      "overview": "The Andong Maskdance Festival is a global celebration where the memories carried by masks come to life through dance. Visitors can experience Korea’s mask dance traditions, inscribed on UNESCO’s Intangible Cultural Heritage of Humanity list, alongside mask dances from around the world. A wide range of performances, parades, the Tallori Daedongnanjang community celebrations, and the World Maskplay Competition create opportunities for people to come together and share in the festival experience. The 2026 Andong Maskdance Festival seeks to connect the stories preserved in masks with contemporary life. As children and seniors, local residents and international visitors gather in the same place to laugh, applaud, and share the rhythm of the festival, the memories carried by masks become a living culture. Shaped by the participation of all who take part, the festival becomes a true “dance for everyone,” celebrating the power of community and the joy of coming together.",
+      "region": "Gyeongsangbuk-do",
+      "district": "Andong-si",
+      "latitude": 36.5597879985,
+      "longitude": 128.7307724581,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/4025906_image2_1.JPG",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010100",
+      "sourceModifiedTime": "20260629132955",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "239, Yuksa-ro, Andong-si, Gyeongsangbuk-do",
+        "tel": "+82-54-840-3400",
+        "homepage": "www.maskdance.com",
+        "operating": {
+          "useTime": "10:00 ~ 22:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20260924",
+          "endDate": "20261004",
+          "venue": "Jungang Line 1942 Andong Station, Mask Dance Park, and Andong Old Downtown"
+        },
+        "experience": {
+          "guide": null,
+          "program": "Korean & International Mask Dance Performances, Madanggeuk & Original Plays, Mask Play Troupe Performances, World Mask Play Competition, Mask Talent, World Creative Mask Contest, Mask Dance Drawing Contest, Tallori Daedongnanjang, Street Parade, Mask Making, Learn Mask Dance",
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "697439",
+      "title": "Anseong Namsadang Baudeogi Festival (안성맞춤 남사당 바우덕이축제)",
+      "description": "*The information below is based on the 2025 festivals. Details for the 2026 festivals will be updated as they become available.*The Namsadang Noripae, which was at the heart of popular culture during the Joseon dynasty, can be likened to today’s touring musical theater companies. Anseong is the birthplace of the Namsadang, which expressed the joys and sorrows of the times through various forms of entertainment. The Anseong Namsadang Baudeogi Festival inherits the tradition and culture of Namsadang and the artistic spirit of Baudeogi, the first female to have become the leader of Namsadang troupe in the Joseon dynasty. It is designated as an official festival of the International Council of Organizations of Folklore Festivals and Folk Arts (CIOFFⓇ), an official partner of UNESCO since 2006. Namsadang Nori (Itinerant Troupe Performance) is held at the festival, along with other shows, including Pungmul Nori (Folk Music and Dance Performance) and foreign folk performances. Visitors can catch the tightrope show every day, which is performed on a rope three meters off the ground. Other attractions include the reenactment of a traditional Korean wedding and royal procession and the World Parade. ◎ Namsadang and BaudeogiNamsadang was a performance troupe that went around singing, dancing, and performing various tricks. The troupe was initially composed of single men, but women also came to be members after the female performer and leader Baudeogi.",
+      "overview": "*The information below is based on the 2025 festivals. Details for the 2026 festivals will be updated as they become available.*The Namsadang Noripae, which was at the heart of popular culture during the Joseon dynasty, can be likened to today’s touring musical theater companies. Anseong is the birthplace of the Namsadang, which expressed the joys and sorrows of the times through various forms of entertainment. The Anseong Namsadang Baudeogi Festival inherits the tradition and culture of Namsadang and the artistic spirit of Baudeogi, the first female to have become the leader of Namsadang troupe in the Joseon dynasty. It is designated as an official festival of the International Council of Organizations of Folklore Festivals and Folk Arts (CIOFFⓇ), an official partner of UNESCO since 2006. Namsadang Nori (Itinerant Troupe Performance) is held at the festival, along with other shows, including Pungmul Nori (Folk Music and Dance Performance) and foreign folk performances. Visitors can catch the tightrope show every day, which is performed on a rope three meters off the ground. Other attractions include the reenactment of a traditional Korean wedding and royal procession and the World Parade. ◎ Namsadang and BaudeogiNamsadang was a performance troupe that went around singing, dancing, and performing various tricks. The troupe was initially composed of single men, but women also came to be members after the female performer and leader Baudeogi.",
+      "region": "Gyeonggi-do",
+      "district": "Anseong-si",
+      "latitude": 37.0318262363,
+      "longitude": 127.3101599625,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/3377804_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010100",
+      "sourceModifiedTime": "20260625105435",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "198-2 Namsadang-ro, Anseong-si, Gyeonggi-do",
+        "tel": "+82-31-678-2511",
+        "homepage": "www.baudeogi.com",
+        "operating": {
+          "useTime": "10:00-21:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20261002",
+          "endDate": "20261005",
+          "venue": "Anseongmatchum Land & Anseongcheon stream"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": "Open to visitors of all ages"
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "293144",
+      "title": "Bucheon International Comics Festival (부천국제만화축제)",
+      "description": "*The information below is based on the 2025 festivals. Details for the 2026 festivals will be updated as they become available.*As Korea’s leading comic-focused festival, the Bucheon International Comics Festival features a wide range of events, including the special exhibition of Bucheon Comic Awards winners, comic exhibitions, and the Singing BICOF. Visitors can explore Comics Bunker, where they can find merchandise from various artists, along with a comic book café. The festival also includes the World Webtoon Forum and the International Cosplay Championship, as well as talk & signing events with renowned domestic artists.",
+      "overview": "*The information below is based on the 2025 festivals. Details for the 2026 festivals will be updated as they become available.*As Korea’s leading comic-focused festival, the Bucheon International Comics Festival features a wide range of events, including the special exhibition of Bucheon Comic Awards winners, comic exhibitions, and the Singing BICOF. Visitors can explore Comics Bunker, where they can find merchandise from various artists, along with a comic book café. The festival also includes the World Webtoon Forum and the International Cosplay Championship, as well as talk & signing events with renowned domestic artists.",
+      "region": "Gyeonggi-do",
+      "district": "Bucheon-si",
+      "latitude": 37.508197014,
+      "longitude": 126.7421906073,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/75/3557475_image2_1.JPG",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010100",
+      "sourceModifiedTime": "20260731111109",
+      "localScore": 53,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "1 Gilju-ro, Bucheon-si, Gyeonggi-do",
+        "tel": "+82-32-310-3071",
+        "homepage": "www.bicof.com",
+        "operating": {
+          "useTime": "10:00-18:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20260918",
+          "endDate": "20260920",
+          "venue": "Korea Manhwa Museum"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "1273884",
+      "title": "Bupyeong Pungmul Festival (부평풍물대축제)",
+      "description": "Celebrating its 30th edition, the Bupyeong Pungmul Festival brings rhythm, excitement, and community spirit to the heart of the city. Since its launch in 1997, the festival has grown into one of Korea’s leading traditional cultural and performing arts festivals. For nearly three decades, it has filled the urban landscape with the vibrant sounds of Korean pungmul, creating a dynamic space where citizens and artists come together. At the heart of the festival are the pungmul troupes from Bupyeong’s 22 neighborhoods, whose lively rhythms have long served as a powerful force for community unity. Held for three days from October 2 to 4, 2026, the 30th Bupyeong Pungmul Festival carries special significance as it reflects on the traditions built over the past three decades while celebrating a new chapter for the future. This year’s edition will be bigger and more colorful than ever, expanding into the Gulpocheon Stream area, an iconic symbol of Bupyeong’s urban regeneration, and presenting an even wider variety of programs and experiences.",
+      "overview": "Celebrating its 30th edition, the Bupyeong Pungmul Festival brings rhythm, excitement, and community spirit to the heart of the city. Since its launch in 1997, the festival has grown into one of Korea’s leading traditional cultural and performing arts festivals. For nearly three decades, it has filled the urban landscape with the vibrant sounds of Korean pungmul, creating a dynamic space where citizens and artists come together. At the heart of the festival are the pungmul troupes from Bupyeong’s 22 neighborhoods, whose lively rhythms have long served as a powerful force for community unity. Held for three days from October 2 to 4, 2026, the 30th Bupyeong Pungmul Festival carries special significance as it reflects on the traditions built over the past three decades while celebrating a new chapter for the future. This year’s edition will be bigger and more colorful than ever, expanding into the Gulpocheon Stream area, an iconic symbol of Bupyeong’s urban regeneration, and presenting an even wider variety of programs and experiences.",
+      "region": "Incheon",
+      "district": "Bupyeong-gu",
+      "latitude": 37.4944181127,
+      "longitude": 126.7229954336,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/4067377_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010100",
+      "sourceModifiedTime": "20260625111055",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "34-1, Bupyeong-daero, Bupyeong-gu, Incheon",
+        "tel": "+82-32-509-7516",
+        "homepage": "portal.icbp.go.kr/bpf/",
+        "operating": {
+          "useTime": "10:00~21:30",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20261002",
+          "endDate": "20261004",
+          "venue": "Bupyeong-daero and the Bupyeong Area"
+        },
+        "experience": {
+          "guide": null,
+          "program": "Opening and Closing Performances, Bupyeong Daedong Parade & Bupyeong Manmanse",
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "293091",
+      "title": "Busan International Rock Festival (부산국제록페스티벌)",
+      "description": "First held in 2000, the Busan International Rock Festival is Korea’s first and longest-running international rock festival. In 2026, the 27th edition will take place over three days, from Friday, October 2 to Sunday, October 4, at Samnak Eco Park, featuring a diverse lineup of Korean and international artists. Stages set throughout the park will showcase everything from emerging talent to world-renowned headliners. Beyond the performances, visitors can also enjoy a variety of festival attractions, including interactive games, food court lounges, camping zones, and other special side events.",
+      "overview": "First held in 2000, the Busan International Rock Festival is Korea’s first and longest-running international rock festival. In 2026, the 27th edition will take place over three days, from Friday, October 2 to Sunday, October 4, at Samnak Eco Park, featuring a diverse lineup of Korean and international artists. Stages set throughout the park will showcase everything from emerging talent to world-renowned headliners. Beyond the performances, visitors can also enjoy a variety of festival attractions, including interactive games, food court lounges, camping zones, and other special side events.",
+      "region": "Busan",
+      "district": "Sasang-gu",
+      "latitude": 35.1728573,
+      "longitude": 128.9681914,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/06/4040606_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV01",
+      "lclsSystm3": "EV010100",
+      "sourceModifiedTime": "20260618141525",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "29-50, Samnak-dong, Sasang-gu, Busan",
+        "tel": "+82-51-713-5000",
+        "homepage": "busanrockfestival.com",
+        "operating": {
+          "useTime": "10:00~22:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20261002",
+          "endDate": "20261004",
+          "venue": "Samnak Eco Park"
+        },
+        "experience": {
+          "guide": null,
+          "program": "Busan International Rock Festival, Rookies on the BU-ROCK, Road to BU-ROCK",
+          "ageRange": null
+        },
+        "detailInfo": []
+      }
+    },
+    {
+      "sourceContentId": "4020637",
+      "title": "Cheonan K-Culture Expo (천안 K-컬처박람회)",
+      "description": "The Cheonan K-Culture Expo is a K-culture–driven cultural industry fair held primarily at the Independence Hall of Korea, a landmark symbolizing Korea’s spirit of independence and national identity. Since its inaugural edition in 2023, the expo has been held annually for three consecutive years, integrating exhibition, performance, interactive, and consumer-oriented programs into a comprehensive cultural platform. Through ongoing collaboration with the Independence Hall, cultural and arts institutions, and regional industries, the expo continues to strengthen its operational stability while expanding its scale and scope.",
+      "overview": "The Cheonan K-Culture Expo is a K-culture–driven cultural industry fair held primarily at the Independence Hall of Korea, a landmark symbolizing Korea’s spirit of independence and national identity. Since its inaugural edition in 2023, the expo has been held annually for three consecutive years, integrating exhibition, performance, interactive, and consumer-oriented programs into a comprehensive cultural platform. Through ongoing collaboration with the Independence Hall, cultural and arts institutions, and regional industries, the expo continues to strengthen its operational stability while expanding its scale and scope.",
+      "region": "Chungcheongnam-do",
+      "district": "Dongnam-gu",
+      "latitude": 36.7773487289308,
+      "longitude": 127.2325927550662,
+      "image": "https://tong.visitkorea.or.kr/cms/resource/13/4020713_image2_1.jpg",
+      "contentTypeId": "85",
+      "cat1": "",
+      "cat2": "",
+      "cat3": "",
+      "lclsSystm1": "EV",
+      "lclsSystm2": "EV03",
+      "lclsSystm3": "EV030200",
+      "sourceModifiedTime": "20260507163155",
+      "localScore": 71,
+      "qualityScore": 100,
+      "selectionStatus": "AUTO_ACCEPTED",
+      "detailData": {
+        "address": "1 Dongnipginyeomgwan-ro, Mokcheon-eup, Dongnam-gu, Cheonan-si, Chungcheongnam-do",
+        "tel": "+82-41-521-3411",
+        "homepage": "www.kcultureexpo.com",
+        "operating": {
+          "useTime": "10:00-22:00",
+          "restDate": null,
+          "parking": null,
+          "informationCenter": null
+        },
+        "event": {
+          "startDate": "20260902",
+          "endDate": "20260906",
+          "venue": "Independence Hall of Korea"
+        },
+        "experience": {
+          "guide": null,
+          "program": null,
+          "ageRange": "Open to visitors of all ages"
+        },
+        "detailInfo": []
+      }
+    }
+  ]
+}
