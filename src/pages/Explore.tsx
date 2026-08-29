@@ -12,11 +12,8 @@ import type { SupabaseQuestCard } from "@/features/quests/supabaseQuestAdapter";
 
 const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY ?? "";
 const configuredMapId = (import.meta.env.VITE_GOOGLE_MAPS_MAP_ID ?? "").trim();
-// Google Cloud JavaScript map IDs are 16-character hexadecimal identifiers.
-// Keep the map usable while a project map ID is being configured.
-const GOOGLE_MAPS_MAP_ID = configuredMapId === "DEMO_MAP_ID" || /^[a-f0-9]{16}$/i.test(configuredMapId)
-  ? configuredMapId
-  : "DEMO_MAP_ID";
+// Use the Map ID issued by Google Cloud as-is. Fall back only when none is configured.
+const GOOGLE_MAPS_MAP_ID = configuredMapId || "DEMO_MAP_ID";
 
 const peopleCounts = [12, 8, 5, 23, 3, 15, 9, 7, 18, 4, 11, 6, 14];
 
