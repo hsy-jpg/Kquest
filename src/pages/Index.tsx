@@ -7,7 +7,7 @@ import { quests, difficultyColor } from "@/data/quests";
 import tigerMascot from "@/assets/tiger-mascot.png";
 import kquestLogo from "@/assets/kquest-logo.png";
 import PersonalizationOnboarding from "@/components/PersonalizationOnboarding";
-import { ACTIVITIES, MOODS, REGIONS, loadPrefs, recommendedQuests, type Prefs } from "@/lib/personalization";
+import { ACTIVITIES, MOODS, PREFS_UPDATED_EVENT, REGIONS, loadPrefs, recommendedQuests, type Prefs } from "@/lib/personalization";
 import { selectHomeForYouQuests } from "@/features/quests/homeForYou";
 import { usePublishedQuests } from "@/features/quests/usePublishedQuests";
 import { rankForYouQuests } from "@/features/quests/forYouRecommendations";
@@ -64,6 +64,16 @@ const Index = () => {
     if (location.hash !== "#for-you") return;
     requestAnimationFrame(() => document.getElementById("for-you")?.scrollIntoView({ behavior: "smooth", block: "start" }));
   }, [location.hash]);
+
+  useEffect(() => {
+    const handlePrefsUpdated = (event: Event) => {
+      const nextPrefs = (event as CustomEvent<Prefs>).detail ?? loadPrefs();
+      setPrefs(nextPrefs);
+      setRecentForYouIds(new Set());
+    };
+    window.addEventListener(PREFS_UPDATED_EVENT, handlePrefsUpdated);
+    return () => window.removeEventListener(PREFS_UPDATED_EVENT, handlePrefsUpdated);
+  }, []);
 
 
   return (

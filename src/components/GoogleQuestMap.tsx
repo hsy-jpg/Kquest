@@ -18,6 +18,7 @@ type Props = {
 };
 
 let mapsLoader: Promise<typeof google> | null = null;
+const MAP_READY_TIMEOUT_MS = 12_000;
 
 function loadGoogleMaps(apiKey: string): Promise<typeof google> {
   if (window.google?.maps) return Promise.resolve(window.google);
@@ -75,13 +76,30 @@ const GoogleQuestMap = forwardRef<GoogleQuestMapHandle, Props>(({
       if (cancelled || !containerRef.current) return;
       const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
       await google.maps.importLibrary("marker");
-      mapRef.current = new Map(containerRef.current, {
-        center: { lat: 36.35, lng: 127.9 },
-        zoom: 7,
-        mapId,
-        disableDefaultUI: true,
-        gestureHandling: "greedy",
+      const initialize = (candidateMapId: string) => new Promise<google.maps.Map>((resolve, reject) => {
+        if (!containerRef.current) return reject(new Error("Google Maps container is unavailable."));
+        const map = new Map(containerRef.current, {
+          center: { lat: 36.35, lng: 127.9 },
+          zoom: 7,
+          mapId: candidateMapId,
+          disableDefaultUI: true,
+          gestureHandling: "greedy",
+        });
+        const timeout = window.setTimeout(() => reject(new Error(`Google Map ${candidateMapId} did not become ready.`)), MAP_READY_TIMEOUT_MS);
+        google.maps.event.addListenerOnce(map, "idle", () => {
+          window.clearTimeout(timeout);
+          resolve(map);
+        });
       });
+
+      try {
+        mapRef.current = await initialize(mapId);
+      } catch (configuredMapError) {
+        if (mapId === "DEMO_MAP_ID") throw configuredMapError;
+        console.warn("[K-Quest Explore] Configured Map ID failed; retrying with DEMO_MAP_ID.", configuredMapError);
+        mapRef.current = await initialize("DEMO_MAP_ID");
+      }
+      if (cancelled) return;
       setReady(true);
     }).catch((error) => {
       console.error("[K-Quest Explore] Google Maps initialization failed.", error);

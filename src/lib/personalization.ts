@@ -45,6 +45,7 @@ export type Prefs = {
 };
 
 const KEY = "kquest.prefs";
+export const PREFS_UPDATED_EVENT = "kquest:prefs-updated";
 
 export const loadPrefs = (): Prefs | null => {
   try {
@@ -58,6 +59,7 @@ export const loadPrefs = (): Prefs | null => {
 export const savePrefs = (p: Prefs) => {
   try {
     localStorage.setItem(KEY, JSON.stringify(p));
+    window.dispatchEvent(new CustomEvent<Prefs>(PREFS_UPDATED_EVENT, { detail: p }));
   } catch {
     /* ignore */
   }
