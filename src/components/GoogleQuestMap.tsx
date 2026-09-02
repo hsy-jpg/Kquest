@@ -20,7 +20,7 @@ type Props = {
 let mapsLoader: Promise<typeof google> | null = null;
 const MAP_READY_TIMEOUT_MS = 12_000;
 
-function loadGoogleMaps(apiKey: string): Promise<typeof google> {
+function loadGoogleMaps(apiKey: string, mapId: string): Promise<typeof google> {
   if (window.google?.maps) return Promise.resolve(window.google);
   mapsLoader ??= new Promise((resolve, reject) => {
     const callbackName = `__kquestGoogleMapsReady_${Date.now()}`;
@@ -33,7 +33,16 @@ function loadGoogleMaps(apiKey: string): Promise<typeof google> {
       if (window.google?.maps) resolve(window.google);
       else reject(new Error("Google Maps was unavailable after loading."));
     };
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(apiKey)}&v=weekly&loading=async&libraries=marker&callback=${callbackName}`;
+    const params = new URLSearchParams({
+      key: apiKey,
+      v: "weekly",
+      loading: "async",
+      libraries: "marker",
+      callback: callbackName,
+      auth_referrer_policy: "origin",
+      map_ids: mapId,
+    });
+    script.src = `https://maps.googleapis.com/maps/api/js?${params.toString()}`;
     script.async = true;
     script.onerror = () => {
       cleanup();
@@ -72,7 +81,7 @@ const GoogleQuestMap = forwardRef<GoogleQuestMapHandle, Props>(({
 
   useEffect(() => {
     let cancelled = false;
-    loadGoogleMaps(apiKey).then(async () => {
+    loadGoogleMaps(apiKey, mapId).then(async () => {
       if (cancelled || !containerRef.current) return;
       const { Map } = await google.maps.importLibrary("maps") as google.maps.MapsLibrary;
       await google.maps.importLibrary("marker");
