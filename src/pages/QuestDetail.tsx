@@ -48,8 +48,8 @@ const QuestDetail = () => {
   const fallbackMapQuery = encodeURIComponent(`${quest.title} ${quest.location}`);
   const googleMapUrl = publishedQuest?.experienceDetails.googleMapUrl
     ?? `https://www.google.com/maps/search/?api=1&query=${fallbackMapQuery}`;
-  const naverMapUrl = publishedQuest?.experienceDetails.naverMapUrl
-    ?? `https://map.naver.com/p/search/${fallbackMapQuery}`;
+  const kakaoMapUrl = publishedQuest?.experienceDetails.kakaoMapUrl
+    ?? `https://map.kakao.com/link/search/${fallbackMapQuery}`;
 
   return (
     <div className="flex flex-col min-h-full">
@@ -223,8 +223,8 @@ const QuestDetail = () => {
                     <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-lg bg-primary px-3 py-2.5 text-xs font-bold text-primary-foreground">
                       <Navigation size={14} /> Google Maps
                     </a>
-                    <a href={naverMapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-lg border border-border bg-card px-3 py-2.5 text-xs font-bold text-foreground">
-                      <Navigation size={14} /> Naver Map
+                    <a href={kakaoMapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-lg border border-border bg-card px-3 py-2.5 text-xs font-bold text-foreground">
+                      <Navigation size={14} /> Kakao Map
                     </a>
                   </div>
                 </AccordionContent>
