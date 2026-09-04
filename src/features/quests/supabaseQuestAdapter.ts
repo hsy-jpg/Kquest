@@ -52,6 +52,7 @@ export interface QuestExperienceDetails {
   address: string;
   homepage: string | null;
   telephone: string | null;
+  googleMapUrl: string;
   naverMapUrl: string;
   kakaoMapUrl: string;
 }
@@ -235,6 +236,11 @@ function deriveExperienceDetails(record: PublishedQuestRecord, description: stri
     parking ? `Parking information: ${parking}` : "Parking information is unavailable, so public transportation is recommended when possible.",
   ];
   const mapQuery = encodeURIComponent(address || record.title);
+  const googleMapQuery = encodeURIComponent(
+    record.latitude !== null && record.longitude !== null
+      ? `${record.latitude},${record.longitude}`
+      : address || record.title,
+  );
   return {
     about: description,
     tips,
@@ -246,6 +252,7 @@ function deriveExperienceDetails(record: PublishedQuestRecord, description: stri
     address: address || record.region,
     homepage: textValue(detail.homepage),
     telephone: textValue(detail.tel) ?? textValue(operating.informationCenter),
+    googleMapUrl: `https://www.google.com/maps/search/?api=1&query=${googleMapQuery}`,
     naverMapUrl: `https://map.naver.com/p/search/${mapQuery}`,
     kakaoMapUrl: `https://map.kakao.com/link/search/${mapQuery}`,
   };

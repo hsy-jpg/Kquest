@@ -45,6 +45,12 @@ const QuestDetail = () => {
     );
   }
 
+  const fallbackMapQuery = encodeURIComponent(`${quest.title} ${quest.location}`);
+  const googleMapUrl = publishedQuest?.experienceDetails.googleMapUrl
+    ?? `https://www.google.com/maps/search/?api=1&query=${fallbackMapQuery}`;
+  const naverMapUrl = publishedQuest?.experienceDetails.naverMapUrl
+    ?? `https://map.naver.com/p/search/${fallbackMapQuery}`;
+
   return (
     <div className="flex flex-col min-h-full">
       {/* Hero Image */}
@@ -144,9 +150,6 @@ const QuestDetail = () => {
             <MapPin size={16} className="text-primary" />
             <span className="font-bold text-sm">{quest.location}</span>
           </div>
-          <div className="mt-3 h-28 rounded-xl bg-muted flex items-center justify-center text-muted-foreground text-xs">
-            🗺️ Map preview coming soon
-          </div>
         </div>
 
         {/* Quest Info Accordion */}
@@ -216,16 +219,14 @@ const QuestDetail = () => {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
-                  {publishedQuest ? (
-                    <div className="space-y-3">
-                      <p>{publishedQuest.experienceDetails.address}</p>
-                      <div className="flex flex-wrap gap-2">
-                        <a href={publishedQuest.experienceDetails.naverMapUrl} target="_blank" rel="noreferrer" className="rounded-lg bg-primary px-3 py-2 text-xs font-bold text-primary-foreground">Open Naver Map</a>
-                        <a href={publishedQuest.experienceDetails.kakaoMapUrl} target="_blank" rel="noreferrer" className="rounded-lg border border-border bg-card px-3 py-2 text-xs font-bold">Open Kakao Map</a>
-                        {publishedQuest.experienceDetails.homepage && <a href={publishedQuest.experienceDetails.homepage} target="_blank" rel="noreferrer" className="rounded-lg border border-border bg-card px-3 py-2 text-xs font-bold">Official Website</a>}
-                      </div>
-                    </div>
-                  ) : detail?.howToGetThere}
+                  <div className="grid grid-cols-2 gap-2">
+                    <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-lg bg-primary px-3 py-2.5 text-xs font-bold text-primary-foreground">
+                      <Navigation size={14} /> Google Maps
+                    </a>
+                    <a href={naverMapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-1.5 rounded-lg border border-border bg-card px-3 py-2.5 text-xs font-bold text-foreground">
+                      <Navigation size={14} /> Naver Map
+                    </a>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
 

@@ -55,5 +55,7 @@ describe("adaptPublishedQuest", () => {
     expect(quest.durationMinutes).toBe(10);
     expect(quest.proofType).toBe("PHOTO");
     expect(quest.completionRule.requiredStepOrders).toEqual([1, 2]);
+    expect(quest.experienceDetails.googleMapUrl).toContain("query=37.5%2C127");
+    expect(quest.experienceDetails.naverMapUrl).toContain("Jongno-gu%2C%20Seoul");
   });
 });
