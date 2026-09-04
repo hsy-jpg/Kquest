@@ -14,6 +14,7 @@ import SignTranslator from "@/components/SignTranslator";
 import { tigerPoseSrc, poseForQuest } from "@/lib/tigerPoses";
 import { usePublishedQuest } from "@/features/quests/usePublishedQuests";
 import { recordQuestView } from "@/features/quests/questEvents";
+import { getMockQuestMapUrls } from "@/lib/questMapSearch";
 
 const QuestDetail = () => {
   const { id } = useParams();
@@ -45,10 +46,13 @@ const QuestDetail = () => {
     );
   }
 
+  const mockMapUrls = mockQuest ? getMockQuestMapUrls(mockQuest) : null;
   const fallbackMapQuery = encodeURIComponent(`${quest.title} ${quest.location}`);
   const googleMapUrl = publishedQuest?.experienceDetails.googleMapUrl
+    ?? mockMapUrls?.google
     ?? `https://www.google.com/maps/search/?api=1&query=${fallbackMapQuery}`;
   const kakaoMapUrl = publishedQuest?.experienceDetails.kakaoMapUrl
+    ?? mockMapUrls?.kakao
     ?? `https://map.kakao.com/link/search/${fallbackMapQuery}`;
 
   return (
