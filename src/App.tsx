@@ -17,6 +17,9 @@ import QuestDetail from "./pages/QuestDetail";
 import QuestPlay from "./pages/QuestPlay";
 import PhotoVerify from "./pages/PhotoVerify";
 import QuestReview from "./pages/QuestReview";
+import QuestRouteDetail from "./pages/QuestRouteDetail";
+import GameZone from "./pages/GameZone";
+import GamePlay from "./pages/GamePlay";
 import Login from "./pages/Login";
 import JournalEntryPage from "./pages/JournalEntry";
 import PublicProfile from "./pages/PublicProfile";
@@ -53,6 +56,9 @@ const App = () => {
               <Route path="/journal/:id" element={<JournalEntryPage />} />
               <Route path="/traveler/:userId" element={<PublicProfile />} />
               <Route path="/quest/:id" element={<QuestDetail />} />
+              <Route path="/quest-route/:id" element={<QuestRouteDetail />} />
+              <Route path="/games" element={<GameZone />} />
+              <Route path="/games/:id" element={<GamePlay />} />
               <Route path="/quest/:id/play" element={<QuestPlay />} />
               <Route path="/quest/:id/verify" element={<PhotoVerify />} />
               <Route path="/quest/:id/review" element={<QuestReview />} />

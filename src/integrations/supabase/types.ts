@@ -52,6 +52,39 @@ export type Database = {
           },
         ]
       }
+      quest_submissions: {
+        Row: {
+          id: string
+          user_id: string
+          title: string
+          location: string
+          mission: string
+          category: string
+          photo_path: string
+          status: string
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          user_id: string
+          title: string
+          location: string
+          mission: string
+          category: string
+          photo_path: string
+          status?: string
+          created_at?: string
+        }
+        Update: {
+          title?: string
+          location?: string
+          mission?: string
+          category?: string
+          photo_path?: string
+          status?: string
+        }
+        Relationships: []
+      }
       tour_places: {
         Row: {
           id: string

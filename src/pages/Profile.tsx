@@ -15,6 +15,7 @@ import { levelFromXp, levelTitle } from "@/lib/leveling";
 import journalFood from "@/assets/journal-food.jpg";
 import journalView from "@/assets/journal-view.jpg";
 import journalHanbok from "@/assets/journal-hanbok.jpg";
+import MyTripBoard from "@/components/MyTripBoard";
 
 const REWARD_CHART_SIZE = 10;
 const MOCK_QUESTS_BASELINE = 12;
@@ -134,6 +135,8 @@ const Profile = () => {
           </div>
         ))}
       </div>
+
+      <MyTripBoard />
 
       {/* Level */}
       <div className="mt-4 mx-5 rounded-2xl bg-card border border-border p-4 shadow-sm">

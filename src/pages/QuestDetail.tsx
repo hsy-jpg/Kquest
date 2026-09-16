@@ -15,6 +15,7 @@ import { tigerPoseSrc, poseForQuest } from "@/lib/tigerPoses";
 import { usePublishedQuest } from "@/features/quests/usePublishedQuests";
 import { recordQuestView } from "@/features/quests/questEvents";
 import { getMockQuestMapUrls } from "@/lib/questMapSearch";
+import SaveQuestButton from "@/components/SaveQuestButton";
 
 const QuestDetail = () => {
   const { id } = useParams();
@@ -73,6 +74,7 @@ const QuestDetail = () => {
         >
           <ArrowLeft size={16} /> Back
         </button>
+        <SaveQuestButton quest={quest} className="absolute right-4 top-4" />
         <img
           src={tigerPoseSrc[poseForQuest(quest)]}
           alt=""

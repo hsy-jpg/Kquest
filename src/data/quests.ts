@@ -21,6 +21,7 @@ import questBookstore from "@/assets/quest-bookstore.jpg";
 import questBakery from "@/assets/quest-bakery.jpg";
 import questBadminton from "@/assets/quest-badminton.jpg";
 import questTteokbokki from "@/assets/quest-tteokbokki.jpg";
+import { routePrototypeQuests } from "@/data/routePrototypeQuests";
 
 export interface QuestStep {
   id: number;
@@ -564,6 +565,8 @@ export const quests: Quest[] = [
     ],
   },
 ];
+
+quests.push(...routePrototypeQuests);
 
 export const difficultyColor = (d: string) => {
   if (d === "Easy") return "bg-success/15 text-success";

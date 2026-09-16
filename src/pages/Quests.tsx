@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Clock, MapPin, Zap, Shuffle, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, Clock, Dice5, Flag, MapPin, Route, Sparkles, Star, Zap, Shuffle, SlidersHorizontal } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -10,6 +10,10 @@ import { usePublishedQuests } from "@/features/quests/usePublishedQuests";
 import { useQuestEventSignals } from "@/features/quests/useQuestEventSignals";
 import { questMatchesRegion, rankForYouQuests } from "@/features/quests/forYouRecommendations";
 import type { SupabaseQuestCard } from "@/features/quests/supabaseQuestAdapter";
+import { questRoutes, type QuestRoute } from "@/data/questRoutes";
+import CreateQuestDialog from "@/components/CreateQuestDialog";
+import SaveQuestButton from "@/components/SaveQuestButton";
+import SaveRouteButton from "@/components/SaveRouteButton";
 
 const categories = ["For You", "Food", "Culture", "Shopping", "Nightlife", "Nature"] as const;
 
@@ -19,8 +23,11 @@ const GENERIC_LOCAL_MOCK_IDS = [1, 3, 5, 7, 9, 17, 20, 21, 22] as const;
 const genericLocalMockQuests = quests.filter((quest) => GENERIC_LOCAL_MOCK_IDS.includes(quest.id as typeof GENERIC_LOCAL_MOCK_IDS[number]));
 
 const QuestCard = ({ quest, onClick }: { quest: Quest; onClick: () => void }) => (
-  <button
+  <div
+    role="button"
+    tabIndex={0}
     onClick={onClick}
+    onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") onClick(); }}
     className="w-full text-left rounded-2xl overflow-hidden border border-border shadow-sm transition-transform active:scale-[0.98] bg-card"
   >
     <div className="relative h-40">
@@ -29,6 +36,7 @@ const QuestCard = ({ quest, onClick }: { quest: Quest; onClick: () => void }) =>
       <span className="absolute top-3 right-3 flex items-center gap-1 text-xp bg-card/90 backdrop-blur-sm text-xs font-bold px-2.5 py-1 rounded-full">
         <Zap size={13} /> {quest.xp} XP
       </span>
+      <SaveQuestButton quest={quest} className="absolute left-3 top-3" />
       <div className="absolute bottom-0 left-0 right-0 p-4">
         <p className="font-extrabold text-base text-primary-foreground">{quest.title}</p>
       </div>
@@ -44,7 +52,23 @@ const QuestCard = ({ quest, onClick }: { quest: Quest; onClick: () => void }) =>
         <MapPin size={12} /> {quest.distance}
       </span>
     </div>
-  </button>
+  </div>
+);
+
+const RouteCard = ({ route, onClick }: { route: QuestRoute; onClick: () => void }) => (
+  <div role="button" tabIndex={0} onClick={onClick} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") onClick(); }} className="w-[82vw] max-w-[330px] shrink-0 overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm transition-transform active:scale-[0.98]">
+    <div className="relative h-44">
+      <img src={route.coverImage} alt="" className="h-full w-full object-cover" loading="lazy" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--korean-deep))] via-[hsl(var(--korean-deep)/0.35)] to-transparent" />
+      <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-extrabold text-primary shadow-sm">{route.theme}</span>
+      <SaveRouteButton route={route} className="absolute right-3 top-3" />
+      <div className="absolute inset-x-0 bottom-0 p-4 text-white"><p className="text-lg font-black leading-tight">{route.emoji} {route.title}</p><p className="mt-1 text-xs font-bold text-white/75">{route.subtitle}</p></div>
+    </div>
+    <div className="p-4">
+      <div className="flex items-center gap-2 text-xs font-extrabold text-foreground"><span className="rounded-full bg-primary/10 px-2.5 py-1 text-primary">{route.duration}</span><span className="flex items-center gap-1"><Flag size={13} /> {route.questIds.length} Quests</span></div>
+      <div className="mt-3 flex items-center justify-between"><span className="text-xs text-muted-foreground">{route.estimatedTime}</span><span className="flex items-center gap-1 text-xs font-extrabold text-primary">View Route <ArrowRight size={14} /></span></div>
+    </div>
+  </div>
 );
 
 const Quests = () => {
@@ -109,10 +133,33 @@ const Quests = () => {
     <div className="pb-4">
       <div className="px-5 pt-6">
         <h1 className="text-2xl font-extrabold">Quests 🎯</h1>
-        <p className="text-sm text-muted-foreground mt-1">Find your next adventure</p>
+        <div className="mt-1 flex items-center justify-between gap-3">
+          <p className="text-sm text-muted-foreground">Find your next adventure</p>
+          <CreateQuestDialog />
+        </div>
       </div>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-4">
+      <section className="mt-6">
+        <div className="mb-3 flex items-end justify-between px-5">
+          <div><p className="flex items-center gap-1.5 text-[11px] font-extrabold uppercase tracking-[0.16em] text-primary"><Route size={14} /> Curated journeys</p><h2 className="mt-1 text-lg font-black">Featured Quest Routes</h2></div>
+          <span className="text-xs font-bold text-muted-foreground">Swipe →</span>
+        </div>
+        <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-2 scrollbar-hide">
+          {questRoutes.map((route) => <div key={route.id} className="snap-start"><RouteCard route={route} onClick={() => navigate(`/quest-route/${route.id}`)} /></div>)}
+        </div>
+      </section>
+
+      <section className="px-5 pt-5">
+        <button onClick={() => navigate("/games")} className="group relative w-full overflow-hidden rounded-3xl bg-[hsl(var(--korean-deep))] p-5 text-left text-white shadow-[7px_8px_0_hsl(var(--primary)/0.22)] transition-transform duration-200 active:scale-[0.97] active:-rotate-1">
+          <div className="absolute -right-8 -top-10 h-36 w-36 rounded-full bg-primary/35 blur-2xl" /><Star className="absolute right-5 top-5 rotate-12 text-[hsl(var(--xp))]" size={20} /><Zap className="absolute right-16 top-12 -rotate-12 text-accent" size={18} /><span className="absolute bottom-3 right-7 rotate-12 text-2xl font-black text-white/15">?</span>
+          <div className="relative flex items-center gap-4"><span className="flex h-16 w-16 shrink-0 rotate-[-6deg] items-center justify-center rounded-2xl bg-[hsl(var(--xp))] text-[hsl(var(--xp-foreground))] shadow-lg transition-transform group-active:rotate-6"><Dice5 size={34} /></span><div><p className="flex items-center gap-1 text-[10px] font-black uppercase tracking-[0.2em] text-white/55"><Sparkles size={12} /> K-Quest Game Zone</p><h2 className="mt-1 text-2xl font-black">LET'S PLAY!</h2><p className="mt-1 text-xs font-bold leading-relaxed text-white/70">Feeling adventurous?<br />Pick a challenge and let Korea surprise you.</p></div></div>
+          <div className="relative mt-4 flex items-center justify-between rounded-xl bg-white/10 px-4 py-2.5 text-xs font-black"><span>4 challenges waiting</span><span className="flex items-center gap-1 text-[hsl(var(--xp))]">ENTER GAME ZONE <ArrowRight size={14} /></span></div>
+        </button>
+      </section>
+
+      <div className="px-5 pt-6"><p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">Explore one at a time</p><h2 className="mt-1 text-lg font-black">Individual Quests</h2></div>
+
+      <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-3">
         <div className="px-5 overflow-x-auto scrollbar-hide">
           <TabsList className="inline-flex h-11 rounded-xl bg-muted gap-1 w-auto min-w-full">
             {categories.map((c) => (
