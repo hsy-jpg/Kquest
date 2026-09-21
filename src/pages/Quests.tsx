@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { ArrowRight, Clock, Dice5, Flag, MapPin, Route, Sparkles, Star, Zap, Shuffle, SlidersHorizontal } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { quests, difficultyColor, type Quest } from "@/data/quests";
-import { loadPrefs, REGIONS, type Prefs } from "@/lib/personalization";
+import { quests, difficultyColor, LOCAL_QUEST_IDS, localQuests, type Quest } from "@/data/quests";
+import { loadPrefs, recommendedQuests, REGIONS, type Prefs } from "@/lib/personalization";
 import { usePublishedQuests } from "@/features/quests/usePublishedQuests";
 import { useQuestEventSignals } from "@/features/quests/useQuestEventSignals";
 import { questMatchesRegion, rankForYouQuests } from "@/features/quests/forYouRecommendations";
@@ -15,12 +15,10 @@ import CreateQuestDialog from "@/components/CreateQuestDialog";
 import SaveQuestButton from "@/components/SaveQuestButton";
 import SaveRouteButton from "@/components/SaveRouteButton";
 
-const categories = ["For You", "Food", "Culture", "Shopping", "Nightlife", "Nature"] as const;
+const categories = ["For You", "Local", "Food", "Culture", "Shopping", "Nightlife", "Nature"] as const;
 
-// Existing location-flexible mock quests. These are reused as everyday local
-// experiences when a region is selected; no new quest content is generated.
-const GENERIC_LOCAL_MOCK_IDS = [1, 3, 5, 7, 9, 17, 20, 21, 22] as const;
-const genericLocalMockQuests = quests.filter((quest) => GENERIC_LOCAL_MOCK_IDS.includes(quest.id as typeof GENERIC_LOCAL_MOCK_IDS[number]));
+// Location-flexible quests can be surfaced in every region as everyday local experiences.
+const genericLocalMockQuests = localQuests;
 
 const QuestCard = ({ quest, onClick }: { quest: Quest; onClick: () => void }) => (
   <div
@@ -73,11 +71,13 @@ const RouteCard = ({ route, onClick }: { route: QuestRoute; onClick: () => void 
 
 const Quests = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<string>("For You");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const trendingView = searchParams.get("view") === "trending";
+  const [activeTab, setActiveTab] = useState<string>(() => trendingView ? "Local" : "For You");
   const [shuffleKey, setShuffleKey] = useState(0);
   const [position, setPosition] = useState<{ latitude: number; longitude: number } | null>(null);
   const prefs = useMemo(() => loadPrefs(), []);
-  const [selectedRegion, setSelectedRegion] = useState(() => prefs?.region ?? "korea");
+  const [selectedRegion, setSelectedRegion] = useState(() => trendingView ? "korea" : prefs?.region ?? "korea");
   const [regionFilterOpen, setRegionFilterOpen] = useState(false);
   const { data: publishedQuests, isError: publishedQuestsError } = usePublishedQuests();
   const { data: questEvents = [] } = useQuestEventSignals();
@@ -90,6 +90,11 @@ const Quests = () => {
       { enableHighAccuracy: false, timeout: 8_000, maximumAge: 10 * 60_000 },
     );
   }, [selectedRegion]);
+
+  useEffect(() => {
+    if (!trendingView) return;
+    requestAnimationFrame(() => document.getElementById("individual-quests")?.scrollIntoView({ block: "start" }));
+  }, [trendingView]);
 
   const regionalQuests = useMemo(() => {
     if (!publishedQuests) return undefined;
@@ -104,26 +109,48 @@ const Quests = () => {
 
   const categoryMap = useMemo<Record<string, Quest[]>>(() => {
     const publishedSource: Quest[] = publishedQuestsError ? [] : regionalQuests ?? [];
-    const localMocks = selectedRegion === "seoul" || selectedRegion === "korea"
+    const localMocks = trendingView || selectedRegion === "seoul" || selectedRegion === "korea"
       ? quests
       : selectLocalMockQuests(selectedRegion, shuffleKey, 3);
-    const source: Quest[] = [...publishedSource, ...localMocks];
+    const visibleLocalMocks = trendingView ? localQuests : localMocks;
+    const source: Quest[] = [...visibleLocalMocks, ...publishedSource];
+    const localCandidates: Quest[] = [
+      ...(selectedRegion === "korea" || selectedRegion === "seoul"
+        ? localQuests
+        : selectLocalMockQuests(selectedRegion, shuffleKey, localQuests.length)),
+      ...publishedSource,
+    ];
     const effectivePrefs: Prefs = prefs
       ? { ...prefs, region: selectedRegion }
       : { moods: [], activities: [], region: selectedRegion };
     const rankedPublished = regionalQuests && !publishedQuestsError
-      ? rankForYouQuests(regionalQuests, effectivePrefs, questEvents, regionalQuests.length)
+      ? rankForYouQuests(regionalQuests, effectivePrefs, questEvents, Math.min(12, regionalQuests.length))
       : [];
-    const forYou = interleaveLocalQuests(rankedPublished, localMocks);
+    const personalizedFallback = recommendedQuests(effectivePrefs, quests.length)
+      .filter((quest) => !LOCAL_QUEST_IDS.includes(quest.id as typeof LOCAL_QUEST_IDS[number]))
+      .slice(0, 12);
+    const forYou = uniqueQuests([...rankedPublished, ...personalizedFallback]).slice(0, 12);
+    const forYouKeys = new Set(forYou.map(questIdentity));
+    const localTabQuests = uniqueQuests(localCandidates).filter((quest) => !forYouKeys.has(questIdentity(quest)));
+    const categoryQuests = (category: Quest["category"]) => {
+      const regionalMatches = source.filter((quest) => quest.category === category);
+      if (regionalMatches.length) return regionalMatches;
+
+      const localFallback = localQuests.filter((quest) => quest.category === category);
+      if (localFallback.length) return localFallback;
+
+      return quests.filter((quest) => quest.category === category).slice(0, 6);
+    };
     return {
       "For You": forYou,
-      Food: source.filter((quest) => quest.category === "Food"),
-      Culture: source.filter((quest) => quest.category === "Culture"),
-      Shopping: source.filter((quest) => quest.category === "Shopping"),
-      Nightlife: source.filter((quest) => quest.category === "Nightlife"),
-      Nature: source.filter((quest) => quest.category === "Nature"),
+      Local: localTabQuests,
+      Food: categoryQuests("Food"),
+      Culture: categoryQuests("Culture"),
+      Shopping: categoryQuests("Shopping"),
+      Nightlife: categoryQuests("Nightlife"),
+      Nature: categoryQuests("Nature"),
     };
-  }, [prefs, publishedQuestsError, regionalQuests, questEvents, selectedRegion, shuffleKey]);
+  }, [prefs, publishedQuestsError, regionalQuests, questEvents, selectedRegion, shuffleKey, trendingView]);
 
   const displayQuests = [...(categoryMap[activeTab] || [])].sort(() =>
     shuffleKey ? Math.random() - 0.5 : 0
@@ -157,7 +184,7 @@ const Quests = () => {
         </button>
       </section>
 
-      <div className="px-5 pt-6"><p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">Explore one at a time</p><h2 className="mt-1 text-lg font-black">Individual Quests</h2></div>
+      <div id="individual-quests" className="scroll-mt-4 px-5 pt-6"><p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-muted-foreground">Explore one at a time</p><h2 className="mt-1 text-lg font-black">Individual Quests</h2></div>
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="mt-3">
         <div className="px-5 overflow-x-auto scrollbar-hide">
@@ -214,6 +241,7 @@ const Quests = () => {
                   type="button"
                   onClick={() => {
                     setSelectedRegion(region.id);
+                    if (trendingView) setSearchParams({});
                     setRegionFilterOpen(false);
                   }}
                   className={`w-full flex items-center gap-2 rounded-lg px-3 py-2 text-left text-sm font-bold transition-colors ${selectedRegion === region.id ? "bg-primary text-primary-foreground" : "hover:bg-muted"}`}
@@ -244,19 +272,22 @@ function distanceKm(lat1: number, lon1: number, lat2: number, lon2: number): num
 function selectLocalMockQuests(region: string, shuffleKey: number, count: number): Quest[] {
   const seed = [...region].reduce((total, character) => total + character.charCodeAt(0), 0) + shuffleKey;
   return Array.from({ length: Math.min(count, genericLocalMockQuests.length) }, (_, index) =>
-    genericLocalMockQuests[(seed + index * 3) % genericLocalMockQuests.length],
+    genericLocalMockQuests[(seed + index * 7) % genericLocalMockQuests.length],
   );
 }
 
-function interleaveLocalQuests(published: Quest[], localMocks: Quest[]): Quest[] {
-  if (!published.length) return localMocks;
-  if (!localMocks.length) return published;
+function questIdentity(quest: Quest): string {
+  return "databaseId" in quest
+    ? `published:${String((quest as { databaseId: string }).databaseId)}`
+    : `local:${quest.id}`;
+}
 
-  const result = [...published];
-  localMocks.forEach((quest, index) => {
-    // Keep regional places dominant while making everyday local quests visible.
-    const insertionIndex = Math.min(2 + index * 4, result.length);
-    result.splice(insertionIndex, 0, quest);
+function uniqueQuests(items: Quest[]): Quest[] {
+  const seen = new Set<string>();
+  return items.filter((quest) => {
+    const key = questIdentity(quest);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
   });
-  return result;
 }

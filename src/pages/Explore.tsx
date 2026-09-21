@@ -9,6 +9,7 @@ import mapStreet from "@/assets/map-seoul-street.jpg";
 import GoogleQuestMap, { type GoogleQuestMapHandle } from "@/components/GoogleQuestMap";
 import { usePublishedQuests } from "@/features/quests/usePublishedQuests";
 import type { SupabaseQuestCard } from "@/features/quests/supabaseQuestAdapter";
+import { matchesQuestSearch } from "@/lib/questSearch";
 
 const GOOGLE_MAPS_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY ?? "";
 const configuredMapId = (import.meta.env.VITE_GOOGLE_MAPS_MAP_ID ?? "").trim();
@@ -94,6 +95,7 @@ const decorations: Record<number, Array<{ x: number; y: number; icon: string; si
 const Explore = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
   const [zoom, setZoom] = useState(0); // 0=city, 1=district, 2=street
   const [googleMapFailed, setGoogleMapFailed] = useState(false);
@@ -101,10 +103,22 @@ const Explore = () => {
   const { data: publishedQuests, isError: publishedQuestsError } = usePublishedQuests();
   const liveMapQuests = (publishedQuests ?? []).filter((quest) => quest.latitude !== null && quest.longitude !== null);
   const useGoogleMap = Boolean(GOOGLE_MAPS_API_KEY && !googleMapFailed && liveMapQuests.length);
-  const questSource: Quest[] = useGoogleMap && !publishedQuestsError ? liveMapQuests : quests;
+  const defaultQuestSource: Quest[] = !publishedQuestsError && publishedQuests?.length ? publishedQuests : quests;
+  const questSource: Quest[] = searchQuery.trim()
+    ? uniqueExploreQuests([
+        ...(!publishedQuestsError && publishedQuests ? publishedQuests : []),
+        ...quests,
+      ])
+    : defaultQuestSource;
 
-  const filteredQuests =
-    activeCategory === "All" ? questSource : questSource.filter((q) => q.category === activeCategory);
+  const filteredQuests = questSource.filter((quest) =>
+    (activeCategory === "All" || quest.category === activeCategory)
+      && matchesQuestSearch(quest, searchQuery),
+  );
+  const filteredMapQuests = filteredQuests.filter((quest): quest is SupabaseQuestCard =>
+    "latitude" in quest && "longitude" in quest
+      && typeof quest.latitude === "number" && typeof quest.longitude === "number",
+  );
 
   const visiblePins = filteredQuests
     .map((q) => ({ quest: q, pos: pinCoords[q.id]?.[zoom] }))
@@ -130,9 +144,32 @@ const Explore = () => {
       <p className="text-sm text-muted-foreground mt-1">Tap a pin to discover a quest</p>
 
       {/* Search */}
-      <div className="mt-4 flex items-center gap-2 rounded-xl bg-card border border-border px-3 py-2.5">
+      <div className="mt-4 flex items-center gap-2 rounded-xl bg-card border border-border px-3 py-2.5 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20 transition-colors">
         <Search size={18} className="text-muted-foreground" />
-        <span className="text-sm text-muted-foreground">Search places or quests...</span>
+        <input
+          type="search"
+          value={searchQuery}
+          onChange={(event) => {
+            setSearchQuery(event.target.value);
+            setSelectedQuest(null);
+          }}
+          placeholder="Search regions or quest names..."
+          aria-label="Search regions or quest names"
+          className="min-w-0 flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none"
+        />
+        {searchQuery && (
+          <button
+            type="button"
+            onClick={() => {
+              setSearchQuery("");
+              setSelectedQuest(null);
+            }}
+            className="rounded-full p-1 text-muted-foreground hover:bg-muted hover:text-foreground"
+            aria-label="Clear search"
+          >
+            <X size={14} />
+          </button>
+        )}
       </div>
 
       {/* Categories */}
@@ -160,7 +197,7 @@ const Explore = () => {
             ref={googleMapRef}
             apiKey={GOOGLE_MAPS_API_KEY}
             mapId={GOOGLE_MAPS_MAP_ID}
-            quests={filteredQuests as SupabaseQuestCard[]}
+            quests={filteredMapQuests}
             selectedQuestId={selectedQuest?.id}
             onSelect={setSelectedQuest}
             onError={handleGoogleMapError}
@@ -344,9 +381,18 @@ const Explore = () => {
 
       {/* Nearby quests with social */}
       <h2 className="mt-5 text-lg font-bold">
-        {activeCategory === "All" ? "Happening Now" : `${activeCategory} Quests`}
+        {searchQuery.trim()
+          ? `${filteredQuests.length} quest${filteredQuests.length === 1 ? "" : "s"} found`
+          : activeCategory === "All" ? "Happening Now" : `${activeCategory} Quests`}
       </h2>
       <div className="mt-2 flex flex-col gap-3">
+        {filteredQuests.length === 0 && (
+          <div className="rounded-2xl border border-dashed border-border bg-card px-5 py-8 text-center">
+            <Search size={24} className="mx-auto text-muted-foreground" />
+            <p className="mt-2 text-sm font-bold">No quests found</p>
+            <p className="mt-1 text-xs text-muted-foreground">Try another region or quest name.</p>
+          </div>
+        )}
         {filteredQuests.map((q, i) => (
           <div key={q.id} className="rounded-2xl overflow-hidden border border-border shadow-sm bg-card">
             <div className="relative h-32">
@@ -377,3 +423,13 @@ const Explore = () => {
 };
 
 export default Explore;
+
+function uniqueExploreQuests(items: Quest[]): Quest[] {
+  const seen = new Set<string>();
+  return items.filter((quest) => {
+    const key = `${quest.title.trim().toLocaleLowerCase()}|${quest.location.trim().toLocaleLowerCase()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}

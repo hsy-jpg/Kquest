@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Flame, Zap, Clock, MapPin, ChevronRight, Gift, TrendingUp, Star, Sparkles, SlidersHorizontal } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
-import { quests, difficultyColor } from "@/data/quests";
+import { quests, difficultyColor, localQuests } from "@/data/quests";
 import tigerMascot from "@/assets/tiger-mascot.png";
 import kquestLogo from "@/assets/kquest-logo.png";
 import PersonalizationOnboarding from "@/components/PersonalizationOnboarding";
@@ -15,8 +15,8 @@ import { useQuestEventSignals } from "@/features/quests/useQuestEventSignals";
 import { rankForTodayQuests } from "@/features/quests/forTodayRecommendations";
 
 const todayQuest = quests[0];
-const featuredQuests = quests.filter((q) => q.featured);
-const trendingQuests = quests.filter((q) => !q.featured && q.id !== todayQuest.id);
+const trendingQuests = localQuests;
+const festivalFallbackQuests = quests.filter((quest) => quest.category === "Festival").slice(0, 3);
 
 const labelFor = (list: readonly { id: string; emoji: string; label: string }[], id: string) => {
   const found = list.find((x) => x.id === id);
@@ -52,12 +52,12 @@ const Index = () => {
     [personalizedPublished, forYou, publishedQuestsError, prefs, publishedQuests],
   );
   const displayedForToday = useMemo(() => {
-    if (publishedQuestsError || !publishedQuests?.length) return featuredQuests;
+    if (publishedQuestsError || !publishedQuests?.length) return festivalFallbackQuests;
     const forYouIds = new Set(
       displayedForYou.flatMap((quest) => "databaseId" in quest ? [(quest as { databaseId: string }).databaseId] : []),
     );
     const ranked = rankForTodayQuests(publishedQuests, questEventSignals, forYouIds, 3);
-    return ranked.length ? ranked : featuredQuests;
+    return ranked.length ? ranked : festivalFallbackQuests;
   }, [publishedQuestsError, publishedQuests, displayedForYou, questEventSignals]);
 
   useEffect(() => {
@@ -400,7 +400,7 @@ const Index = () => {
             <TrendingUp size={18} className="text-secondary" />
             <h2 className="text-lg font-bold">Trending Quests</h2>
           </div>
-          <button className="flex items-center gap-0.5 text-xs font-bold text-primary">
+          <button onClick={() => navigate("/quests?view=trending#individual-quests")} className="flex items-center gap-0.5 text-xs font-bold text-primary">
             See all <ChevronRight size={14} />
           </button>
         </div>

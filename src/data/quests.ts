@@ -5,7 +5,6 @@ import questNoraebang from "@/assets/quest-noraebang.jpg";
 import questBaduk from "@/assets/quest-baduk.jpg";
 import questJjimjilbang from "@/assets/quest-jjimjilbang.jpg";
 import questCafe from "@/assets/quest-cafe.jpg";
-import questApartmentPark from "@/assets/quest-apartment-park.jpg";
 import questHanriverPicnic from "@/assets/quest-hanriver-picnic.jpg";
 import questConvstore from "@/assets/quest-convstore.jpg";
 import questGimbap from "@/assets/quest-gimbap.jpg";
@@ -21,6 +20,13 @@ import questBookstore from "@/assets/quest-bookstore.jpg";
 import questBakery from "@/assets/quest-bakery.jpg";
 import questBadminton from "@/assets/quest-badminton.jpg";
 import questTteokbokki from "@/assets/quest-tteokbokki.jpg";
+import questBaseballCheer from "@/assets/quest-baseball-cheer.png";
+import questBanchanHomeMeal from "@/assets/quest-banchan-home-meal.png";
+import questUndergroundShopping from "@/assets/quest-underground-shopping.png";
+import questApartmentNightMarket from "@/assets/quest-apartment-night-market.png";
+import questApartmentBadmintonBet from "@/assets/quest-apartment-badminton-bet.png";
+import questTteokShop from "@/assets/quest-tteok-shop.png";
+import questDaisoSurvivalKit from "@/assets/quest-daiso-survival-kit.png";
 import { routePrototypeQuests } from "@/data/routePrototypeQuests";
 
 export interface QuestStep {
@@ -208,24 +214,24 @@ export const quests: Quest[] = [
   },
   {
     id: 7,
-    title: "Apartment Park Night Walk",
-    subtitle: "Stroll through a real Korean residential park",
-    xp: 90,
-    emoji: "🌃",
-    image: questApartmentPark,
+    title: "Apartment Park Badminton Bet",
+    subtitle: "Walk the complex, challenge residents, and play for ice cream",
+    xp: 180,
+    emoji: "🏸",
+    image: questApartmentBadmintonBet,
     category: "Culture",
-    difficulty: "Easy",
-    time: "45 min",
-    distance: "1.0 km",
-    location: "Any apartment complex park, Seoul",
-    story: "Past the security gate, joggers loop the track. Halmonis chat on benches. Kids race scooters past the playground. This is where Seoul actually lives at night.",
-    description: "Korean apartment complexes have surprisingly beautiful interior parks. Take an evening walk through one and feel the everyday neighborhood rhythm.",
-    mission: "Walk through an apartment park after sunset and photograph the lit-up scene.",
+    difficulty: "Medium",
+    time: "1.5 hr",
+    distance: "1.2 km",
+    location: "Any publicly accessible apartment complex park in Korea",
+    story: "Past the apartment gates, neighbors circle the walking path and shuttlecocks fly over a park net. Say hello, ask before joining, and turn an ordinary evening into a friendly match. The loser buys ice cream at the unmanned shop nearby.",
+    description: "Explore the everyday rhythm of a Korean apartment park, then politely invite willing residents to a short badminton game. Finish with a lighthearted ice cream bet at a nearby self-service shop.",
+    mission: "Complete one park loop, play a consensual badminton game with residents or companions, and let the losing side buy ice cream.",
     steps: [
-      { id: 1, title: "Pick a Complex", description: "Find a large apartment park — try Mapo or Gangnam", emoji: "🏢", type: "location" },
-      { id: 2, title: "Walk the Loop", description: "Follow the inner walking track at least once", emoji: "🚶", type: "action" },
-      { id: 3, title: "Sit on a Bench", description: "Pause and watch neighborhood life happen", emoji: "🪑", type: "action" },
-      { id: 4, title: "Photo the Night", description: "Capture the warm apartment windows + park lights", emoji: "📸", type: "photo" },
+      { id: 1, title: "Walk the Apartment Loop", description: "Use only an open public path and complete one full loop without entering resident-only buildings.", emoji: "🏢", type: "location" },
+      { id: 2, title: "Ask Before You Join", description: "Politely ask a willing group to play, or play with your own companions if residents prefer privacy.", emoji: "🙋", type: "action" },
+      { id: 3, title: "Play the Ice Cream Match", description: "Play one friendly game to 11 points. Agree beforehand that the loser buys ice cream.", emoji: "🏸", type: "action" },
+      { id: 4, title: "Claim the Ice Cream", description: "Visit a nearby unmanned ice cream shop, pay normally, and photograph the rackets with the winning treat.", emoji: "🍦", type: "photo" },
     ],
   },
   {
@@ -564,9 +570,147 @@ export const quests: Quest[] = [
       { id: 4, title: "Photo the Plate", description: "Snap the steaming red plate before the first bite", emoji: "📸", type: "photo" },
     ],
   },
+  {
+    id: 23,
+    title: "Cheer Like a Korean",
+    subtitle: "Learn the song, wear the colors, and taste the ballpark",
+    xp: 200,
+    emoji: "⚾",
+    image: questBaseballCheer,
+    category: "Culture",
+    difficulty: "Medium",
+    time: "3 hr",
+    distance: "0.8 km",
+    location: "A professional baseball stadium in Korea",
+    story: "Korean baseball is a concert, picnic, and ball game at the same time. The cheer captain starts a song, thunder sticks rise, and an entire section moves together before the next pitch.",
+    description: "Attend a Korean professional baseball game, learn one player cheer, try a team-colored item or cheering tool, and complete the experience with lemon cream shrimp or another stadium specialty.",
+    mission: "Join one full player cheer, experience the cheering culture, and photograph your stadium food with the field in view.",
+    steps: [
+      { id: 1, title: "Enter the Ballpark", description: "Book a valid ticket, arrive before the middle innings, and find your assigned seat.", emoji: "🏟️", type: "location" },
+      { id: 2, title: "Follow One Cheer Song", description: "Watch the cheer section, learn one chorus, and join without blocking anyone's view.", emoji: "🎶", type: "action" },
+      { id: 3, title: "Try the Team Spirit", description: "Wear a generic or official team item, or use a permitted cheering tool responsibly.", emoji: "📣", type: "action" },
+      { id: 4, title: "Taste the Stadium", description: "Try lemon cream shrimp when available, or choose another signature stadium snack, then photograph it with the field.", emoji: "🍤", type: "photo" },
+    ],
+  },
+  {
+    id: 24,
+    title: "Build a Korean Home Meal",
+    subtitle: "Let a neighborhood banchan shop design your table",
+    xp: 130,
+    emoji: "🍱",
+    image: questBanchanHomeMeal,
+    category: "Food",
+    difficulty: "Easy",
+    time: "1 hr",
+    distance: "0.6 km",
+    location: "Any neighborhood banchan shop in Korea",
+    story: "Behind the glass are dozens of small decisions: seasoned spinach, rolled omelet, stir-fried anchovies, and today's kimchi. This is how a Korean home meal comes together on a busy day.",
+    description: "Visit an independent side-dish shop, ask what is good today, and combine rice, soup or a simple main dish with three banchan for your own Korean-style home table.",
+    mission: "Choose three different banchan, build a balanced home meal, and photograph the completed table.",
+    steps: [
+      { id: 1, title: "Find a Banchan Shop", description: "Choose a neighborhood shop with prepared side dishes displayed hygienically.", emoji: "🏪", type: "location" },
+      { id: 2, title: "Ask What's Good Today", description: "Ask the owner for one seasonal or popular recommendation and check ingredients if needed.", emoji: "💬", type: "action" },
+      { id: 3, title: "Pick Three Banchan", description: "Choose three different colors or styles, such as a vegetable, protein, and kimchi or pickle.", emoji: "🥢", type: "action" },
+      { id: 4, title: "Set Your Home Table", description: "Serve the banchan with rice and a simple main or soup, then photograph the full meal before eating.", emoji: "📸", type: "photo" },
+    ],
+  },
+  {
+    id: 25,
+    title: "Underground Arcade Fashion Find",
+    subtitle: "Browse the stalls and buy one item you will actually wear",
+    xp: 120,
+    emoji: "🧥",
+    image: questUndergroundShopping,
+    category: "Shopping",
+    difficulty: "Easy",
+    time: "1.5 hr",
+    distance: "1.0 km",
+    location: "A subway underground shopping arcade in Korea",
+    story: "Below the traffic, compact fashion stalls stretch from exit to exit. Prices are handwritten, trends change quickly, and the best find may be one rack deeper than you expected.",
+    description: "Explore a Korean underground shopping arcade, compare several stalls, check the size and return policy, and buy one practical clothing item within your budget.",
+    mission: "Compare at least three shops and purchase one clothing item only after confirming its price, fit, and exchange conditions.",
+    steps: [
+      { id: 1, title: "Walk the Arcade First", description: "Browse one full section before buying so you understand the range of styles and prices.", emoji: "🚇", type: "location" },
+      { id: 2, title: "Compare Three Stalls", description: "Find similar items at three shops and compare price, material, and sizing.", emoji: "🔎", type: "action" },
+      { id: 3, title: "Check Before Buying", description: "Confirm the price and exchange policy, and try the item only where fitting is allowed.", emoji: "🏷️", type: "action" },
+      { id: 4, title: "Show Your Find", description: "Buy one item you will wear and photograph it with the underground arcade in the background.", emoji: "📸", type: "photo" },
+    ],
+  },
+  {
+    id: 26,
+    title: "Apartment Night Market",
+    subtitle: "Eat and mingle at a neighborhood pop-up market",
+    xp: 130,
+    emoji: "🏮",
+    image: questApartmentNightMarket,
+    category: "Food",
+    difficulty: "Easy",
+    time: "1.5 hr",
+    distance: "0.8 km",
+    location: "A publicly advertised apartment night market in Korea",
+    story: "For one evening, the apartment courtyard becomes a tiny festival. Folding tables fill with snacks, children weave between neighbors, and food tents glow below the towers.",
+    description: "Visit only an apartment night market that is publicly advertised or that you are invited to. Try neighborhood snacks, support a stall, and enjoy the communal atmosphere without entering private areas.",
+    mission: "Try two different market foods or activities and photograph the public market atmosphere respectfully.",
+    steps: [
+      { id: 1, title: "Confirm Public Access", description: "Use a public event notice or resident invitation; do not enter access-controlled residential areas without permission.", emoji: "📅", type: "location" },
+      { id: 2, title: "Walk Every Stall", description: "Take one loop before choosing and notice what residents are cooking, selling, or playing.", emoji: "🚶", type: "action" },
+      { id: 3, title: "Try Two Local Picks", description: "Buy two different snacks or join one small activity while following the event's payment rules.", emoji: "🥡", type: "action" },
+      { id: 4, title: "Capture the Courtyard", description: "Photograph the lights and stalls without clearly showing children or residents who have not consented.", emoji: "📸", type: "photo" },
+    ],
+  },
+  {
+    id: 27,
+    title: "Mystery Tteok Pair",
+    subtitle: "Choose two rice cakes by name before you know the flavor",
+    xp: 110,
+    emoji: "🍡",
+    image: questTteokShop,
+    category: "Food",
+    difficulty: "Easy",
+    time: "40 min",
+    distance: "0.4 km",
+    location: "Any neighborhood tteok shop in Korea",
+    story: "The display is filled with names that hint at seasons, ingredients, and old celebrations. Pick the two names that make you most curious, then discover what they actually taste like.",
+    description: "Visit a neighborhood rice-cake shop and choose two different tteok based first on their Korean names. Ask the owner what each name means, then compare texture and flavor.",
+    mission: "Choose two unfamiliar tteok by name, learn what is inside, taste both, and photograph the pair.",
+    steps: [
+      { id: 1, title: "Find a Tteok Shop", description: "Visit a neighborhood shop with several unpackaged or freshly made rice-cake varieties.", emoji: "🏪", type: "location" },
+      { id: 2, title: "Pick Two Names", description: "Before asking about flavor, choose the two Korean names that sound or look most interesting to you.", emoji: "2️⃣", type: "action" },
+      { id: 3, title: "Ask What They Mean", description: "Ask the owner about the name, main ingredients, allergens, and the best way to eat each one.", emoji: "💬", type: "action" },
+      { id: 4, title: "Taste and Compare", description: "Taste both, choose a favorite, and photograph them together with their names recorded in your journal.", emoji: "📸", type: "photo" },
+    ],
+  },
+  {
+    id: 28,
+    title: "₩10,000 Korea Survival Kit",
+    subtitle: "Build a foreigner's everyday essentials kit at Daiso",
+    xp: 140,
+    emoji: "🧺",
+    image: questDaisoSurvivalKit,
+    category: "Shopping",
+    difficulty: "Medium",
+    time: "1 hr",
+    distance: "0.5 km",
+    location: "Any Daiso store in Korea",
+    story: "One red basket, a strict ₩10,000 limit, and shelves full of tiny solutions. Your job is to decide what a newcomer to Korea genuinely needs for an easier first week.",
+    description: "Create a practical daily-life survival kit for an international visitor using only items purchased at Daiso. Compare prices carefully and stay within a total budget of ₩10,000.",
+    mission: "Buy at least three useful items for Korean daily life, keep the total at or below ₩10,000, and explain why each item belongs in the kit.",
+    steps: [
+      { id: 1, title: "Set Three Survival Needs", description: "Choose three needs before shopping, such as rainy weather, public transport, laundry, food storage, hygiene, or language study.", emoji: "📝", type: "action" },
+      { id: 2, title: "Compare the Shelves", description: "Visit the matching sections, compare sizes and prices, and keep a running total before putting items in your basket.", emoji: "🔎", type: "location" },
+      { id: 3, title: "Stay Under ₩10,000", description: "Choose at least three items and confirm the final shelf-price total does not exceed ₩10,000 before checkout.", emoji: "🧮", type: "action" },
+      { id: 4, title: "Present the Kit", description: "Photograph the purchased kit and add one short reason explaining how each item helps with life in Korea.", emoji: "📸", type: "photo" },
+    ],
+  },
 ];
 
+export const LOCAL_QUEST_IDS = [1, 3, 5, 7, 9, 17, 20, 21, 22, 23, 24, 25, 26, 27, 28, 0] as const;
+
 quests.push(...routePrototypeQuests);
+
+export const localQuests = LOCAL_QUEST_IDS
+  .map((id) => quests.find((quest) => quest.id === id))
+  .filter((quest): quest is Quest => Boolean(quest));
 
 export const difficultyColor = (d: string) => {
   if (d === "Easy") return "bg-success/15 text-success";

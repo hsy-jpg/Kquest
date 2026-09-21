@@ -1,4 +1,10 @@
 import type { Quest, QuestStep } from "@/data/quests";
+import fallbackLocalDiscoveryImage from "@/assets/quest-fallback-local-discovery.png";
+import fallbackFoodImage from "@/assets/quest-banchan-home-meal.png";
+import fallbackShoppingImage from "@/assets/quest-underground-shopping.png";
+import fallbackNightlifeImage from "@/assets/quest-nightmarket.jpg";
+import fallbackNatureImage from "@/assets/quest-hanriver-picnic.jpg";
+import fallbackFestivalImage from "@/assets/quest-apartment-night-market.png";
 
 export interface SupabaseQuestStep {
   order: number;
@@ -141,6 +147,15 @@ const CATEGORY_EMOJI: Record<Quest["category"], string> = {
   Festival: "🎉",
 };
 
+const FALLBACK_IMAGE_BY_CATEGORY: Record<Quest["category"], string> = {
+  Food: fallbackFoodImage,
+  Culture: fallbackLocalDiscoveryImage,
+  Nature: fallbackNatureImage,
+  Nightlife: fallbackNightlifeImage,
+  Shopping: fallbackShoppingImage,
+  Festival: fallbackFestivalImage,
+};
+
 const STEP_META: Record<string, Pick<QuestStep, "title" | "emoji" | "type">> = {
   VISIT: { title: "Visit the place", emoji: "📍", type: "location" },
   EXPLORE: { title: "Explore closely", emoji: "🔎", type: "action" },
@@ -204,6 +219,27 @@ function objectValue(value: unknown): Record<string, unknown> {
 
 function textValue(value: unknown): string | null {
   return typeof value === "string" && value.trim() ? value.trim() : null;
+}
+
+function eventDateIso(value: unknown, endOfDay = false): string | null {
+  const text = textValue(value);
+  if (!text) return null;
+  if (/^\d{8}$/.test(text)) {
+    const year = text.slice(0, 4);
+    const month = text.slice(4, 6);
+    const day = text.slice(6, 8);
+    return `${year}-${month}-${day}T${endOfDay ? "23:59:59" : "00:00:00"}+09:00`;
+  }
+  const date = new Date(text);
+  return Number.isNaN(date.getTime()) ? null : date.toISOString();
+}
+
+function deriveAvailability(record: PublishedQuestRecord): SupabaseQuestCard["availability"] {
+  const detail = objectValue(record.tour_places?.detail_data);
+  const event = objectValue(detail.event);
+  const startAt = eventDateIso(event.startDate);
+  const endAt = eventDateIso(event.endDate, true);
+  return startAt && endAt ? { startAt, endAt } : null;
 }
 
 function deriveExperienceDetails(record: PublishedQuestRecord, description: string, category: Quest["category"]): QuestExperienceDetails {
@@ -293,7 +329,7 @@ export function adaptPublishedQuest(record: PublishedQuestRecord): SupabaseQuest
     subtitle: summary(description),
     xp: Math.round((80 + localScore * 0.7) / 10) * 10,
     emoji: CATEGORY_EMOJI[category],
-    image: record.image ?? "",
+    image: record.image?.trim() || FALLBACK_IMAGE_BY_CATEGORY[category],
     category,
     difficulty: difficultyCode === "EASY" ? "Easy" : difficultyCode === "MEDIUM" ? "Medium" : "Hard",
     time: `${durationMinutes} min`,
@@ -333,7 +369,7 @@ export function adaptPublishedQuest(record: PublishedQuestRecord): SupabaseQuest
     userChoice: choiceStep
       ? { required: true, prompt: choiceStep.prompt, responseType: "TEXT", options: null }
       : null,
-    availability: null,
+    availability: deriveAvailability(record),
     experienceDetails,
   };
 }

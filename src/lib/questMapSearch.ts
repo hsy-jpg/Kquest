@@ -12,6 +12,12 @@ const ROUTE_PROTOTYPE_MAP_SEARCH_TERMS: Record<number, string> = {
   190: "Seoul subway station", 191: "Seoul subway station restaurant", 192: "Seoul subway station neighborhood",
   200: "Seoul public date spot", 210: "Seoul old dabang", 211: "Seoul old neighborhood alley", 212: "Seoul traditional games experience", 213: "Seoul retro street",
   220: "Seoul traditional market snack", 221: "Seoul old local restaurant nopo",
+  23: "한국 프로야구장",
+  24: "동네 반찬가게",
+  25: "지하상가 옷가게",
+  26: "아파트 야시장",
+  27: "동네 떡집",
+  28: "다이소",
 };
 
 /**

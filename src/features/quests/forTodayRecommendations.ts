@@ -80,9 +80,9 @@ export function rankForTodayQuests(
     if (ownEvents.some((event) => event.event_type === "COMPLETE")) return [];
 
     const availability = eventAvailability(quest, now);
-    if (availability.known && !availability.active) return [];
-    // A Festival without dates cannot be asserted to be executable today.
-    if (quest.questType === "FESTIVAL" && !availability.known) return [];
+    // For Today is reserved for genuinely time-limited events that are active now.
+    // General seasonal places (for example valleys or beaches) belong in For You.
+    if (quest.questType !== "FESTIVAL" || !availability.known || !availability.active) return [];
 
     const eventActiveToday = availability.active ? 3 : 0;
     const eventBoundaryToday = availability.boundary ? 3 : 0;

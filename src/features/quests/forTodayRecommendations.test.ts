@@ -28,24 +28,34 @@ const candidates = [
 ];
 
 describe("rankForTodayQuests", () => {
-  it("selects up to three executable, diverse PUBLISHED Quest types", () => {
-    const ranked = rankForTodayQuests(candidates, [], new Set(), 3, new Date("2026-08-17T14:00:00+09:00"));
-    expect(ranked.map((item) => item.questType)).toEqual(["NATURE", "MARKET", "CULTURE"]);
-    expect(ranked.every((item) => item.forTodayRecommendation.breakdown.recommendedTime === 2)).toBe(true);
+  it("selects only dated festivals that are active today", () => {
+    const festival: SupabaseQuestCard = {
+      ...candidates[4],
+      availability: { startAt: "2026-08-17T00:00:00+09:00", endAt: "2026-08-18T23:59:59+09:00" },
+    };
+    const ranked = rankForTodayQuests([...candidates.slice(0, 4), festival], [], new Set(), 3, new Date("2026-08-17T14:00:00+09:00"));
+    expect(ranked.map((item) => item.questType)).toEqual(["FESTIVAL"]);
+    expect(ranked[0].forTodayRecommendation.breakdown.eventActiveToday).toBe(3);
   });
 
-  it("excludes completed Quests and undated Festivals", () => {
-    const events: QuestEventSignal[] = [{ quest_id: candidates[0].databaseId, event_type: "COMPLETE", created_at: "2026-08-17T01:00:00Z" }];
-    const ranked = rankForTodayQuests(candidates, events, new Set(), 5, new Date("2026-08-17T14:00:00+09:00"));
-    expect(ranked.some((item) => item.databaseId === candidates[0].databaseId)).toBe(false);
-    expect(ranked.some((item) => item.questType === "FESTIVAL")).toBe(false);
+  it("excludes general places, undated Festivals, and completed Festivals", () => {
+    const activeFestival: SupabaseQuestCard = {
+      ...candidates[4],
+      availability: { startAt: "2026-08-01T00:00:00+09:00", endAt: "2026-08-31T23:59:59+09:00" },
+    };
+    const events: QuestEventSignal[] = [{ quest_id: activeFestival.databaseId, event_type: "COMPLETE", created_at: "2026-08-17T01:00:00Z" }];
+    const ranked = rankForTodayQuests([...candidates, activeFestival], events, new Set(), 5, new Date("2026-08-17T14:00:00+09:00"));
+    expect(ranked).toEqual([]);
   });
 
-  it("boosts an in-progress Quest and penalizes overlap with For You", () => {
-    const events: QuestEventSignal[] = [{ quest_id: candidates[1].databaseId, event_type: "START", created_at: "2026-08-17T01:00:00Z" }];
-    const ranked = rankForTodayQuests(candidates, events, new Set([candidates[0].databaseId]), 4, new Date("2026-08-17T14:00:00+09:00"));
-    expect(ranked[0].databaseId).toBe(candidates[1].databaseId);
-    expect(ranked.find((item) => item.databaseId === candidates[0].databaseId)?.forTodayRecommendation.breakdown.forYouOverlap).toBe(-2);
+  it("boosts an in-progress active Festival and penalizes For You overlap", () => {
+    const availability = { startAt: "2026-08-01T00:00:00+09:00", endAt: "2026-08-31T23:59:59+09:00" };
+    const first = { ...candidates[4], availability };
+    const second = { ...candidates[3], questType: "FESTIVAL", availability };
+    const events: QuestEventSignal[] = [{ quest_id: second.databaseId, event_type: "START", created_at: "2026-08-17T01:00:00Z" }];
+    const ranked = rankForTodayQuests([first, second], events, new Set([first.databaseId]), 2, new Date("2026-08-17T14:00:00+09:00"));
+    expect(ranked[0].databaseId).toBe(second.databaseId);
+    expect(ranked.find((item) => item.databaseId === first.databaseId)?.forTodayRecommendation.breakdown.forYouOverlap).toBe(-2);
     expect(ranked[0].forTodayRecommendation.reasons.length).toBeGreaterThan(0);
   });
 

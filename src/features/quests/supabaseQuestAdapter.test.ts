@@ -58,4 +58,25 @@ describe("adaptPublishedQuest", () => {
     expect(quest.experienceDetails.googleMapUrl).toContain("query=37.5%2C127");
     expect(quest.experienceDetails.naverMapUrl).toContain("Jongno-gu%2C%20Seoul");
   });
+
+  it("derives a Korea-local active period from TourAPI festival dates", () => {
+    const festival = adaptPublishedQuest({
+      ...record,
+      quest_type: "FESTIVAL",
+      tour_places: {
+        ...record.tour_places!,
+        detail_data: { event: { startDate: "20260918", endDate: "20260922" } },
+      },
+    });
+
+    expect(festival.availability).toEqual({
+      startAt: "2026-09-18T00:00:00+09:00",
+      endAt: "2026-09-22T23:59:59+09:00",
+    });
+  });
+
+  it("uses a category-appropriate local image when TourAPI has no photo", () => {
+    const withoutImage = adaptPublishedQuest({ ...record, image: null, quest_type: "LOCAL_FOOD" });
+    expect(withoutImage.image).toContain("quest-banchan-home-meal.png");
+  });
 });
